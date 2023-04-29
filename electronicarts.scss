@@ -1,7 +1,110 @@
-*{
-margin:0;
-padding :0;}
+@use "base-module.scss" as basic;
 
-.container{
-border: 2px solid black;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.dropdown-menu.first-dropdown {
+  width: 25rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-main {
+  margin: 0;
+  padding: 0;
+
+  .header {
+    height: 65lvh;
+  }
+
+  .hiding-nav {
+    width: 100%;
+    position: fixed;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+    padding-right: 4rem;
+    background: basic.$primary;
+    height: 4lvh;
+
+    i {
+      color: rgb(149, 141, 141);
+      font-size: 1.7rem;
+      &:hover {
+        color: white;
+      }
+    }
+
+    button {
+      background: none;
+      border: none;
+    }
+  }
+
+  .main-nav {
+    .navbar {
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      transition: top 0.3s;
+    }
+    .container-fluid {
+      * {
+        color: black;
+      }
+
+      .fa-ellipsis-vertical {
+        font-size: 2.5rem;
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  .main-logo {
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(mainlogo.png);
+  }
+}
+
+// Animazione Navbar Dropdown
+@media all and (min-width: 992px) {
+  .navbar .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    margin-top: 0;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: red;
+    text-decoration: none;
+  }
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+  }
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transform: rotateX(0deg);
+  }
+}
+// Fine animazione navbar
