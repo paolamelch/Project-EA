@@ -1,4 +1,10 @@
 @use "base-module.scss" as basic;
+@font-face {
+  font-family: "EaFont";
+  src: url("EaFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -6,10 +12,46 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#eaLogo {
+  font-family: "EaFont";
+  font-size: 2.5rem;
+}
+
 .dropdown-menu.first-dropdown {
-  width: 25rem;
-  display: flex;
-  flex-direction: row;
+  .container-drop {
+    width: 35rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 1rem;
+    .left-side-drop {
+      flex-basis: 50%;
+      h5 {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0.25);
+        text-underline-offset: 1rem;
+      }
+    }
+    .right-side-drop {
+      flex-basis: 50%;
+      h5 {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0.25);
+        text-underline-offset: 1rem;
+      }
+    }
+  }
+}
+
+a.nav-link {
+  font-size: 1.7rem;
+  margin-right: 4rem;
+}
+
+.navbar-brand {
+  padding-bottom: 4rem;
 }
 
 .container-main {
@@ -52,10 +94,10 @@
       width: 100%;
       background-color: white;
       transition: top 0.3s;
-    }
-    .container-fluid {
-      * {
-        color: black;
+      .container-fluid {
+        * {
+          color: black;
+        }
       }
 
       .fa-ellipsis-vertical {

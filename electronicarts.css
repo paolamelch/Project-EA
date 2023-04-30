@@ -1,13 +1,53 @@
+@font-face {
+  font-family: "EaFont";
+  src: url("EaFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.dropdown-menu.first-dropdown {
-  width: 25rem;
-  display: flex;
-  flex-direction: row;
+#eaLogo {
+  font-family: "EaFont";
+  font-size: 2.5rem;
+}
+
+.dropdown-menu.first-dropdown .container-drop {
+  width: 35rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 1rem;
+}
+.dropdown-menu.first-dropdown .container-drop .left-side-drop {
+  flex-basis: 50%;
+}
+.dropdown-menu.first-dropdown .container-drop .left-side-drop h5 {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  text-underline-offset: 1rem;
+}
+.dropdown-menu.first-dropdown .container-drop .right-side-drop {
+  flex-basis: 50%;
+}
+.dropdown-menu.first-dropdown .container-drop .right-side-drop h5 {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  text-underline-offset: 1rem;
+}
+
+a.nav-link {
+  font-size: 1.7rem;
+  margin-right: 4rem;
+}
+
+.navbar-brand {
+  padding-bottom: 4rem;
 }
 
 .container-main {
@@ -46,10 +86,10 @@
   background-color: white;
   transition: top 0.3s;
 }
-.container-main .main-nav .container-fluid * {
+.container-main .main-nav .navbar .container-fluid * {
   color: black;
 }
-.container-main .main-nav .container-fluid .fa-ellipsis-vertical {
+.container-main .main-nav .navbar .fa-ellipsis-vertical {
   font-size: 2.5rem;
   margin-right: 3rem;
 }
