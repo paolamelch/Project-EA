@@ -1,7 +1,217 @@
-*{
-margin:0;
-padding :0;}
+$blackborder: 1px solid black;
 
-.container{
-border: 2px solid black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: auto;
+}
+
+.eaPlayContainer {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+}
+
+#eaBackground {
+    width: 100%;
+    height: 100%;
+}
+
+.eaFlexContainer {
+    max-width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eaFlexContainerChild {
+    max-height: 100%;
+}
+
+#eaSmallLogo {
+    object-fit: fill;
+}
+
+.eaParagraph {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.eaFlexContainerChild2 {
+    margin-top: 17px;
+}
+.buttonStyle{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lightBlueDiv {
+    height: 96px;
+    width: 100%;
+    background-color: rgb(107, 185, 227);
+    padding: 0 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lightBlueDivChild {
+    flex: 1 1 50%;
+}
+.playersAndParents {
+    font-size: 1.7rem;
+}
+.bohButton2 {
+    float: right;
+}
+
+.socialMediaContainer {
+    padding: 12px 76px;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(236, 234, 234);
+}
+
+.socialMedia {
+    height: 100%;
+    margin: 0 3.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.careersList {
+    ul {
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.3rem;
+        justify-content: space-between;
+    }
+    li {
+        display: inline;
+    }
+    li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.socialMediaList {
+    h3 {
+        margin: 10px 0 10px 10px;
+        text-align: right;
+        font-size: 0.8rem;
+    }
+    ul {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    li {
+        display: inline;
+    }
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.section2 {
+    background-color: rgb(242, 241, 241);
+    .networkFooter {
+        height: 240px;
+        padding: 15px 93px 40px;
+        margin: 0 3rem;
+        .networkFooterContainer {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+        .networkFooterLogo {
+            img {
+                width: 100%;
+                height: 50px;
+            }
+        }
+        .networkFooterLinks {
+            width: 100%;
+            height: 100%;
+            margin: 0 0 0 1.5rem;
+            .networkFooterLinksContainer {
+                width: 100%;
+                height: auto;
+                display: flex;
+                gap: 1rem;
+                .networkFooterList {
+                    flex: 1 1 100%;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.3rem;
+                        margin: 1rem 1rem 1rem 0;
+                        line-height: 2.5rem;
+                    }
+                }
+                .networkFooterSelect {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 2.5rem;
+                    .networkFooterSelect1 {
+                        width: 35%;
+                        .selectButton {
+                            border: 1px solid rgba(188, 183, 183, 0.646);
+                            height: 70%;
+                        }
+                    }
+                }
+            }
+            .networkFooterLegal{
+                width:100%;
+                height:50%;
+                margin-top: 1rem;
+                display:flex;
+                gap:15rem;
+                .networkFooterLegalList{
+                    width:100%;
+                    height:auto;
+                    flex:4;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1rem;
+                        margin: 1rem 1rem 1rem 0;
+                        line-height: 1.5rem;
+                    }
+                    .networkFooterCopyright{
+                        margin: 1rem 1rem 1rem 0;
+                    }
+                }
+                .networkFooterLegalImg{
+                    width:100%;
+                    height:auto;
+                    flex:1;
+                    img{
+                        float:right;
+                        padding-top:2.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
