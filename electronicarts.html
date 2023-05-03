@@ -1,14 +1,215 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="electronicarts.css">
-        <title>Electronic Arts</title>
-    </head>
-    <body>
-        <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="electronicarts.css" />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f4fe88f674.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Electronic Arts</title>
+  </head>
+  <body>
+    <div class="container-fluid container-main">
+      <div class="header">
+        <div class="hiding-nav" id="navbar">
+          <button>
+            <i class="fa-regular fa-user"></i>
+          </button>
+
+          <button>
+            <i class="fa-solid fa-question"></i>
+          </button>
+
+          <button>
+            <i id="eaLogo">EA</i>
+          </button>
+        </div>
+
+        <div class="main-nav">
+          <nav class="navbar navbar-expand-lg navbar-dark" id="navbar2">
+            <div class="container-fluid">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <a class="navbar-brand" href="#">
+                <img src="ea-wordmark-network-nav-coral.svg" />
+              </a>
+              <!-- Games -->
+              <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      Games
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-menu-end fade-down first-dropdown"
+                    >
+                      <div class="container-drop">
+                        <div class="left-side-drop">
+                          <h5>Browse Games</h5>
+                          <ul>
+                            <li><a href="#">Latest Games</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">Free-To-Play</a></li>
+                            <li><a href="#">EA SPORTS</a></li>
+                            <li><a href="#">EA Originals</a></li>
+                            <li><a href="#">Games Library</a></li>
+                            <li><a href="#">EA app Deals</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="right-side-drop">
+                          <h5>Platform</h5>
+                          <ul>
+                            <li><a href="#">PC</a></li>
+                            <li><a href="#">PlayStation 5</a></li>
+                            <li><a href="#">Xbox Series X</a></li>
+                            <li><a href="#">Nintendo Switch</a></li>
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">Pogo</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- More Experiences -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      More Experiences
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                      <li><a class="dropdown-item" href="#"> EA Play</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"> The EA app </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Competitive Gaming
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> EA Play Live </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> Playtesting </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- About -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                      <li><a class="dropdown-item" href="#"> Company</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"> EA Studios </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> Careers </a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"> Our Technology </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> EA Partners </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> News </a></li>
+                      <li><a class="dropdown-item" href="#"> Inside EA </a></li>
+                    </ul>
+                  </li>
+                  <!-- Commitments -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      Commitments
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                      <li>
+                        <a class="dropdown-item" href="#"> Our Commitments</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> Positive Play </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Inclusion & Diversity
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> Social Impact </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> People & Culture </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> Environment </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Resources -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      Resources
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                      <li><a class="dropdown-item" href="#"> Help</a></li>
+                      <li><a class="dropdown-item" href="#"> Forums </a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Player & Parental tools
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> Accessibility </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> Press </a></li>
+                      <li><a class="dropdown-item" href="#"> Investors </a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse.// -->
+            </div>
+            <!-- container-fluid.// -->
+          </nav>
+        </div>
+
+        <div class="main-logo"></div>
+      </div>
+    </div>
+<div class="FooterContainer">
             <section class="eaPlayContainer">
                 <img src="media/hero-medium-console-7x2-xl.jpg.adapt.crop5x2.1455w.jpg" alt="" id="eaBackground">
                 <div class="eaFlexContainer">
@@ -113,5 +314,28 @@
                 </section> 
             </footer>
         </div>
-    </body>
+    <!-- Bootstrap Javascript e Navbar Dropdown - lasciare come ultimo elemento, scrivere sopra-->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+          document.getElementById("navbar2").style.top = "40px";
+        } else {
+          document.getElementById("navbar").style.top = "-20px";
+          document.getElementById("navbar2").style.top = "0";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
