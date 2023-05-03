@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "EaFont";
+  src: url("EaFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#eaLogo {
+  font-family: "EaFont";
+  font-size: 2.5rem;
+}
+
+.dropdown-menu.first-dropdown .container-drop {
+  width: 35rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 1rem;
+}
+.dropdown-menu.first-dropdown .container-drop .left-side-drop {
+  flex-basis: 50%;
+}
+.dropdown-menu.first-dropdown .container-drop .left-side-drop h5 {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  text-underline-offset: 1rem;
+}
+.dropdown-menu.first-dropdown .container-drop .right-side-drop {
+  flex-basis: 50%;
+}
+.dropdown-menu.first-dropdown .container-drop .right-side-drop h5 {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  text-underline-offset: 1rem;
+}
+
+a.nav-link {
+  font-size: 1.7rem;
+  margin-right: 4rem;
+}
+
+.navbar-brand {
+  padding-bottom: 4rem;
+}
+
+.container-main {
+  margin: 0;
+  padding: 0;
+}
+.container-main .header {
+  height: 65lvh;
+}
+.container-main .hiding-nav {
+  width: 100%;
+  position: fixed;
+  transition: top 0.3s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+  padding-right: 4rem;
+  background: #161616;
+  height: 4lvh;
+}
+.container-main .hiding-nav i {
+  color: rgb(149, 141, 141);
+  font-size: 1.7rem;
+}
+.container-main .hiding-nav i:hover {
+  color: white;
+}
+.container-main .hiding-nav button {
+  background: none;
+  border: none;
+}
+.container-main .main-nav .navbar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  transition: top 0.3s;
+}
+.container-main .main-nav .navbar .container-fluid * {
+  color: black;
+}
+.container-main .main-nav .navbar .fa-ellipsis-vertical {
+  font-size: 2.5rem;
+  margin-right: 3rem;
+}
+.container-main .main-logo {
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(mainlogo.png);
+}
+
+.footerContainer {
+  height: auto;
+}
+
+.eaPlayContainer {
+  max-width: 100%;
+  max-height: auto;
+  background-color: rgb(107, 185, 227);
+  position: relative;
+}
+
+#eaBackground {
+  width: 100%;
+  height: 100%;
+}
+
+.eaFlexContainer {
+  max-width: 50%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eaFlexContainerChild {
+  max-height: 100%;
+}
+
+#eaSmallLogo {
+  object-fit: fill;
+}
+
+.eaParagraph {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.eaFlexContainerChild2 {
+  margin-top: 17px;
+}
+
+.buttonStyle {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightBlueDiv {
+  height: 96px;
+  width: 100%;
+  background-color: rgb(107, 185, 227);
+  padding: 0 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lightBlueDivChild {
+  flex: 1 1 50%;
+}
+
+.playersAndParents {
+  font-size: 1.7rem;
+}
+
+.bohButton2 {
+  float: right;
+}
+
+.socialMediaContainer {
+  padding: 12px 76px;
+  height: 150px;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+}
+
+.socialMedia {
+  height: 100%;
+  margin: 0 3.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.careersList ul {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.3rem;
+  justify-content: space-between;
+}
+.careersList li {
+  display: inline;
+}
+.careersList li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+.careersList li a:hover {
+  color: red;
+}
+
+.socialMediaList h3 {
+  margin: 10px 0 10px 10px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.socialMediaList ul {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.socialMediaList li {
+  display: inline;
+}
+.socialMediaList li a {
+  text-decoration: none;
+  color: black;
+}
+
+.section2 {
+  background-color: rgb(242, 241, 241);
+}
+.section2 .networkFooter {
+  height: 240px;
+  padding: 15px 93px 40px;
+  margin: 0 3rem;
+}
+.section2 .networkFooter .networkFooterContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.section2 .networkFooter .networkFooterLogo img {
+  width: 100%;
+  height: 50px;
+}
+.section2 .networkFooter .networkFooterLinks {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 1.5rem;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1rem;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterList {
+  flex: 1 1 100%;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterList a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin: 1rem 1rem 1rem 0;
+  line-height: 2.5rem;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5rem;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 {
+  width: 35%;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton {
+  border: 1px solid rgba(188, 183, 183, 0.646);
+  height: 70%;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal {
+  width: 100%;
+  height: 50%;
+  margin-top: 1rem;
+  display: flex;
+  gap: 15rem;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalList {
+  width: 100%;
+  height: auto;
+  flex: 4;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalList a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  margin: 1rem 1rem 1rem 0;
+  line-height: 1.5rem;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalList .networkFooterCopyright {
+  margin: 1rem 1rem 1rem 0;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalImg {
+  width: 100%;
+  height: auto;
+  flex: 1;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalImg img {
+  float: right;
+  padding-top: 2.5rem;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    margin-top: 0;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: red;
+    text-decoration: none;
+  }
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+  }
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transform: rotateX(0deg);
+  }
+}
+
+/*# sourceMappingURL=electronicarts.css.map */
