@@ -11,6 +11,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  background-color: rgba(212, 192, 192, 0.25);
+}
+
 #eaLogo {
   font-family: "EaFont";
   font-size: 2.5rem;
@@ -69,6 +73,7 @@ a.nav-link {
   padding-right: 4rem;
   background: #161616;
   height: 4lvh;
+  z-index: 10;
 }
 .container-main .hiding-nav i {
   color: rgb(149, 141, 141);
@@ -83,6 +88,7 @@ a.nav-link {
 }
 .container-main .main-nav .navbar {
   position: fixed;
+  z-index: 15;
   width: 100%;
   background-color: white;
   transition: top 0.3s;
@@ -100,6 +106,59 @@ a.nav-link {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(mainlogo.png);
+}
+
+.featured-games-container {
+  height: 90lvh;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.featured-games-container h1 {
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  font-weight: 550;
+}
+.featured-games-container .featured-grid {
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: center;
+  gap: 3rem;
+}
+.featured-games-container .featured-grid .featured-square {
+  border: 1px solid black;
+  width: 35rem;
+  height: 35rem;
+}
+.featured-games-container .featured-grid .featured-square--one {
+  background: url(media/square1.png);
+}
+.featured-games-container .featured-grid .featured-square--two {
+  background: url(media/square2.png);
+}
+.featured-games-container .featured-grid .featured-square--three {
+  background: url(media/square3.png);
+}
+.featured-games-container .featured-grid .featured-square--four {
+  background: url(media/square4.png);
+}
+.featured-games-container .featured-grid .featured-square--five {
+  background: url(media/square5.png);
+}
+.featured-games-container .featured-grid .featured-square--six {
+  background: url(media/square6.png);
+}
+.featured-games-container .our-btn {
+  background: none;
+  border-radius: 3px;
+  border: none;
+  outline: 2px solid black;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.1s ease-in-out;
+}
+.featured-games-container .our-btn:hover {
+  outline-offset: 4px;
 }
 
 .footerContainer {
@@ -150,6 +209,20 @@ a.nav-link {
   max-width: 100%;
   max-height: 100%;
 }
+.buttonStyle .bohButton {
+  color: white;
+  background: none;
+  border-radius: 3px;
+  border: none;
+  outline: 2px solid white;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.1s ease-in-out;
+}
+.buttonStyle .bohButton:hover {
+  outline-offset: 4px;
+}
 
 .lightBlueDiv {
   height: 96px;
@@ -172,6 +245,17 @@ a.nav-link {
 
 .bohButton2 {
   float: right;
+  background: none;
+  border-radius: 3px;
+  border: none;
+  outline: 2px solid black;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.1s ease-in-out;
+}
+.bohButton2:hover {
+  outline-offset: 4px;
 }
 
 .socialMediaContainer {
