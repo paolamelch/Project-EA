@@ -1,71 +1,72 @@
 @use "base-module.scss" as basic;
 @font-face {
-  font-family: "EaFont";
-  src: url("EaFont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "EaFont";
+    src: url("EaFont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  background-color: rgba(212, 192, 192, 0.25);
+    background-color: rgba(212, 192, 192, 0.25);
 }
 
 #eaLogo {
-  font-family: "EaFont";
-  font-size: 2.5rem;
+    font-family: "EaFont";
+    font-size: 2.5rem;
 }
 
 .dropdown-menu.first-dropdown {
-  .container-drop {
-    width: 35rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    padding: 1rem;
-    .left-side-drop {
-      flex-basis: 50%;
-      h5 {
-        font-weight: 700;
-        text-decoration: underline;
-        text-decoration-color: rgba(0, 0, 0, 0.25);
-        text-underline-offset: 1rem;
-      }
+    .container-drop {
+        width: 35rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding: 1rem;
+        .left-side-drop {
+            flex-basis: 50%;
+            h5 {
+                font-weight: 700;
+                text-decoration: underline;
+                text-decoration-color: rgba(0, 0, 0, 0.25);
+                text-underline-offset: 1rem;
+            }
+        }
+        .right-side-drop {
+            flex-basis: 50%;
+            h5 {
+                font-weight: 700;
+                text-decoration: underline;
+                text-decoration-color: rgba(0, 0, 0, 0.25);
+                text-underline-offset: 1rem;
+            }
+        }
     }
-    .right-side-drop {
-      flex-basis: 50%;
-      h5 {
-        font-weight: 700;
-        text-decoration: underline;
-        text-decoration-color: rgba(0, 0, 0, 0.25);
-        text-underline-offset: 1rem;
-      }
-    }
-  }
 }
 
 a.nav-link {
-  font-size: 1.7rem;
-  margin-right: 4rem;
+    font-size: 1.7rem;
+    margin-right: 4rem;
 }
 
 .navbar-brand {
-  padding-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .container-main {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    height : 55rem;
 
-  .header {
-    height: 65lvh;
-  }
+    .header {
+        height: 60rem;
+    }
 
   .hiding-nav {
     width: 100%;
@@ -77,96 +78,201 @@ a.nav-link {
     gap: 5rem;
     padding-right: 4rem;
     background: basic.$primary;
-    height: 4lvh;
     z-index: 10;
 
-    i {
-      color: rgb(149, 141, 141);
-      font-size: 1.7rem;
-      &:hover {
-        color: white;
-      }
-    }
-
-    button {
-      background: none;
-      border: none;
-    }
-  }
-
-  .main-nav {
-    .navbar {
-      position: fixed;
-      z-index: 15;
-      width: 100%;
-      background-color: white;
-      transition: top 0.3s;
-      .container-fluid {
-        * {
-          color: black;
+        i {
+            color: rgb(149, 141, 141);
+            font-size: 1.7rem;
+            &:hover {
+                color: white;
+            }
         }
-      }
 
-      .fa-ellipsis-vertical {
-        font-size: 2.5rem;
-        margin-right: 3rem;
-      }
+        button {
+            background: none;
+            border: none;
+        }
     }
-  }
 
-  .main-logo {
-    height: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(mainlogo.png);
-  }
+    .main-nav {
+        .navbar {
+            position: fixed;
+      z-index: 15;
+            width: 100%;
+            background-color: white;
+            transition: top 0.3s;
+            .container-fluid {
+                * {
+                    color: black;
+                }
+            }
+
+            .fa-ellipsis-vertical {
+                font-size: 2.5rem;
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    .main-logo {
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('mainlogo.png');
+        height:58rem;
+    }
 }
 
 // Featured Game Container
 
 .featured-games-container {
-  height: 90lvh;
-  text-align: center;
-  margin-bottom: 4rem;
-  h1 {
-    margin-bottom: 5rem;
-    font-size: 4rem;
-    font-weight: 550;
-  }
-
-  .featured-grid {
-    display: flex;
-    margin-bottom: 3rem;
-    justify-content: center;
-    gap: 3rem;
-
-    .featured-square {
-      border: 1px solid black;
-      width: 35rem;
-      height: 35rem;
-      &--one {
-        background: url(media/square1.png);
-      }
-      &--two {
-        background: url(media/square2.png);
-      }
-      &--three {
-        background: url(media/square3.png);
-      }
-      &--four {
-        background: url(media/square4.png);
-      }
-      &--five {
-        background: url(media/square5.png);
-      }
-      &--six {
-        background: url(media/square6.png);
-      }
+    text-align: center;
+    margin-bottom: 4rem;
+    h1 {
+        margin-bottom: 5rem;
+        font-size: 4rem;
+        font-weight: 550;
     }
-  }
 
-  .our-btn {
+    .featured-grid {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: center;
+        gap: 3rem;
+
+        .featured-square {
+            border: 1px solid black;
+            width: 35rem;
+            height: 35rem;
+            &--one {
+                background: url('media/square1.png');
+            }
+            &--two {
+                background: url('media/square2.png');
+            }
+            &--three {
+                background: url('media/square3.png');
+            }
+            &--four {
+                background: url('media/square4.png');
+            }
+            &--five {
+                background: url('media/square5.png');
+            }
+            &--six {
+                background: url('media/square6.png');
+            }
+        }
+    }
+
+    .our-btn {
+        background: none;
+        border-radius: 3px;
+        border: none;
+        outline: 2px solid black;
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding: 1.5rem 2.5rem;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            outline-offset: 4px;
+        }
+    }
+}
+
+// Fine Featured Game
+
+// INIZIO FOOTER
+.footerContainer {
+    height: auto;
+}
+
+.eaPlayContainer {
+    max-width: 100%;
+    max-height: auto;
+    background-color: rgb(107, 185, 227);
+    position: relative;
+}
+
+#eaBackground {
+    width: 100%;
+    height: 100%;
+}
+
+.eaFlexContainer {
+    max-width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eaFlexContainerChild {
+    max-height: 100%;
+}
+
+#eaSmallLogo {
+    object-fit: fill;
+}
+
+.eaParagraph {
+    color: white;
+    font-size: 2rem;
+}
+
+.eaFlexContainerChild2 {
+    margin-top: 17px;
+}
+.buttonStyle {
+    max-width: 100%;
+    max-height: 100%;
+    .bohButton {
+        color: white;
+        background: none;
+        border-radius: 3px;
+        border: none;
+        outline: 2px solid white;
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding: 1.5rem 2.5rem;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            outline-offset: 4px;
+        }
+    }
+}
+
+.lightBlueDiv {
+    height: 96px;
+    width: 100%;
+    background-color: rgb(107, 185, 227);
+    padding: 0 10rem 0 11rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lightBlueDivChild1 {
+    flex: 3.5
+}
+
+.lightBlueDivChild2 {
+    flex: 4;
+}
+.playersAndParents {
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+}
+.bohButton2 {
+    float: right;
     background: none;
     border-radius: 3px;
     border: none;
@@ -177,284 +283,209 @@ a.nav-link {
     transition: all 0.1s ease-in-out;
 
     &:hover {
-      outline-offset: 4px;
+        outline-offset: 4px;
     }
-  }
 }
 
-// Fine Featured Game
-
-// INIZIO FOOTER
-.footerContainer {
-  height: auto;
-}
-
-.eaPlayContainer {
-  max-width: 100%;
-  max-height: auto;
-  background-color: rgb(107, 185, 227);
-  position: relative;
-}
-
-#eaBackground {
-  width: 100%;
-  height: 100%;
-}
-
-.eaFlexContainer {
-  max-width: 50%;
-  height: 80%;
-  position: absolute;
-  top: 0;
-  left: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.eaFlexContainerChild {
-  max-height: 100%;
-}
-
-#eaSmallLogo {
-  object-fit: fill;
-}
-
-.eaParagraph {
-  color: white;
-  font-size: 1.2rem;
-}
-
-.eaFlexContainerChild2 {
-  margin-top: 17px;
-}
-.buttonStyle {
-  max-width: 100%;
-  max-height: 100%;
-  .bohButton {
-    color: white;
+.bohButton2 {
+    float: right;
     background: none;
     border-radius: 3px;
     border: none;
-    outline: 2px solid white;
+    outline: 2px solid black;
     font-size: 1.7rem;
     font-weight: 500;
     padding: 1.5rem 2.5rem;
     transition: all 0.1s ease-in-out;
 
     &:hover {
-      outline-offset: 4px;
+        outline-offset: 4px;
     }
-  }
-}
-
-.lightBlueDiv {
-  height: 96px;
-  width: 100%;
-  background-color: rgb(107, 185, 227);
-  padding: 0 7rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.lightBlueDivChild {
-  flex: 1 1 50%;
-}
-.playersAndParents {
-  font-size: 1.7rem;
-}
-.bohButton2 {
-  float: right;
-  background: none;
-  border-radius: 3px;
-  border: none;
-  outline: 2px solid black;
-  font-size: 1.7rem;
-  font-weight: 500;
-  padding: 1.5rem 2.5rem;
-  transition: all 0.1s ease-in-out;
-
-  &:hover {
-    outline-offset: 4px;
-  }
 }
 
 .socialMediaContainer {
-  padding: 12px 76px;
-  height: 150px;
-  width: 100%;
-  background-color: rgb(236, 234, 234);
+    padding: 3rem 9rem;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(236, 234, 234);
 }
 
 .socialMedia {
-  height: 100%;
-  margin: 0 3.5rem;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
+    height: 100%;
+    margin: 0 3.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .careersList {
-  ul {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.3rem;
-    justify-content: space-between;
-  }
-  li {
-    display: inline;
-  }
-  li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    &:hover {
-      color: red;
+    ul {
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: space-between;
     }
-  }
+    li {
+        display: inline;
+    }
+    li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        &:hover {
+            color: red;
+        }
+    }
 }
 
 .socialMediaList {
-  h3 {
-    margin: 10px 0 10px 10px;
-    text-align: right;
-    font-size: 0.8rem;
-  }
-  ul {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-  }
-  li {
-    display: inline;
-  }
-  li a {
-    text-decoration: none;
-    color: black;
-  }
+    h3 {
+        margin: 10px 0 10px 10px;
+        text-align: right;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+    }
+    ul {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+    li {
+        list-style-type: none;
+    }
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+    li a .fa-brands:hover{
+        font-size:2.5rem;
+        transition: all 0.2s ease;
+    }
 }
 
 .section2 {
-  background-color: rgb(242, 241, 241);
-  .networkFooter {
-    height: 240px;
-    padding: 15px 93px 40px;
-    margin: 0 3rem;
-    .networkFooterContainer {
-      height: 100%;
-      width: 100%;
-      display: flex;
-    }
-    .networkFooterLogo {
-      img {
-        width: 100%;
-        height: 50px;
-      }
-    }
-    .networkFooterLinks {
-      width: 100%;
-      height: 100%;
-      margin: 0 0 0 1.5rem;
-      .networkFooterLinksContainer {
-        width: 100%;
-        height: auto;
-        display: flex;
-        gap: 1rem;
-        .networkFooterList {
-          flex: 1 1 100%;
-          a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.3rem;
-            margin: 1rem 1rem 1rem 0;
-            line-height: 2.5rem;
-          }
+    background-color: rgb(242, 241, 241);
+    .networkFooter {
+        height: 240px;
+        padding: 3rem 10rem 0 13rem;
+        margin: 0 2rem;
+        .networkFooterContainer {
+            height: 100%;
+            width: 100%;
+            display: flex;
         }
-        .networkFooterSelect {
-          width: 100%;
-          display: flex;
-          justify-content: flex-end;
-          gap: 2.5rem;
-          .networkFooterSelect1 {
-            width: 35%;
-            .selectButton {
-              border: 1px solid rgba(188, 183, 183, 0.646);
-              height: 70%;
+        .networkFooterLogo {
+            img {
+                width: 100%;
+                height: 50px;
             }
-          }
         }
-      }
-      .networkFooterLegal {
-        width: 100%;
-        height: 50%;
-        margin-top: 1rem;
-        display: flex;
-        gap: 15rem;
-        .networkFooterLegalList {
-          width: 100%;
-          height: auto;
-          flex: 4;
-          a {
-            text-decoration: none;
-            color: black;
-            font-size: 1rem;
-            margin: 1rem 1rem 1rem 0;
-            line-height: 1.5rem;
-          }
-          .networkFooterCopyright {
-            margin: 1rem 1rem 1rem 0;
-          }
+        .networkFooterLinks {
+            width: 100%;
+            height: 100%;
+            margin: 0 0 0 1.5rem;
+            .networkFooterLinksContainer {
+                width: 100%;
+                height: auto;
+                display: flex;
+                gap: 1rem;
+                .networkFooterList {
+                    flex: 2;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.7rem;
+                        margin: 1.2rem 1.2rem 1.2rem 0;
+                        line-height: 3rem;
+                    }
+                }
+                .networkFooterSelect {
+                    width: 100%;
+                    flex: 2;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 4rem;
+                    .networkFooterSelect1 {
+                        width: auto;
+                        .selectButton {
+                            border: 1px solid rgba(188, 183, 183, 0.646);
+                            height: 60px;
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+            .networkFooterLegal {
+                width: 100%;
+                height: 50%;
+                margin-top: 1rem;
+                display: flex;
+                gap: 15rem;
+                .networkFooterLegalList {
+                    width: 100%;
+                    flex: 4;
+                    height: auto;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.3rem;
+                        margin: 1rem 1rem 1rem 0;
+                        line-height: 1.7rem;
+                    }
+                    .networkFooterCopyright {
+                        margin: 1rem 1rem 1rem 0;
+                    }
+                }
+                .networkFooterLegalImg {
+                    width: 100%;
+                    height: auto;
+                    flex: 2;
+                    img {
+                        float: right;
+                        padding-top: 2.5rem;
+                    }
+                }
+            }
         }
-        .networkFooterLegalImg {
-          width: 100%;
-          height: auto;
-          flex: 1;
-          img {
-            float: right;
-            padding-top: 2.5rem;
-          }
-        }
-      }
     }
-  }
 }
 // FINE FOOTER
 
 // Animazione Navbar Dropdown
 @media all and (min-width: 992px) {
-  .navbar .dropdown-menu-end {
-    right: 0;
-    left: auto;
-  }
-  .navbar .nav-item .dropdown-menu {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    margin-top: 0;
-  }
-  .navbar .nav-item:hover .nav-link {
-    color: red;
-    text-decoration: none;
-  }
-  .navbar .dropdown-menu.fade-down {
-    top: 80%;
-    transform: rotateX(-75deg);
-    transform-origin: 0% 0%;
-  }
-  .navbar .dropdown-menu.fade-up {
-    top: 180%;
-  }
-  .navbar .nav-item:hover .dropdown-menu {
-    transition: 0.3s;
-    opacity: 1;
-    visibility: visible;
-    top: 100%;
-    transform: rotateX(0deg);
-  }
+    .navbar .dropdown-menu-end {
+        right: 0;
+        left: auto;
+    }
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        margin-top: 0;
+    }
+    .navbar .nav-item:hover .nav-link {
+        color: red;
+        text-decoration: none;
+    }
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0 0;
+    }
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: 0.3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
 }
+
 // Fine animazione navbar
