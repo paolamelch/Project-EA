@@ -101,12 +101,50 @@ a.nav-link {
   margin-right: 3rem;
 }
 .container-main .main-logo {
+  display: flex;
   height: 100%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("mainlogo.png");
   height: 58rem;
+}
+.container-main .main-logo .main-logo-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.container-main .main-logo h1 {
+  color: #161616;
+  font-size: 5.5rem;
+  font-weight: 700;
+  padding: 0 20rem;
+  text-align: center;
+}
+.container-main .main-logo h3 {
+  color: #161616;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 15rem;
+  word-spacing: 0.2rem;
+}
+.container-main .main-logo button {
+  background: white;
+  border-radius: 3px;
+  border: none;
+  outline: 2px solid white;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.1s ease-in-out;
+  margin-top: 1rem;
+  font-weight: 550;
+}
+.container-main .main-logo button:hover {
+  outline: 6px solid white;
 }
 
 .featured-games-container {
@@ -193,8 +231,7 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .eaParagraph {
@@ -455,4 +492,6 @@ a.nav-link {
     top: 100%;
     transform: rotateX(0deg);
   }
-}/*# sourceMappingURL=electronicarts.css.map */
+}
+
+/*# sourceMappingURL=electronicarts.css.map */
