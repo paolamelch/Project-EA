@@ -184,6 +184,98 @@ a.nav-link {
 
 // Fine Featured Game
 
+
+// Inizio Latest Update
+.latest-update-container {
+    width: 100vw;
+    h3{
+        font-size: 2rem;
+        font-weight: normal;
+
+    }
+    h1 {
+        text-align: center;
+        margin: 3rem 0;
+        font-weight: 900;
+    }
+    .divisorSpanFra{
+        border-right: .5px solid gray ;
+        margin-left: 2rem;
+    }
+    .containerLatestSub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: start;
+        gap:2rem;
+        padding: .5rem;
+        transform:translateX(-6rem);
+        // background-color: red;
+    }
+    .borderLatest{
+        border-bottom: solid 1px gray;
+        width: 100vw;
+
+    }
+    .cardLatestUpdate:hover{
+        transform: translateY(-2rem);
+        box-shadow:2px 20px 25px;
+        
+    }
+    .containerCardLatest {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, auto));
+        gap: 3rem;
+        margin-bottom: 3rem;
+        padding: 6rem 22rem;
+        .cardLatestUpdate{
+            border: solid lightgray .2px;
+            cursor: pointer;
+            box-shadow: 2px 2px 6px;
+            .paddingLatest{
+                padding: 1rem;
+            }
+        }
+    }
+    .cardLatestUpdate:hover{
+        transform: translateY(-2rem);
+        transition: 400ms ease-in-out;
+        box-shadow:2px 20px 25px;
+     
+    }
+    .cardLatestUpdate {
+        max-width: 36rem;
+        max-height: 45rem;
+        .latestUpdateImg {
+            max-width: 100%;
+        }
+    }
+    .redEaInc{
+        color: red;
+    }
+    .our-btn {
+        background: none;
+        border-radius: 3px;
+        border: none;
+        outline: 2px solid black;
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding: 1.5rem 2.5rem;
+        transition: all 0.1s ease-in-out;
+        margin-bottom:3rem ;
+        // background-color: red;
+
+        &:hover {
+            outline-offset: 4px;
+        }
+    }
+}
+// Fine Latest Update
+
 // INIZIO FOOTER
 .footerContainer {
     height: auto;
