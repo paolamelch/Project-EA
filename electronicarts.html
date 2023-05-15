@@ -21,9 +21,15 @@
       src="https://kit.fontawesome.com/f4fe88f674.js"
       crossorigin="anonymous"
     ></script>
+    
     <title>Electronic Arts</title>
   </head>
   <body>
+
+      <!-- Sidebar Toggle -->
+      <div id="sidebar-wrapper">.</div>
+      <!-- Fine Sidebar Toggle -->
+
     <div class="container-fluid container-main">
       <div class="header">
         <div class="hiding-nav" id="navbar">
@@ -43,7 +49,9 @@
         <div class="main-nav">
           <nav class="navbar navbar-expand-lg navbar-dark" id="navbar2">
             <div class="container-fluid">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <button id="side-toggle">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
               <a class="navbar-brand" href="#">
                 <img src="ea-wordmark-network-nav-coral.svg" />
               </a>
@@ -337,6 +345,10 @@
                 </section> 
             </footer>
         </div>
+
+      
+
+
     <!-- Bootstrap Javascript e Navbar Dropdown - lasciare come ultimo elemento, scrivere sopra-->
     <script>
       var prevScrollpos = window.pageYOffset;
@@ -360,5 +372,8 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Our script -->
+    <script src="script.js"></script>
   </body>
 </html>

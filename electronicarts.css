@@ -13,6 +13,7 @@
 
 body {
   background-color: rgba(212, 192, 192, 0.25);
+  position: relative;
 }
 
 #eaLogo {
@@ -523,6 +524,20 @@ a.nav-link {
 .dropdown-menu > li > a {
   margin: 1.5rem 0;
   padding: 0 3rem 0 2rem;
+}
+
+#sidebar-wrapper {
+  position: absolute;
+  background-color: black;
+  left: -41rem;
+  width: 41rem;
+  height: 100%;
+  z-index: 200;
+  transition: all 1.5s ease-in-out;
+}
+
+#side-toggle {
+  border: none;
 }
 
 /*# sourceMappingURL=electronicarts.css.map */

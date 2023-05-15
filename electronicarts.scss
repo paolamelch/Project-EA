@@ -15,6 +15,7 @@
 
 body {
   background-color: rgba(212, 192, 192, 0.25);
+  position: relative;
 }
 
 #eaLogo {
@@ -556,6 +557,7 @@ a.nav-link {
 }
 
 // Fine animazione navbar
+// Correzione navbar li
 .navbar .nav-item .dropdown-menu {
   margin-top: 1.7rem;
   border-radius: 5px;
@@ -565,3 +567,20 @@ a.nav-link {
   margin: 1.5rem 0;
   padding: 0 3rem 0 2rem;
 }
+// Fine correzione navbar li
+
+// Sidebar
+#sidebar-wrapper {
+  position: absolute;
+  background-color: black;
+  left: -41rem;
+  width: 41rem;
+  height: 100%;
+  z-index: 200;
+  transition: all 1.5s ease-in-out;
+}
+
+#side-toggle {
+  border: none;
+}
+// Fine Sidebar
