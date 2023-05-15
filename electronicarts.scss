@@ -32,19 +32,41 @@ body {
     .left-side-drop {
       flex-basis: 50%;
       h5 {
+        font-size: 1.7rem;
         font-weight: 700;
         text-decoration: underline;
         text-decoration-color: rgba(0, 0, 0, 0.25);
         text-underline-offset: 1rem;
       }
+      ul {
+        list-style: none;
+
+        li {
+          margin: 0 0 1rem 0;
+          &:first-of-type {
+            margin-top: 2rem;
+          }
+        }
+      }
     }
     .right-side-drop {
       flex-basis: 50%;
       h5 {
+        font-size: 1.7rem;
         font-weight: 700;
         text-decoration: underline;
         text-decoration-color: rgba(0, 0, 0, 0.25);
         text-underline-offset: 1rem;
+      }
+      ul {
+        list-style: none;
+
+        li {
+          margin: 0 0 1rem 0;
+          &:first-of-type {
+            margin-top: 2rem;
+          }
+        }
       }
     }
   }
@@ -115,6 +137,7 @@ a.nav-link {
   }
 
   .main-logo {
+    margin-top: 3rem;
     display: flex;
     height: 100%;
     background-size: contain;
@@ -136,7 +159,7 @@ a.nav-link {
       color: #161616;
       font-size: 5.5rem;
       font-weight: 700;
-      padding: 0 20rem;
+      padding: 0 5rem;
       text-align: center;
     }
 
@@ -144,7 +167,7 @@ a.nav-link {
       color: #161616;
       text-align: center;
       font-weight: 400;
-      padding: 0 15rem;
+      padding: 0 5rem;
       word-spacing: 0.2rem;
     }
 
@@ -170,6 +193,7 @@ a.nav-link {
 // Featured Game Container
 
 .featured-games-container {
+  margin-top: 12rem;
   text-align: center;
   margin-bottom: 4rem;
   h1 {
@@ -532,3 +556,12 @@ a.nav-link {
 }
 
 // Fine animazione navbar
+.navbar .nav-item .dropdown-menu {
+  margin-top: 1.7rem;
+  border-radius: 5px;
+}
+
+.dropdown-menu > li > a {
+  margin: 1.5rem 0;
+  padding: 0 3rem 0 2rem;
+}
