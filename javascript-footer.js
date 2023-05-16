@@ -1,6 +1,23 @@
-let selectButton = document.querySelector(".selectRegion");
-let nationsList = document.querySelector(".nationsSelect");
-let arrowUp = document.getElementById("arrow-up")
+const square = document.getElementsByClassName("featured-square");
+const squareContainer = document.getElementsByClassName(".square-logos-container");
+const officialSite = document.getElementsByClassName(".official-site");
+
+// square.addEventListener('mouseover', function(){
+//     squareContainer.style.transform = "translateY(-10%)";
+//     squareContainer.style.transition = "all 0.5s ease";
+//     officialSite.style.visibility = "visible";
+// })
+// square.addEventListener('mouseout', function(){
+//     squareContainer.style.transform = "translateY(0%)";
+//     officialSite.style.visibility = "hidden";
+// })
+
+
+
+
+const selectButton = document.querySelector(".selectRegion");
+const nationsList = document.querySelector(".nationsSelect");
+const arrowUp = document.getElementById("arrow-up")
 
 function showMenu(){
     if (nationsList.style.visibility == 'visible') {
@@ -14,9 +31,9 @@ function showMenu(){
     
 }
 
-let selectButton2 = document.querySelector(".selectRegion1");
-let nationsList2 = document.querySelector(".nationsSelect1");
-let arrowUp2 = document.getElementById("arrow-up1")
+const selectButton2 = document.querySelector(".selectRegion1");
+const nationsList2 = document.querySelector(".nationsSelect1");
+const arrowUp2 = document.getElementById("arrow-up1")
 
 function showMenu2(){
     if (nationsList2.style.visibility == 'visible') {

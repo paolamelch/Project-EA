@@ -195,9 +195,8 @@ a.nav-link {
 // Featured Game Container
 
 .featured-games-container {
-  margin-top: 12rem;
+  margin: 12rem 0 4rem 0;
   text-align: center;
-  margin-bottom: 4rem;
   h1 {
     margin-bottom: 5rem;
     font-size: 4rem;
@@ -205,32 +204,154 @@ a.nav-link {
   }
 
   .featured-grid {
-    display: flex;
-    margin-bottom: 3rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(35rem, 20rem));
+    grid-template-rows: repeat(2,minmax(35rem, 20rem));
+    padding:3rem;
     gap: 3rem;
+    justify-content: center;
 
     .featured-square {
-      border: 1px solid black;
       width: 35rem;
       height: 35rem;
+      &:hover{
+        background-image: linear-gradient(to right, (rgba(15, 0, 125, 1) ,rgba(255, 71, 71,1)));
+        background-size:cover;
+        cursor: pointer;
+      }
       &--one {
         background: url("media/square1.png");
+        background-repeat: no-repeat;
+        .square-logos-container{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a{
+            text-decoration: none;
+            p{
+              visibility: hidden;
+              color:white;
+              font-size: 1.5rem;
+              &:hover{
+                color:gray;
+              }
+            }
+          }
+          .square-logos{
+            width: 50%;
+            height: 50%;
+          };
+        }
       }
       &--two {
         background: url("media/square2.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          p{
+            visibility: hidden;
+            color:white;
+            &:hover{
+              color:gray;
+            }
+          }
+        }
+        .square-logos{
+          width: 70%;
+          height: 70%;
+        }
       }
       &--three {
         background: url("media/square3.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          p{
+            visibility: hidden;
+            color:white;
+            &:hover{
+              color:gray;
+            }
+          }
+        }
+        .square-logos{
+          width: 50%;
+          height: 50%;
+        }
       }
       &--four {
         background: url("media/square4.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          p{
+            visibility: hidden;
+            color:white;
+            &:hover{
+              color:gray;
+            }
+          }
+        }
+        .square-logos{
+          width: 50%;
+          height: 50%;
+        }
       }
       &--five {
-        background: url("media/square5.png");
+        background: url("media/square5.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          p{
+            visibility: hidden;
+            color:white;
+            &:hover{
+              color:gray;
+            }
+          }
+        }
+        .square-logos{
+          width: 80%;
+          height: 80%;
+        }
       }
       &--six {
         background: url("media/square6.png");
+        width:35rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          p{
+            visibility: hidden;
+            color:white;
+            &:hover{
+              color:gray;
+            }
+          }
+        }
+        .square-logos{
+          width: 35%;
+          height: 35%;
+        }
       }
     }
   }
