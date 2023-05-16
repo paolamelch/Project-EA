@@ -253,6 +253,92 @@ a.nav-link {
 
 // Fine Featured Game
 
+// Inizio Latest Update
+.latest-update-container {
+  width: 100vw;
+  h3 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  h1 {
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: 900;
+  }
+  .divisorSpanFra {
+    border-right: 0.5px solid gray;
+    margin-left: 2rem;
+  }
+  .containerLatestSub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    padding: 0.5rem;
+    transform: translateX(-6rem);
+    // background-color: red;
+  }
+  .borderLatest {
+    border-bottom: solid 1px gray;
+    width: 100vw;
+  }
+  .cardLatestUpdate:hover {
+    transform: translateY(-2rem);
+    box-shadow: 2px 20px 25px;
+  }
+  .containerCardLatest {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, auto));
+    gap: 3rem;
+    margin-bottom: 3rem;
+    padding: 6rem 22rem;
+    .cardLatestUpdate {
+      border: solid lightgray 0.2px;
+      cursor: pointer;
+      box-shadow: 2px 2px 6px;
+      .paddingLatest {
+        padding: 1rem;
+      }
+    }
+  }
+  .cardLatestUpdate:hover {
+    transform: translateY(-2rem);
+    transition: 400ms ease-in-out;
+    box-shadow: 2px 20px 25px;
+  }
+  .cardLatestUpdate {
+    max-width: 36rem;
+    max-height: 45rem;
+    .latestUpdateImg {
+      max-width: 100%;
+    }
+  }
+  .redEaInc {
+    color: red;
+  }
+  .our-btn {
+    background: none;
+    border-radius: 3px;
+    border: none;
+    outline: 2px solid black;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1.5rem 2.5rem;
+    transition: all 0.1s ease-in-out;
+    margin-bottom: 3rem;
+    // background-color: red;
+
+    &:hover {
+      outline-offset: 4px;
+    }
+  }
+}
+// Fine Latest Update
+
 // INIZIO FOOTER
 .footerContainer {
   height: auto;
@@ -433,6 +519,30 @@ a.nav-link {
     font-size: 2.5rem;
     transition: all 0.2s ease;
   }
+  h3 {
+    margin: 10px 0 10px 10px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+  }
+  ul {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+  li {
+    list-style-type: none;
+  }
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  li a .fa-brands:hover {
+    font-size: 2.5rem;
+    transition: all 0.2s ease;
+  }
 }
 
 .section2 {
@@ -483,6 +593,205 @@ a.nav-link {
               border: 1px solid rgba(188, 183, 183, 0.646);
               height: 60px;
               width: 150px;
+            }
+          }
+        }
+      }
+      .networkFooterLegal {
+        width: 100%;
+        height: 50%;
+        margin-top: 1rem;
+        display: flex;
+        gap: 15rem;
+        .networkFooterLegalList {
+          width: 100%;
+          flex: 4;
+          height: auto;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.3rem;
+            margin: 1rem 1rem 1rem 0;
+            line-height: 1.7rem;
+          }
+          .networkFooterCopyright {
+            margin: 1rem 1rem 1rem 0;
+          }
+        }
+        .networkFooterLegalImg {
+          width: 100%;
+          height: auto;
+          flex: 2;
+          img {
+            float: right;
+            padding-top: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+  background-color: rgb(242, 241, 241);
+  .networkFooter {
+    height: 240px;
+    padding: 3rem 10rem 0 13rem;
+    margin: 0 2rem;
+    .networkFooterContainer {
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+    .networkFooterLogo {
+      img {
+        width: 100%;
+        height: 50px;
+      }
+    }
+    .networkFooterLinks {
+      width: 100%;
+      height: 100%;
+      margin: 0 0 0 1.5rem;
+      .networkFooterLinksContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 1rem;
+        .networkFooterList {
+          flex: 2;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.7rem;
+            margin: 1.2rem 1.2rem 1.2rem 0;
+            line-height: 3rem;
+          }
+        }
+        .networkFooterSelect {
+          width: 100%;
+          flex: 2;
+          display: flex;
+          justify-content: flex-end;
+          gap: 4rem;
+          .networkFooterSelect1 {
+            width: auto;
+            .selectButton1 {
+              height: 60px;
+              width: 150px;
+              .selectRegion1 {
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 1px;
+                font-size: 1.3rem;
+                text-align: left;
+                outline: 2px solid #c2c2c2;
+                padding: 0 1.2rem;
+                transition: all 0.1s ease-in-out;
+                position: relative;
+
+                &:hover {
+                  outline-offset: 2px;
+                }
+                .nationsSelect1 {
+                  border: 2px solid #c2c2c2;
+                  width: 600px;
+                  height: 400px;
+                  padding: 0 1rem;
+                  position: absolute;
+                  top: -40rem;
+                  right: -2rem;
+                  background-color: rgb(242, 241, 241);
+                  display: flex;
+                  flex-direction: column wrap;
+                  .nationsColumn1 {
+                    height: 100%;
+                    padding: 0 1.5rem;
+                    flex: 1;
+                    .firstColumn1 {
+                      height: 11.1%;
+                      border-bottom: 1px solid #dddcdc;
+                      align-items: center;
+                      display: flex;
+                      &:hover {
+                        transform: translateX(0.7rem);
+                        transition: all 0.2s ease-in-out;
+                      }
+                      .nationsName1 {
+                        padding-left: 1rem;
+                        flex: 8;
+                      }
+                      .flagSpan {
+                        flex: 1;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .selectButton {
+              height: 60px;
+              width: 150px;
+              .selectRegion {
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 1px;
+                font-size: 1.3rem;
+                text-align: left;
+                outline: 2px solid #c2c2c2;
+                padding: 0 1.2rem;
+                transition: all 0.1s ease-in-out;
+                position: relative;
+
+                &:hover {
+                  outline-offset: 2px;
+                }
+
+                .nationsSelect {
+                  border: 2px solid #c2c2c2;
+                  width: 600px;
+                  height: 400px;
+                  padding: 0 1rem;
+                  position: absolute;
+                  top: -40rem;
+                  right: -2rem;
+                  background-color: rgb(242, 241, 241);
+                  display: flex;
+                  flex-direction: column wrap;
+                  .nationsColumn {
+                    height: 100%;
+                    padding: 0 1.5rem;
+                    flex: 1;
+                    .firstColumn {
+                      height: 11.1%;
+                      border-bottom: 1px solid #dddcdc;
+                      align-items: center;
+                      display: flex;
+                      &:hover {
+                        transform: translateX(0.7rem);
+                        transition: all 0.2s ease-in-out;
+                      }
+                      .nationsName {
+                        padding-left: 1rem;
+                        flex: 8;
+                      }
+                      .checkSpan {
+                        flex: 1;
+                      }
+                    }
+                  }
+                }
+
+                .priceAndLanguage {
+                  width: 100%;
+                  color: rgb(125, 125, 125);
+                }
+                .selectNation {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-end;
+                }
+              }
             }
           }
         }
