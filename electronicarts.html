@@ -27,13 +27,45 @@
   <body>
 
       <!-- Sidebar Toggle -->
-      <div id="sidebar-wrapper">.</div>
+      <div id="sidebar-wrapper">
+        <div class="close-toggle" id="close-toggle">
+          <h5>All Games</h5>
+          <button>X</button>
+        </div>
+        <!-- Contenuto qui sotto -->
+      </div>
       <!-- Fine Sidebar Toggle -->
+
+      <!-- Profile Sidebar Toggle -->
+      <div id="profile-wrapper">
+        <div class="profile-close" id="profile-close">
+          <button id="profile-close">X</button>
+        </div>
+        
+        <div class="user-profile-tags">
+
+          <div class="left-user-side">
+            <button>
+              <i class="fa-regular fa-user"></i>
+            </button>
+            <h5>Sign In</h5>
+          </div>
+          
+          <div class="right-user-side">
+            <button>
+              <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <h5>Create Account</h5>
+          </div>
+
+        </div>
+      </div>
+      <!-- Fine Profile Sidebar Toggle -->
 
     <div class="container-fluid container-main">
       <div class="header">
         <div class="hiding-nav" id="navbar">
-          <button>
+          <button id="user-toggle">
             <i class="fa-regular fa-user"></i>
           </button>
 
@@ -349,21 +381,8 @@
       
 
 
-    <!-- Bootstrap Javascript e Navbar Dropdown - lasciare come ultimo elemento, scrivere sopra-->
-    <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("navbar").style.top = "0";
-          document.getElementById("navbar2").style.top = "36px";
-        } else {
-          document.getElementById("navbar").style.top = "-20px";
-          document.getElementById("navbar2").style.top = "0";
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    </script>
+    <!-- Bootstrap Javascript lasciare come ultimo elemento, scrivere sopra-->
+  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
