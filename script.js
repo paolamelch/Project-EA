@@ -50,3 +50,17 @@ window.onscroll = function () {
 };
 
 // Fine Navbar
+
+// FAQ Wrapper
+let faqWrapper = document.getElementById("faq-wrapper");
+let faqClose = document.getElementById("faq-close");
+let faqToggle = document.getElementById("faq-toggle");
+
+faqToggle.addEventListener("click", () => {
+  faqWrapper.style.top = "36px";
+});
+
+faqClose.addEventListener("click", () => {
+  faqWrapper.style.top = "-44rem";
+});
+// Fine FAQ Wrapper
