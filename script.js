@@ -3,7 +3,7 @@ let sideToggle = document.getElementById("side-toggle");
 let hidingNav = document.getElementById("navbar");
 let mainNav = document.getElementById("navbar2");
 let closeToggle = document.getElementById("close-toggle");
-
+let sidebarOverlay = document.getElementById("sidebar-overlay");
 // User Bar Toggle
 let userToggle = document.getElementById("user-toggle");
 let profileWrapper = document.getElementById("profile-wrapper");
@@ -22,9 +22,13 @@ profileClose.addEventListener("click", () => {
 sideToggle.addEventListener("click", () => {
   console.log("click");
   sidebar.style.left = "0";
+  sidebarOverlay.style.display = "block";
+  sidebarOverlay.style.visibility = "visible";
 });
 closeToggle.addEventListener("click", () => {
   sidebar.style.left = "-41rem";
+  sidebarOverlay.style.display = "none";
+  sidebarOverlay.style.visibility = "hidden";
 });
 
 // Fine Sidebar Toggle
