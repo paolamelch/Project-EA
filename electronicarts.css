@@ -399,9 +399,6 @@ a.nav-link {
 .latest-update-container .disableLatest {
   display: none !important;
 }
-.latest-update-container .containerCardLatestDue {
-  background-color: red;
-}
 .latest-update-container h3 {
   font-size: 2rem;
   font-weight: normal;

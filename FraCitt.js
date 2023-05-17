@@ -1,18 +1,27 @@
 const eaNews = document.getElementById('eaNews')
 const eaPlay = document.getElementById('eaPlay')
 const fifa = document.getElementById('FIFA')
+const fUno = document.getElementById('F1')
+const madden = document.getElementById('Madden')
+const apex = document.getElementById('Apex')
+const theSims = document.getElementById('TheSims')
+const battle = document.getElementById('Battle')
 
-eaNews.addEventListener('click', riuso)
-eaPlay.addEventListener('click', riusoP)
 
-function riuso(){
-    document.getElementById('eaN').classList.add("disableLatest");
-    document.getElementById('eaP').classList.remove("disableLatest");
+eaNews.addEventListener('click', uno)
+eaPlay.addEventListener('click', due)
+
+function uno(){
+    document.querySelector('.containerCardLatestUno').classList.remove("disableLatest");
+    document.querySelector('.containerCardLatestDue').classList.add("disableLatest");              
+    
+    
     console.log("attivo il primo");
 }
 
-function riusoP(){
-    document.getElementById('eaN').classList.remove("disableLatest");
-    document.getElementById('eaP').classList.add("disableLatest");
+function due(){
+    document.querySelector('.containerCardLatestDue').classList.remove("disableLatest");              
+    document.querySelector('.containerCardLatestUno').classList.add("disableLatest");              
+    
     console.log("attivo il secondo");
 }
