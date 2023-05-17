@@ -1,16 +1,32 @@
-const square = document.getElementsByClassName("featured-square");
-const squareContainer = document.getElementsByClassName(".square-logos-container");
-const officialSite = document.getElementsByClassName(".official-site");
+const square = document.querySelectorAll(".featured-square");
+const squareContainer = document.querySelectorAll(".translateContainer");
+const officialSite = document.querySelectorAll(".official-site");
 
-// square.addEventListener('mouseover', function(){
-//     squareContainer.style.transform = "translateY(-10%)";
-//     squareContainer.style.transition = "all 0.5s ease";
-//     officialSite.style.visibility = "visible";
-// })
-// square.addEventListener('mouseout', function(){
-//     squareContainer.style.transform = "translateY(0%)";
-//     officialSite.style.visibility = "hidden";
-// })
+function mouseOver(arr){
+    arr.forEach((el)=> el.addEventListener('mouseover',function(){
+        squareContainer.forEach((el) =>{
+            el.style.transform = "translateY(-10%)";
+            el.style.transition = "all 0.5s ease"; 
+        });
+        officialSite.forEach((el) =>{
+            el.style.visibility = "visible";
+        })
+    }));
+
+}
+function mouseOut(arr){
+    arr.forEach((el)=> el.addEventListener('mouseout',function(){
+        squareContainer.forEach((el) =>{
+            el.style.transform = "translateY(0%)";
+        });
+        officialSite.forEach((el) =>{
+            el.style.visibility = "hidden";
+        })
+    }));
+};
+
+mouseOver(square)
+mouseOut(square);
 
 
 
