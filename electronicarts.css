@@ -171,9 +171,8 @@ a.nav-link {
 }
 
 .featured-games-container {
-  margin-top: 12rem;
+  margin: 12rem 0 4rem 0;
   text-align: center;
-  margin-bottom: 4rem;
 }
 .featured-games-container h1 {
   margin-bottom: 5rem;
@@ -181,33 +180,204 @@ a.nav-link {
   font-weight: 550;
 }
 .featured-games-container .featured-grid {
-  display: flex;
-  margin-bottom: 3rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(35rem, 20rem));
+  grid-template-rows: repeat(2, minmax(35rem, 20rem));
+  padding: 3rem;
   gap: 3rem;
+  justify-content: center;
 }
 .featured-games-container .featured-grid .featured-square {
-  border: 1px solid black;
   width: 35rem;
   height: 35rem;
 }
 .featured-games-container .featured-grid .featured-square--one {
   background: url("media/square1.png");
+  background-repeat: no-repeat;
+}
+.featured-games-container .featured-grid .featured-square--one .square-logos-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer {
+  width: 50%;
+  height: 40%;
+}
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer a p {
+  visibility: hidden;
+  color: white;
+  font-size: 1.5rem;
+}
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer a p:hover {
+  color: gray;
+}
+.featured-games-container .featured-grid .featured-square--one .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .square-logos {
+  width: 50%;
+  height: 50%;
 }
 .featured-games-container .featured-grid .featured-square--two {
   background: url("media/square2.png");
+  background-repeat: no-repeat;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container .translateContainer a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container .translateContainer a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container .translateContainer a p:hover {
+  color: gray;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos {
+  width: 70%;
+  height: 70%;
 }
 .featured-games-container .featured-grid .featured-square--three {
   background: url("media/square3.png");
+  background-repeat: no-repeat;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container .translateContainer a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container .translateContainer a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container .translateContainer a p:hover {
+  color: gray;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos {
+  width: 50%;
+  height: 50%;
 }
 .featured-games-container .featured-grid .featured-square--four {
   background: url("media/square4.png");
+  background-repeat: no-repeat;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container .translateContainer a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container .translateContainer a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container .translateContainer a p:hover {
+  color: gray;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos {
+  width: 50%;
+  height: 50%;
 }
 .featured-games-container .featured-grid .featured-square--five {
-  background: url("media/square5.png");
+  background: url("media/square5.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container .translateContainer a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container .translateContainer a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container .translateContainer a p:hover {
+  color: gray;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos {
+  width: 80%;
+  height: 80%;
 }
 .featured-games-container .featured-grid .featured-square--six {
   background: url("media/square6.png");
+  width: 35rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.featured-games-container .featured-grid .featured-square--six .square-logos-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-games-container .featured-grid .featured-square--six .square-logos-container .translateContainer a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--six .square-logos-container .translateContainer a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--six .square-logos-container .translateContainer a p:hover {
+  color: gray;
+}
+.featured-games-container .featured-grid .featured-square--six .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--six .square-logos {
+  width: 35%;
+  height: 35%;
 }
 .featured-games-container .our-btn {
   background: none;
@@ -225,6 +395,9 @@ a.nav-link {
 
 .latest-update-container {
   width: 100vw;
+}
+.latest-update-container .disableLatest {
+  display: none !important;
 }
 .latest-update-container h3 {
   font-size: 2rem;
@@ -261,7 +434,7 @@ a.nav-link {
 }
 .latest-update-container .containerCardLatest {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, auto));
+  grid-template-columns: repeat(3, minmax(200px, 350px));
   gap: 3rem;
   margin-bottom: 3rem;
   padding: 6rem 22rem;
@@ -654,6 +827,7 @@ a.nav-link {
 .section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1:hover {
   outline-offset: 2px;
 }
+<<<<<<< HEAD
 .section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 {
   border: 2px solid #c2c2c2;
   width: 600px;
@@ -745,6 +919,103 @@ a.nav-link {
   width: 100%;
   color: rgb(125, 125, 125);
 }
+=======
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .priceAndLanguage {
+  width: 100%;
+  color: rgb(125, 125, 125);
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 {
+  border: 2px solid #c2c2c2;
+  width: 600px;
+  height: 400px;
+  padding: 0 1rem;
+  position: absolute;
+  top: -40rem;
+  right: -2rem;
+  background-color: rgb(242, 241, 241);
+  display: flex;
+  flex-direction: column wrap;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 {
+  height: 100%;
+  padding: 0 1.5rem;
+  flex: 1;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1 {
+  height: 11.1%;
+  border-bottom: 1px solid #dddcdc;
+  align-items: center;
+  display: flex;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1:hover {
+  transform: translateX(0.7rem);
+  transition: all 0.2s ease-in-out;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1 .nationsName1 {
+  padding-left: 1rem;
+  flex: 8;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1 .flagSpan {
+  flex: 1;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton {
+  height: 60px;
+  width: 150px;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1px;
+  font-size: 1.3rem;
+  text-align: left;
+  outline: 2px solid #c2c2c2;
+  padding: 0 1.2rem;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion:hover {
+  outline-offset: 2px;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect {
+  border: 2px solid #c2c2c2;
+  width: 600px;
+  height: 400px;
+  padding: 0 1rem;
+  position: absolute;
+  top: -40rem;
+  right: -2rem;
+  background-color: rgb(242, 241, 241);
+  display: flex;
+  flex-direction: column wrap;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn {
+  height: 100%;
+  padding: 0 1.5rem;
+  flex: 1;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn {
+  height: 11.1%;
+  border-bottom: 1px solid #dddcdc;
+  align-items: center;
+  display: flex;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn:hover {
+  transform: translateX(0.7rem);
+  transition: all 0.2s ease-in-out;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn .nationsName {
+  padding-left: 1rem;
+  flex: 8;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn .checkSpan {
+  flex: 1;
+}
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .priceAndLanguage {
+  width: 100%;
+  color: rgb(125, 125, 125);
+}
+>>>>>>> 50db200d52dea11cd0f3a412a7106ce597071853
 .section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .selectNation {
   width: 100%;
   display: flex;
