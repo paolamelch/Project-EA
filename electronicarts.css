@@ -396,6 +396,12 @@ a.nav-link {
 .latest-update-container {
   width: 100vw;
 }
+.latest-update-container .disableLatest {
+  display: none !important;
+}
+.latest-update-container .containerCardLatestDue {
+  background-color: red;
+}
 .latest-update-container h3 {
   font-size: 2rem;
   font-weight: normal;
@@ -431,7 +437,7 @@ a.nav-link {
 }
 .latest-update-container .containerCardLatest {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, auto));
+  grid-template-columns: repeat(3, minmax(200px, 350px));
   gap: 3rem;
   margin-bottom: 3rem;
   padding: 6rem 22rem;
@@ -506,8 +512,7 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .eaParagraph {
@@ -1099,4 +1104,6 @@ a.nav-link {
 #side-toggle {
   border: none;
   background-color: transparent;
-}/*# sourceMappingURL=electronicarts.css.map */
+}
+
+/*# sourceMappingURL=electronicarts.css.map */
