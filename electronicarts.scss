@@ -203,14 +203,6 @@ a.nav-link {
     font-weight: 550;
   }
 
-  .translate-all{
-    background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-    background-size:cover;
-    cursor: pointer;
-    transform : translateY(10%);
-    transition : all 0.5s ease;
-  }
-
   .featured-grid {
     display: grid;
     grid-template-columns: repeat(3,minmax(35rem, 20rem));
@@ -222,7 +214,6 @@ a.nav-link {
     .featured-square {
       width: 35rem;
       height: 35rem;
-      
       &--one {
         background: url("media/square1.png");
         background-repeat: no-repeat;
@@ -247,11 +238,11 @@ a.nav-link {
               }
             }
           }
-          // &:hover{
-          //   background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-          //   background-size:cover;
-          //   cursor: pointer;
-          // }
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
           .square-logos{
             width: 50%;
             height: 50%;
@@ -279,11 +270,11 @@ a.nav-link {
               }
             }
           }
-          // &:hover{
-          //   background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-          //   background-size:cover;
-          //   cursor: pointer;
-          // }
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
         }
         .square-logos{
           width: 70%;
@@ -311,11 +302,11 @@ a.nav-link {
               }
             }
           }
-          // &:hover{
-          //   background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-          //   background-size:cover;
-          //   cursor: pointer;
-          // }
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
         }
         .square-logos{
           width: 50%;
@@ -343,11 +334,11 @@ a.nav-link {
               }
             }
           }
-          // &:hover{
-          //   background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-          //   background-size:cover;
-          //   cursor: pointer;
-          // }
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
         }
         .square-logos{
           width: 50%;
@@ -376,11 +367,11 @@ a.nav-link {
               }
             }
           }
-          // &:hover{
-          //   background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-          //   background-size:cover;
-          //   cursor: pointer;
-          // }
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
         }
         .square-logos{
           width: 80%;
@@ -413,7 +404,7 @@ a.nav-link {
           &:hover{
             background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
             background-size:cover;
-            cursor: pointer;
+            cursor: pointer;  
           }
         }
         .square-logos{
