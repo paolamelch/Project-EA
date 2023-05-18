@@ -393,8 +393,8 @@ a.nav-link {
   outline-offset: 4px;
 }
 
-.latest-update-container {
-  width: 98vw;
+.latest-update-container a {
+  cursor: pointer;
 }
 .latest-update-container .disableLatest {
   display: none !important;
@@ -421,8 +421,8 @@ a.nav-link {
   display: flex;
   justify-content: start;
   gap: 2rem;
-  padding: 0.5rem;
-  transform: translateX(-6rem);
+  padding: 0 0.5rem;
+  width: 100%;
 }
 .latest-update-container .borderLatest {
   border-bottom: solid 1px gray;
@@ -433,31 +433,31 @@ a.nav-link {
   box-shadow: 2px 20px 25px;
 }
 .latest-update-container .containerCardLatest {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 350px));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem auto;
   gap: 3rem;
-  margin-bottom: 3rem;
-  padding: 6rem 22rem;
 }
 .latest-update-container .containerCardLatest .cardLatestUpdate {
   border: solid lightgray 0.2px;
-  cursor: pointer;
   box-shadow: 2px 2px 6px;
+  width: 17rem;
+  max-height: 45rem;
+  cursor: pointer;
+  flex-basis: calc(33% - 3rem);
+}
+.latest-update-container .containerCardLatest .cardLatestUpdate .latestUpdateImg {
+  max-width: 100%;
 }
 .latest-update-container .containerCardLatest .cardLatestUpdate .paddingLatest {
-  padding: 1rem;
+  padding: 2rem;
+  margin-bottom: 6rem;
 }
 .latest-update-container .cardLatestUpdate:hover {
   transform: translateY(-2rem);
   transition: 400ms ease-in-out;
   box-shadow: 2px 20px 25px;
-}
-.latest-update-container .cardLatestUpdate {
-  max-width: 36rem;
-  max-height: 45rem;
-}
-.latest-update-container .cardLatestUpdate .latestUpdateImg {
-  max-width: 100%;
 }
 .latest-update-container .redEaInc {
   color: red;
@@ -509,8 +509,7 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .eaParagraph {
@@ -1309,4 +1308,6 @@ a.nav-link {
 
 .dropdown-toggle:hover::after {
   transform: rotate(-50deg);
-}/*# sourceMappingURL=electronicarts.css.map */
+}
+
+/*# sourceMappingURL=electronicarts.css.map */

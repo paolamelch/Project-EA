@@ -436,11 +436,13 @@ a.nav-link {
 
 // Inizio Latest Update
 .latest-update-container {
+  a{
+    cursor: pointer; 
+  }
   .disableLatest {
     display: none !important;
   }
 
-  width: 98vw;
   h3 {
     font-size: 2rem;
     font-weight: normal;
@@ -460,15 +462,16 @@ a.nav-link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // position: relative;
   }
 
   .buttonContainer {
     display: flex;
     justify-content: start;
     gap: 2rem;
-    padding: 0.5rem;
-    transform: translateX(-6rem);
-    // background-color: red;
+    padding: 0 0.5rem;
+    width: 100%;
+    // margin: auto;
   }
 
   .borderLatest {
@@ -482,17 +485,26 @@ a.nav-link {
   }
 
   .containerCardLatest {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 350px));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:4rem auto;
     gap: 3rem;
-    margin-bottom: 3rem;
-    padding: 6rem 22rem;
+    
+    
     .cardLatestUpdate {
       border: solid lightgray 0.2px;
-      cursor: pointer;
       box-shadow: 2px 2px 6px;
+      width: 17rem;
+      max-height: 45rem;
+      cursor: pointer;
+      flex-basis: calc(33% - 3rem);        
+      .latestUpdateImg {
+        max-width: 100%;
+      }
       .paddingLatest {
-        padding: 1rem;
+        padding: 2rem;
+        margin-bottom: 6rem;
       }
     }
   }
@@ -502,13 +514,7 @@ a.nav-link {
     box-shadow: 2px 20px 25px;
   }
 
-  .cardLatestUpdate {
-    max-width: 36rem;
-    max-height: 45rem;
-    .latestUpdateImg {
-      max-width: 100%;
-    }
-  }
+  
 
   .redEaInc {
     color: red;
