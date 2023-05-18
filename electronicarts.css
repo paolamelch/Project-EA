@@ -202,6 +202,11 @@ a.nav-link {
   justify-content: center;
   align-items: center;
 }
+.featured-games-container .featured-grid .featured-square--one .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
 .featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer {
   width: 50%;
   height: 40%;
@@ -217,11 +222,6 @@ a.nav-link {
 .featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer a p:hover {
   color: gray;
 }
-.featured-games-container .featured-grid .featured-square--one .square-logos-container:hover {
-  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
-  background-size: cover;
-  cursor: pointer;
-}
 .featured-games-container .featured-grid .featured-square--one .square-logos-container .square-logos {
   width: 50%;
   height: 50%;
@@ -230,27 +230,27 @@ a.nav-link {
   background: url("media/square2.png");
   background-repeat: no-repeat;
 }
-.featured-games-container .featured-grid .featured-square--two .square-logos-container {
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container .featured-grid .featured-square--two .square-logos-container .translateContainer a {
-  text-decoration: none;
-}
-.featured-games-container .featured-grid .featured-square--two .square-logos-container .translateContainer a p {
-  visibility: hidden;
-  color: white;
-}
-.featured-games-container .featured-grid .featured-square--two .square-logos-container .translateContainer a p:hover {
-  color: gray;
-}
-.featured-games-container .featured-grid .featured-square--two .square-logos-container:hover {
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1:hover {
   background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1 .translateContainer1 a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1 .translateContainer1 a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1 .translateContainer1 a p:hover {
+  color: gray;
 }
 .featured-games-container .featured-grid .featured-square--two .square-logos {
   width: 70%;
@@ -260,27 +260,27 @@ a.nav-link {
   background: url("media/square3.png");
   background-repeat: no-repeat;
 }
-.featured-games-container .featured-grid .featured-square--three .square-logos-container {
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container .featured-grid .featured-square--three .square-logos-container .translateContainer a {
-  text-decoration: none;
-}
-.featured-games-container .featured-grid .featured-square--three .square-logos-container .translateContainer a p {
-  visibility: hidden;
-  color: white;
-}
-.featured-games-container .featured-grid .featured-square--three .square-logos-container .translateContainer a p:hover {
-  color: gray;
-}
-.featured-games-container .featured-grid .featured-square--three .square-logos-container:hover {
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2:hover {
   background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2 .translateContainer2 a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2 .translateContainer2 a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2 .translateContainer2 a p:hover {
+  color: gray;
 }
 .featured-games-container .featured-grid .featured-square--three .square-logos {
   width: 50%;
@@ -290,27 +290,27 @@ a.nav-link {
   background: url("media/square4.png");
   background-repeat: no-repeat;
 }
-.featured-games-container .featured-grid .featured-square--four .square-logos-container {
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container .featured-grid .featured-square--four .square-logos-container .translateContainer a {
-  text-decoration: none;
-}
-.featured-games-container .featured-grid .featured-square--four .square-logos-container .translateContainer a p {
-  visibility: hidden;
-  color: white;
-}
-.featured-games-container .featured-grid .featured-square--four .square-logos-container .translateContainer a p:hover {
-  color: gray;
-}
-.featured-games-container .featured-grid .featured-square--four .square-logos-container:hover {
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3:hover {
   background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3 .translateContainer3 a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3 .translateContainer3 a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3 .translateContainer3 a p:hover {
+  color: gray;
 }
 .featured-games-container .featured-grid .featured-square--four .square-logos {
   width: 50%;
@@ -321,27 +321,27 @@ a.nav-link {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.featured-games-container .featured-grid .featured-square--five .square-logos-container {
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container .featured-grid .featured-square--five .square-logos-container .translateContainer a {
-  text-decoration: none;
-}
-.featured-games-container .featured-grid .featured-square--five .square-logos-container .translateContainer a p {
-  visibility: hidden;
-  color: white;
-}
-.featured-games-container .featured-grid .featured-square--five .square-logos-container .translateContainer a p:hover {
-  color: gray;
-}
-.featured-games-container .featured-grid .featured-square--five .square-logos-container:hover {
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4:hover {
   background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4 .translateContainer4 a {
+  text-decoration: none;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4 .translateContainer4 a p {
+  visibility: hidden;
+  color: white;
+}
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4 .translateContainer4 a p:hover {
+  color: gray;
 }
 .featured-games-container .featured-grid .featured-square--five .square-logos {
   width: 80%;
@@ -360,6 +360,11 @@ a.nav-link {
   justify-content: center;
   align-items: center;
 }
+.featured-games-container .featured-grid .featured-square--six .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
+  background-size: cover;
+  cursor: pointer;
+}
 .featured-games-container .featured-grid .featured-square--six .square-logos-container .translateContainer a {
   text-decoration: none;
 }
@@ -369,11 +374,6 @@ a.nav-link {
 }
 .featured-games-container .featured-grid .featured-square--six .square-logos-container .translateContainer a p:hover {
   color: gray;
-}
-.featured-games-container .featured-grid .featured-square--six .square-logos-container:hover {
-  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
-  background-size: cover;
-  cursor: pointer;
 }
 .featured-games-container .featured-grid .featured-square--six .square-logos {
   width: 35%;
@@ -1015,6 +1015,7 @@ a.nav-link {
 #sidebar-wrapper .close-toggle {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 #sidebar-wrapper .close-toggle h5 {
   font-weight: 600;
@@ -1026,6 +1027,150 @@ a.nav-link {
   color: black;
   font-weight: 800;
   font-size: 1.6rem;
+}
+
+.EA-sidebar-container {
+  width: 100%;
+  height: 100%;
+}
+.EA-sidebar-container .big-EA {
+  width: 35rem;
+  height: 35rem;
+  background: url(media/big-EA.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.EA-sidebar-container .big-EA img {
+  width: 20%;
+  height: 20%;
+}
+.EA-sidebar-container .big-EA img:hover {
+  transform: scale(1.5);
+  transition: all 0.1s ease;
+}
+.EA-sidebar-container .smallEA-container {
+  margin-top: 3rem;
+  height: 88%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.EA-sidebar-container .smallEA-container .smallEA {
+  width: 16rem;
+  height: 16rem;
+  background: url(media/square1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EA-sidebar-container .smallEA-container .smallEA #jedi {
+  height: 50px;
+}
+.EA-sidebar-container .smallEA-container .smallEA #jedi:hover {
+  transform: scale(1.2);
+  transition: all 0.1s ease;
+}
+.EA-sidebar-container .smallEA-container .smallEA1 {
+  width: 16rem;
+  height: 16rem;
+  background: url(media/square2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EA-sidebar-container .smallEA-container .smallEA1 #pga {
+  height: 50px;
+  width: 100px;
+}
+.EA-sidebar-container .smallEA-container .smallEA1 #pga:hover {
+  transform: scale(1.2);
+  transition: all 0.1s ease;
+}
+.EA-sidebar-container .smallEA-container .smallEA2 {
+  width: 16rem;
+  height: 16rem;
+  background: url(media/square3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EA-sidebar-container .smallEA-container .smallEA2 #theSims {
+  height: 70px;
+  width: 70px;
+}
+.EA-sidebar-container .smallEA-container .smallEA2 #theSims:hover {
+  transform: scale(1.2);
+  transition: all 0.1s ease;
+}
+.EA-sidebar-container .smallEA-container .smallEA3 {
+  width: 16rem;
+  height: 16rem;
+  background: url(media/square4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EA-sidebar-container .smallEA-container .smallEA3 #fifa-23 {
+  height: 70px;
+  width: 70px;
+}
+.EA-sidebar-container .smallEA-container .smallEA3 #fifa-23:hover {
+  transform: scale(1.2);
+  transition: all 0.1s ease;
+}
+.EA-sidebar-container .smallEA-container .smallEA4 {
+  width: 16rem;
+  height: 16rem;
+  background: url(media/square5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EA-sidebar-container .smallEA-container .smallEA4 #madden-23 {
+  height: 70px;
+  width: 70px;
+}
+.EA-sidebar-container .smallEA-container .smallEA4 #madden-23:hover {
+  transform: scale(1.2);
+  transition: all 0.1s ease;
+}
+.EA-sidebar-container .smallEA-container .smallEA5 {
+  width: 16rem;
+  height: 16rem;
+  background: url(media/square6.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EA-sidebar-container .smallEA-container .smallEA5 #apex {
+  height: 50px;
+  width: 50px;
+}
+.EA-sidebar-container .smallEA-container .smallEA5 #apex:hover {
+  transform: scale(1.2);
+  transition: all 0.1s ease;
 }
 
 #profile-wrapper {

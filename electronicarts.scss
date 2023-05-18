@@ -223,6 +223,11 @@ a.nav-link {
           display: flex;
           justify-content: center;
           align-items: center;
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
           .translateContainer{
             width: 50%;
             height: 40%;
@@ -238,11 +243,6 @@ a.nav-link {
               }
             }
           }
-          &:hover{
-            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-            background-size:cover;
-            cursor: pointer;
-          }
           .square-logos{
             width: 50%;
             height: 50%;
@@ -252,13 +252,18 @@ a.nav-link {
       &--two {
         background: url("media/square2.png");
         background-repeat: no-repeat;
-        .square-logos-container{
+        .square-logos-container1{
           width: 100%;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          .translateContainer{
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
+          .translateContainer1{
             a{
               text-decoration: none;
               p{
@@ -269,11 +274,6 @@ a.nav-link {
                 }
               }
             }
-          }
-          &:hover{
-            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-            background-size:cover;
-            cursor: pointer;
           }
         }
         .square-logos{
@@ -284,13 +284,18 @@ a.nav-link {
       &--three {
         background: url("media/square3.png");
         background-repeat: no-repeat;
-        .square-logos-container{
+        .square-logos-container2{
           width: 100%;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          .translateContainer{
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
+          .translateContainer2{
             a{
               text-decoration: none;
               p{
@@ -301,11 +306,6 @@ a.nav-link {
                 }
               }
             }
-          }
-          &:hover{
-            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-            background-size:cover;
-            cursor: pointer;
           }
         }
         .square-logos{
@@ -316,13 +316,18 @@ a.nav-link {
       &--four {
         background: url("media/square4.png");
         background-repeat: no-repeat;
-        .square-logos-container{
+        .square-logos-container3{
           width:100%;
           height:100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          .translateContainer{
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
+          .translateContainer3{
             a{
               text-decoration: none;
               p{
@@ -333,11 +338,6 @@ a.nav-link {
                 }
               }
             }
-          }
-          &:hover{
-            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-            background-size:cover;
-            cursor: pointer;
           }
         }
         .square-logos{
@@ -349,13 +349,18 @@ a.nav-link {
         background: url("media/square5.jpg");
         background-repeat: no-repeat;
         background-size: contain;
-        .square-logos-container{
+        .square-logos-container4{
           width: 100%;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          .translateContainer{
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
+          }
+          .translateContainer4{
             a{
               text-decoration: none;
               p{
@@ -366,11 +371,6 @@ a.nav-link {
                 }
               }
             }
-          }
-          &:hover{
-            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-            background-size:cover;
-            cursor: pointer;
           }
         }
         .square-logos{
@@ -389,6 +389,12 @@ a.nav-link {
           display: flex;
           justify-content: center;
           align-items: center;
+
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;  
+          }
           .translateContainer{
             a{
               text-decoration: none;
@@ -400,11 +406,6 @@ a.nav-link {
                 }
               }
             }
-          }
-          &:hover{
-            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
-            background-size:cover;
-            cursor: pointer;  
           }
         }
         .square-logos{
@@ -1081,7 +1082,8 @@ a.nav-link {
   .close-toggle {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 2rem;
+    
     h5 {
       font-weight: 600;
       color: #a3a3a3;
@@ -1095,6 +1097,151 @@ a.nav-link {
     }
   }
 }
+
+.EA-sidebar-container{
+  width: 100%;
+  height: 100%;
+  .big-EA{
+    width: 35rem;
+    height: 35rem;
+    background: url(media/big-EA.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width:20%;
+      height:20%;
+      &:hover{
+        transform: scale(1.5);
+        transition: all 0.1s ease;
+      }
+    }
+  }
+  .smallEA-container{
+    margin-top: 3rem;
+    height: 88%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap : 3rem;
+    .smallEA{
+      width:16rem;
+      height:16rem;
+      background: url(media/square1.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        #jedi{
+          height:50px;
+          &:hover{
+            transform: scale(1.2);
+            transition: all 0.1s ease;
+          }
+        }
+    }  
+    .smallEA1{
+      width:16rem;
+      height:16rem;
+      background: url(media/square2.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #pga{
+        height:50px;
+        width:100px;
+        &:hover{
+          transform: scale(1.2);
+          transition: all 0.1s ease;
+        }
+      }
+    }
+    .smallEA2{
+      width:16rem;
+      height:16rem;
+      background: url(media/square3.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #theSims{
+        height: 70px;
+        width:70px;
+        &:hover{
+          transform: scale(1.2);
+          transition: all 0.1s ease;
+        }
+      }
+    }
+    .smallEA3{
+      width:16rem;
+      height:16rem;
+      background: url(media/square4.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #fifa-23{
+        height: 70px;
+        width:70px;
+        &:hover{
+          transform: scale(1.2);
+          transition: all 0.1s ease;
+        }
+      }
+    }
+    .smallEA4{
+      width:16rem;
+      height:16rem;
+      background: url(media/square5.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #madden-23{
+        height: 70px;
+        width:70px;
+        &:hover{
+          transform: scale(1.2);
+          transition: all 0.1s ease;
+        }
+      }
+    }
+    .smallEA5{
+      width:16rem;
+      height:16rem;
+      background: url(media/square6.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #apex{
+        height: 50px;
+        width: 50px;
+        &:hover{
+          transform: scale(1.2);
+          transition: all 0.1s ease;
+        }
+      }
+    }
+  }
+}
+
 
 // User Dropdown
 #profile-wrapper {
