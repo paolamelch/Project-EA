@@ -9,7 +9,7 @@ let userToggle = document.getElementById("user-toggle");
 let profileWrapper = document.getElementById("profile-wrapper");
 let profileClose = document.getElementById("profile-close");
 userToggle.addEventListener("click", () => {
-  profileWrapper.style.top = "36px";
+  profileWrapper.style.top = "30px";
 });
 
 profileClose.addEventListener("click", () => {
@@ -44,7 +44,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
     document.getElementById("navbar2").style.top = "36px";
-    sidebar.style.top = "36px";
+    sidebar.style.top = "30px";
   } else {
     document.getElementById("navbar").style.top = "-20px";
     document.getElementById("navbar2").style.top = "0";
@@ -61,7 +61,7 @@ let faqClose = document.getElementById("faq-close");
 let faqToggle = document.getElementById("faq-toggle");
 
 faqToggle.addEventListener("click", () => {
-  faqWrapper.style.top = "36px";
+  faqWrapper.style.top = "30px";
 });
 
 faqClose.addEventListener("click", () => {
