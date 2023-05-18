@@ -1,3 +1,5 @@
+// animazione quadrati Featured Games 
+
 const square = document.querySelector(".square-logos-container");
 const squareContainer = document.querySelector(".translateContainer");
 const officialSite = document.querySelector(".official-site");
@@ -100,7 +102,9 @@ square5.addEventListener('mouseout', function () {
     officialSite5.style.visibility = "hidden";
 });
 
+// Fine animazione quadrati Featured Games
 
+//Inizio animazione bottoni
 
 const selectButton = document.querySelector(".selectRegion");
 const nationsList = document.querySelector(".nationsSelect");
@@ -131,3 +135,5 @@ function showMenu2() {
     }
 
 }
+
+//Fine animazione bottoni
