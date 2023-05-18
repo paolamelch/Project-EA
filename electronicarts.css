@@ -79,7 +79,7 @@ a.nav-link {
 .container-main {
   margin: 0;
   padding: 0;
-  height: 55rem;
+  height: 45rem;
 }
 .container-main .header {
   height: 60rem;
@@ -130,7 +130,7 @@ a.nav-link {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("mainlogo.png");
-  height: 58rem;
+  height: 52rem;
 }
 .container-main .main-logo .main-logo-left {
   display: flex;
@@ -219,9 +219,6 @@ a.nav-link {
   color: white;
   font-size: 1.5rem;
 }
-.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer a p:hover {
-  color: gray;
-}
 .featured-games-container .featured-grid .featured-square--one .square-logos-container .square-logos {
   width: 50%;
   height: 50%;
@@ -248,9 +245,6 @@ a.nav-link {
 .featured-games-container .featured-grid .featured-square--two .square-logos-container1 .translateContainer1 a p {
   visibility: hidden;
   color: white;
-}
-.featured-games-container .featured-grid .featured-square--two .square-logos-container1 .translateContainer1 a p:hover {
-  color: gray;
 }
 .featured-games-container .featured-grid .featured-square--two .square-logos {
   width: 70%;
@@ -279,9 +273,6 @@ a.nav-link {
   visibility: hidden;
   color: white;
 }
-.featured-games-container .featured-grid .featured-square--three .square-logos-container2 .translateContainer2 a p:hover {
-  color: gray;
-}
 .featured-games-container .featured-grid .featured-square--three .square-logos {
   width: 50%;
   height: 50%;
@@ -308,9 +299,6 @@ a.nav-link {
 .featured-games-container .featured-grid .featured-square--four .square-logos-container3 .translateContainer3 a p {
   visibility: hidden;
   color: white;
-}
-.featured-games-container .featured-grid .featured-square--four .square-logos-container3 .translateContainer3 a p:hover {
-  color: gray;
 }
 .featured-games-container .featured-grid .featured-square--four .square-logos {
   width: 50%;
@@ -340,9 +328,6 @@ a.nav-link {
   visibility: hidden;
   color: white;
 }
-.featured-games-container .featured-grid .featured-square--five .square-logos-container4 .translateContainer4 a p:hover {
-  color: gray;
-}
 .featured-games-container .featured-grid .featured-square--five .square-logos {
   width: 80%;
   height: 80%;
@@ -371,9 +356,6 @@ a.nav-link {
 .featured-games-container .featured-grid .featured-square--six .square-logos-container5 .translateContainer5 a p {
   visibility: hidden;
   color: white;
-}
-.featured-games-container .featured-grid .featured-square--six .square-logos-container5 .translateContainer5 a p:hover {
-  color: gray;
 }
 .featured-games-container .featured-grid .featured-square--six .square-logos {
   width: 35%;

@@ -85,7 +85,7 @@ a.nav-link {
 .container-main {
   margin: 0;
   padding: 0;
-  height: 55rem;
+  height: 45rem;
 
   .header {
     height: 60rem;
@@ -146,7 +146,7 @@ a.nav-link {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("mainlogo.png");
-    height: 58rem;
+    height: 52rem;
 
     .main-logo-left {
       display: flex;
@@ -237,9 +237,6 @@ a.nav-link {
                 visibility: hidden;
                 color:white;
                 font-size: 1.5rem;
-                &:hover{
-                  color:gray;
-                }
               }
             }
           }
@@ -269,9 +266,6 @@ a.nav-link {
               p{
                 visibility: hidden;
                 color:white;
-                &:hover{
-                  color:gray;
-                }
               }
             }
           }
@@ -301,9 +295,6 @@ a.nav-link {
               p{
                 visibility: hidden;
                 color:white;
-                &:hover{
-                  color:gray;
-                }
               }
             }
           }
@@ -333,9 +324,6 @@ a.nav-link {
               p{
                 visibility: hidden;
                 color:white;
-                &:hover{
-                  color:gray;
-                }
               }
             }
           }
@@ -366,9 +354,6 @@ a.nav-link {
               p{
                 visibility: hidden;
                 color:white;
-                &:hover{
-                  color:gray;
-                }
               }
             }
           }
@@ -400,9 +385,6 @@ a.nav-link {
               p{
                 visibility: hidden;
                 color:white;
-                &:hover{
-                  color:gray;
-                }
               }
             }
           }
@@ -468,7 +450,6 @@ a.nav-link {
     gap: 2rem;
     padding: 0.5rem;
     transform: translateX(-6rem);
-    // background-color: red;
   }
 
   .borderLatest {
@@ -524,7 +505,6 @@ a.nav-link {
     padding: 1.5rem 2.5rem;
     transition: all 0.1s ease-in-out;
     margin-bottom: 3rem;
-    // background-color: red;
 
     &:hover {
       outline-offset: 4px;
