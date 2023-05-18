@@ -205,9 +205,9 @@ a.nav-link {
 
   .featured-grid {
     display: grid;
-    grid-template-columns: repeat(3,minmax(35rem, 20rem));
-    grid-template-rows: repeat(2,minmax(35rem, 20rem));
-    padding:3rem;
+    grid-template-columns: repeat(3, minmax(35rem, 20rem));
+    grid-template-rows: repeat(2, minmax(35rem, 20rem));
+    padding: 3rem;
     gap: 3rem;
     justify-content: center;
 
@@ -217,7 +217,7 @@ a.nav-link {
       &--one {
         background: url("media/square1.png");
         background-repeat: no-repeat;
-        .square-logos-container{
+        .square-logos-container {
           width: 100%;
           height: 100%;
           display: flex;
@@ -231,14 +231,14 @@ a.nav-link {
           .translateContainer{
             width: 50%;
             height: 40%;
-            a{
+            a {
               text-decoration: none;
-              p{
+              p {
                 visibility: hidden;
-                color:white;
+                color: white;
                 font-size: 1.5rem;
-                &:hover{
-                  color:gray;
+                &:hover {
+                  color: gray;
                 }
               }
             }
@@ -246,7 +246,7 @@ a.nav-link {
           .square-logos{
             width: 50%;
             height: 50%;
-          };
+          }
         }
       }
       &--two {
@@ -266,14 +266,19 @@ a.nav-link {
           .translateContainer1{
             a{
               text-decoration: none;
-              p{
+              p {
                 visibility: hidden;
-                color:white;
-                &:hover{
-                  color:gray;
+                color: white;
+                &:hover {
+                  color: gray;
                 }
               }
             }
+          }
+          &:hover{
+            background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
+            background-size:cover;
+            cursor: pointer;
           }
         }
         .square-logos{
@@ -298,11 +303,11 @@ a.nav-link {
           .translateContainer2{
             a{
               text-decoration: none;
-              p{
+              p {
                 visibility: hidden;
-                color:white;
-                &:hover{
-                  color:gray;
+                color: white;
+                &:hover {
+                  color: gray;
                 }
               }
             }
@@ -322,6 +327,8 @@ a.nav-link {
           display: flex;
           justify-content: center;
           align-items: center;
+          .translateContainer {
+            a {
           &:hover{
             background: linear-gradient(to right, (rgba(15, 0, 125, 0.7) ,rgba(255, 71, 71,0.7)));
             background-size:cover;
@@ -330,11 +337,11 @@ a.nav-link {
           .translateContainer3{
             a{
               text-decoration: none;
-              p{
+              p {
                 visibility: hidden;
-                color:white;
-                &:hover{
-                  color:gray;
+                color: white;
+                &:hover {
+                  color: gray;
                 }
               }
             }
@@ -363,11 +370,11 @@ a.nav-link {
           .translateContainer4{
             a{
               text-decoration: none;
-              p{
+              p {
                 visibility: hidden;
-                color:white;
-                &:hover{
-                  color:gray;
+                color: white;
+                &:hover {
+                  color: gray;
                 }
               }
             }
@@ -380,7 +387,7 @@ a.nav-link {
       }
       &--six {
         background: url("media/square6.png");
-        width:35rem;
+        width: 35rem;
         background-repeat: no-repeat;
         background-size: contain;
         .square-logos-container5{
@@ -397,11 +404,11 @@ a.nav-link {
           .translateContainer5{
             a{
               text-decoration: none;
-              p{
+              p {
                 visibility: hidden;
-                color:white;
-                &:hover{
-                  color:gray;
+                color: white;
+                &:hover {
+                  color: gray;
                 }
               }
             }
@@ -435,16 +442,22 @@ a.nav-link {
 
 // Inizio Latest Update
 .latest-update-container {
-  width: 100vw;
+  .disableLatest {
+    display: none !important;
+  }
+
+  width: 98vw;
   h3 {
     font-size: 2rem;
     font-weight: normal;
   }
+
   h1 {
     text-align: center;
     margin: 3rem 0;
     font-weight: 900;
   }
+
   .divisorSpanFra {
     border-right: 0.5px solid gray;
     margin-left: 2rem;
@@ -454,6 +467,7 @@ a.nav-link {
     flex-direction: column;
     align-items: center;
   }
+
   .buttonContainer {
     display: flex;
     justify-content: start;
@@ -462,17 +476,20 @@ a.nav-link {
     transform: translateX(-6rem);
     // background-color: red;
   }
+
   .borderLatest {
     border-bottom: solid 1px gray;
     width: 100vw;
   }
+
   .cardLatestUpdate:hover {
     transform: translateY(-2rem);
     box-shadow: 2px 20px 25px;
   }
+
   .containerCardLatest {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, auto));
+    grid-template-columns: repeat(3, minmax(200px, 350px));
     gap: 3rem;
     margin-bottom: 3rem;
     padding: 6rem 22rem;
@@ -490,6 +507,7 @@ a.nav-link {
     transition: 400ms ease-in-out;
     box-shadow: 2px 20px 25px;
   }
+
   .cardLatestUpdate {
     max-width: 36rem;
     max-height: 45rem;
@@ -497,9 +515,11 @@ a.nav-link {
       max-width: 100%;
     }
   }
+
   .redEaInc {
     color: red;
   }
+
   .our-btn {
     background: none;
     border-radius: 3px;
@@ -870,7 +890,7 @@ a.nav-link {
                 &:hover {
                   outline-offset: 2px;
                 }
-                
+
                 .priceAndLanguage {
                   width: 100%;
                   color: rgb(125, 125, 125);
@@ -1276,6 +1296,12 @@ a.nav-link {
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: translateY(-7px);
+      }
+
       button {
         width: 5rem;
         height: 5rem;
@@ -1297,6 +1323,12 @@ a.nav-link {
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: translateY(-7px);
+      }
+
       button {
         width: 5rem;
         height: 5rem;
@@ -1320,4 +1352,78 @@ a.nav-link {
   border: none;
   background-color: transparent;
 }
+
+#sidebar-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 190;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: none;
+  visibility: none;
+}
 // Fine Sidebar
+
+// faq wrapper
+#faq-wrapper {
+  position: absolute;
+  top: -44rem;
+  width: 100%;
+  height: 55vh;
+  background-color: basic.$primary;
+  z-index: 450;
+  transition: all 0.3s ease-in-out;
+
+  .faq-close {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 3rem;
+    button {
+      color: white;
+      background: none;
+      border: none;
+    }
+  }
+
+  .faq-title {
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+  }
+}
+// fine faq wrapper
+// .nav-link.dropdown-toggle::after {
+//   content: "";
+//   display: inline-block;
+//   width: 0;
+//   height: 0;
+//   border-left: 5px solid transparent;
+//   border-right: 5px solid transparent;
+//   border-top: 5px solid black;
+//   transform: translateY(2px);
+//   transition: transform 0.3s ease;
+// }
+
+// .nav-link.dropdown-toggle:hover::after {
+//   transform: rotate(180deg) translateY(-2px);
+// }
+
+.nav-link.dropdown-toggle {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(130deg);
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle:hover::after {
+  transform: rotate(-50deg);
+}
