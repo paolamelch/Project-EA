@@ -122,6 +122,11 @@ a.nav-link {
   font-size: 2.5rem;
   margin-right: 3rem;
 }
+.container-main .main-nav .navbar .fa-ellipsis-vertical:hover {
+  color: red;
+  transform: scale(1.2);
+  transition: all 0.4s ease;
+}
 .container-main .main-logo {
   margin-top: 3rem;
   display: flex;
