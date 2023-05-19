@@ -22,10 +22,16 @@ profileClose.addEventListener("click", () => {
 sideToggle.addEventListener("click", () => {
   console.log("click");
   sidebar.style.left = "0";
+  sidebar.style.top = "36px";
   sidebarOverlay.style.display = "block";
   sidebarOverlay.style.visibility = "visible";
   document.documentElement.style.overflow = "hidden";
-  document.body.scroll = "no";
+  document.getElementById("navbar").style.overflowX = "auto";
+  document.getElementById("navbar").style.overflowY = "auto";
+  document.getElementById("navbar").style.top = "0";
+  document.getElementById("navbar2").style.top = "36px";
+
+  // document.body.scroll = "no";
 });
 closeToggle.addEventListener("click", () => {
   sidebar.style.left = "-41rem";
@@ -33,6 +39,8 @@ closeToggle.addEventListener("click", () => {
   sidebarOverlay.style.visibility = "hidden";
   document.documentElement.style.overflow = "scroll";
   document.body.scroll = "yes";
+  document.getElementById("navbar").style.top = "-20px";
+  document.getElementById("navbar2").style.top = "0";
 });
 
 // Fine Sidebar Toggle
@@ -44,11 +52,9 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
     document.getElementById("navbar2").style.top = "36px";
-    sidebar.style.top = "30px";
   } else {
     document.getElementById("navbar").style.top = "-20px";
     document.getElementById("navbar2").style.top = "0";
-    sidebar.style.top = "0";
   }
   prevScrollpos = currentScrollPos;
 };

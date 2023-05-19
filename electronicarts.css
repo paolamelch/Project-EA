@@ -496,8 +496,7 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .eaParagraph {
@@ -1163,7 +1162,7 @@ a.nav-link {
 }
 
 #profile-wrapper {
-  position: absolute;
+  position: fixed;
   top: -44rem;
   width: 100%;
   height: 55vh;
@@ -1244,7 +1243,8 @@ a.nav-link {
 }
 
 #sidebar-overlay {
-  position: absolute;
+  position: fixed;
+  top: 36px;
   width: 100%;
   height: 100%;
   z-index: 190;
@@ -1254,7 +1254,7 @@ a.nav-link {
 }
 
 #faq-wrapper {
-  position: absolute;
+  position: fixed;
   top: -44rem;
   width: 100%;
   height: 55vh;
@@ -1296,4 +1296,6 @@ a.nav-link {
 
 .dropdown-toggle:hover::after {
   transform: rotate(-50deg);
-}/*# sourceMappingURL=electronicarts.css.map */
+}
+
+/*# sourceMappingURL=electronicarts.css.map */
