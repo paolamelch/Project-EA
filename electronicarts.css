@@ -478,6 +478,9 @@ a.nav-link {
 }
 
 @media (max-width: 768px) {
+  .latest-update-container {
+    margin: auto;
+  }
   .latest-update-container .containerCardLatest {
     text-align: center;
   }
