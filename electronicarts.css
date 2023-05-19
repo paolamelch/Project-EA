@@ -416,12 +416,12 @@ a.nav-link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px;
 }
 .latest-update-container .buttonContainer {
   display: flex;
   justify-content: start;
   gap: 2rem;
-  padding: 0 0.5rem;
   width: 100%;
 }
 .latest-update-container .borderLatest {
@@ -435,7 +435,7 @@ a.nav-link {
 .latest-update-container .containerCardLatest {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: 4rem auto;
   gap: 3rem;
 }
@@ -477,6 +477,12 @@ a.nav-link {
   outline-offset: 4px;
 }
 
+@media (max-width: 480px) and (min-width: 365px) {
+  .latest-update-container .containerCardLatest .cardLatestUpdate {
+    flex-basis: calc(50% - 3rem);
+    background-color: red;
+  }
+}
 .footerContainer {
   height: auto;
 }

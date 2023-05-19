@@ -461,7 +461,9 @@ a.nav-link {
   .containerLatestSub {
     display: flex;
     flex-direction: column;
+    // gap:3rem;
     align-items: center;
+    padding: 30px;
     // position: relative;
   }
 
@@ -469,7 +471,7 @@ a.nav-link {
     display: flex;
     justify-content: start;
     gap: 2rem;
-    padding: 0 0.5rem;
+    // padding: 0 0.5rem;
     width: 100%;
     // margin: auto;
   }
@@ -487,7 +489,7 @@ a.nav-link {
   .containerCardLatest {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin:4rem auto;
     gap: 3rem;
     
@@ -535,6 +537,19 @@ a.nav-link {
     &:hover {
       outline-offset: 4px;
     }
+  }
+}
+@media (max-width: 480px) and (min-width: 365px){
+  
+.latest-update-container{
+
+  .containerCardLatest{
+    
+    .cardLatestUpdate {
+      flex-basis: calc(50% - 3rem) ;
+      background-color: red;    
+    }
+  }
   }
 }
 // Fine Latest Update
