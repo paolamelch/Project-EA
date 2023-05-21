@@ -1556,6 +1556,18 @@ a.nav-link {
       visibility: hidden;
     }
 
+    .myborder {
+      border-top: 2px solid #a3a3a3;
+    }
+
+    .first-border {
+      border-top: 1px solid red;
+    }
+
+    .separate-border {
+      border-top: 1px solid #dddcdc;
+    }
+
     // TABLET SIDEBAR
     .tablet-sidebar {
       height: 100%;
