@@ -1275,8 +1275,96 @@ a.nav-link {
 }
 #faq-wrapper .faq-title {
   text-align: center;
+  color: white;
   width: 100%;
   font-weight: bolder;
+  margin-bottom: 2rem;
+}
+#faq-wrapper .faq-icons {
+  display: grid;
+  gap: 4rem 10rem;
+  padding: 0 45rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+#faq-wrapper .faq-icons i {
+  background-color: white;
+  color: black;
+}
+#faq-wrapper .faq-icons a {
+  text-decoration: none;
+}
+#faq-wrapper .faq-icons a:hover {
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-10px);
+}
+#faq-wrapper .faq-icons p {
+  color: white;
+  margin-top: 0.7em;
+}
+#faq-wrapper .faq-icons .faq-login {
+  justify-self: center;
+}
+#faq-wrapper .faq-icons .faq-login i {
+  padding: 0.7rem 0.35rem;
+  border-radius: 100%;
+}
+#faq-wrapper .faq-icons .faq-login a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#faq-wrapper .faq-icons .faq-link {
+  justify-self: center;
+  justify-items: center;
+}
+#faq-wrapper .faq-icons .faq-link i {
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+#faq-wrapper .faq-icons .faq-link a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#faq-wrapper .faq-icons .faq-link p {
+  text-align: center;
+}
+#faq-wrapper .faq-icons .faq-redeem {
+  justify-self: center;
+}
+#faq-wrapper .faq-icons .faq-redeem i {
+  padding: 0.9rem 0.4rem;
+  border-radius: 100%;
+}
+#faq-wrapper .faq-icons .faq-redeem a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#faq-wrapper .faq-icons .faq-problem {
+  justify-self: center;
+}
+#faq-wrapper .faq-icons .faq-problem i {
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+#faq-wrapper .faq-icons .faq-problem a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#faq-wrapper .faq-footer {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+#faq-wrapper .faq-footer span {
+  color: red;
 }
 
 .nav-link.dropdown-toggle {

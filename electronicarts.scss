@@ -1384,8 +1384,116 @@ a.nav-link {
 
   .faq-title {
     text-align: center;
+    color: white;
     width: 100%;
     font-weight: bolder;
+    margin-bottom: 2rem;
+  }
+
+  .faq-icons {
+    display: grid;
+    gap: 4rem 10rem;
+    padding: 0 45rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    i {
+      background-color: white;
+      color: black;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        transition: all 0.2s ease-in-out;
+        transform: translateY(-10px);
+      }
+    }
+
+    p {
+      color: white;
+      margin-top: 0.7em;
+    }
+
+    .faq-login {
+      justify-self: center;
+
+      i {
+        padding: 0.7rem 0.35rem;
+        border-radius: 100%;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .faq-link {
+      justify-self: center;
+      justify-items: center;
+
+      i {
+        padding: 1.5rem;
+        border-radius: 10px;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .faq-redeem {
+      justify-self: center;
+
+      i {
+        padding: 0.9rem 0.4rem;
+        border-radius: 100%;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .faq-problem {
+      justify-self: center;
+
+      i {
+        padding: 1.5rem;
+        border-radius: 10px;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .faq-footer {
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+
+    span {
+      color: red;
+    }
   }
 }
 // fine faq wrapper

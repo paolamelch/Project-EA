@@ -10,10 +10,12 @@ let profileWrapper = document.getElementById("profile-wrapper");
 let profileClose = document.getElementById("profile-close");
 userToggle.addEventListener("click", () => {
   profileWrapper.style.top = "30px";
+  document.documentElement.style.overflow = "hidden";
 });
 
 profileClose.addEventListener("click", () => {
   profileWrapper.style.top = "-44rem";
+  document.documentElement.style.overflow = "scroll";
 });
 
 // Fine UserBar Toggle
@@ -68,9 +70,11 @@ let faqToggle = document.getElementById("faq-toggle");
 
 faqToggle.addEventListener("click", () => {
   faqWrapper.style.top = "30px";
+  document.documentElement.style.overflow = "hidden";
 });
 
 faqClose.addEventListener("click", () => {
   faqWrapper.style.top = "-44rem";
+  document.documentElement.style.overflow = "scroll";
 });
 // Fine FAQ Wrapper
