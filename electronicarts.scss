@@ -1569,12 +1569,28 @@ a.nav-link {
     }
 
     // TABLET SIDEBAR
+
+    .list-unstyled {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    #sidebar-overlay {
+      top: 40px;
+    }
+
+    #tablet-nav-close {
+      border: none;
+      background: none;
+    }
+
     .tablet-sidebar {
       height: 100%;
-      position: absolute;
-      z-index: 10;
+      position: fixed;
+      z-index: 600;
       padding: 0;
-      // left: -40rem;
+      left: -40rem;
+      transition: all 0.3s ease-in-out;
 
       .tablet-sidebar-head {
         display: flex;
@@ -1600,6 +1616,7 @@ a.nav-link {
       visibility: visible;
 
       .hiding-nav-tablet {
+        // position: fixed;
         display: flex;
         width: 100%;
         height: 3.5vh;
@@ -1617,6 +1634,8 @@ a.nav-link {
       }
 
       .main-nav-tablet {
+        position: fixed;
+        z-index: 40;
         display: flex;
         background-color: white;
         width: 100%;

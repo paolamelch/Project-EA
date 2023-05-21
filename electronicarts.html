@@ -391,10 +391,13 @@
         </div>
 
          <!-- TABLET SIDEBAR -->
-    <div class="flex-shrink-0 bg-white tablet-sidebar" style="width: 380px; padding: 2rem;">
-        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom tablet-sidebar-head">
+    <div class="flex-shrink-0 bg-white tablet-sidebar" style="width: 380px;" id="tablet-sidebar">
+        <a class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom tablet-sidebar-head">
             <img src="ea-wordmark-network-nav-coral.svg" />
-            <i class="fa-solid fa-xmark"></i>
+            <button id="tablet-nav-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
         </a>
         <ul class="list-unstyled ps-0">
           <li class="mb-1">
@@ -453,11 +456,17 @@
               More Experiences
             </button>
             <div class="collapse" id="dashboard-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Overview</a></li>
-                <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                <li><a href="#" class="link-dark rounded">Annually</a></li>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="my-3 first-border"></li>
+                <li><a href="#" class="link-dark rounded">EA Play</a></li>
+                <li class="my-3 separate-border"></li>
+                <li><a href="#" class="link-dark rounded">The EA App</a></li>
+                <li class="my-3 separate-border"></li>
+                <li><a href="#" class="link-dark rounded">Competitive Gaming</a></li>
+                <li class="my-3 separate-border"></li>
+                <li><a href="#" class="link-dark rounded">EA Play Live</a></li>
+                <li class="my-3 separate-border"></li>
+                <li><a href="#" class="link-dark rounded">Playtesting</a></li>
               </ul>
             </div>
           </li>
@@ -467,53 +476,69 @@
               About
             </button>
             <div class="collapse" id="orders-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">New</a></li>
-                <li><a href="#" class="link-dark rounded">Processed</a></li>
-                <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                <li><a href="#" class="link-dark rounded">Returned</a></li>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="first-border my-3"></li>
+               
+                <li><a href="#" class="link-dark rounded">Company</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">EA Studios</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Careers</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Our Technology</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">EA Partners</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">News</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Inside EA</a></li>
+                <li class="first-border my-3"></li>
               </ul>
             </div>
           </li>
           <li class="myborder my-3"></li>
           <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-              About
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#commitments-collapse" aria-expanded="false">
+              Commitments
             </button>
-            <div class="collapse" id="orders-collapse">
+            <div class="collapse" id="commitments-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">New</a></li>
-                <li><a href="#" class="link-dark rounded">Processed</a></li>
-                <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                <li><a href="#" class="link-dark rounded">Returned</a></li>
+                <li class="first-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Our Commitments</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Positive Play</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Inclusion & Diversity</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Social Impact</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">People & Culture</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Environment</a></li>
+                <li class="first-border my-3"></li>
               </ul>
             </div>
           </li>
           <li class="myborder my-3"></li>
           <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-              About
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#resources-collapse" aria-expanded="false">
+              Resources
             </button>
-            <div class="collapse" id="orders-collapse">
+            <div class="collapse" id="resources-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">New</a></li>
-                <li><a href="#" class="link-dark rounded">Processed</a></li>
-                <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                <li><a href="#" class="link-dark rounded">Returned</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="myborder my-3"></li>
-          <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-              Account
-            </button>
-            <div class="collapse" id="account-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">New...</a></li>
-                <li><a href="#" class="link-dark rounded">Profile</a></li>
-                <li><a href="#" class="link-dark rounded">Settings</a></li>
-                <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                <li class="first-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Help</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Forums</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Parental Tools</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Accessibility</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Press</a></li>
+                <li class="separate-border my-3"></li>
+                <li><a href="#" class="link-dark rounded">Investors</a></li>
+                <li class="first-border my-3"></li>
               </ul>
             </div>
           </li>
@@ -524,7 +549,7 @@
 
         <div class="main-nav-tablet">
             <button id="tablet-nav-toggle">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="tablet-sidebar-open"></i>
             </button>
 
             <a class="navbar-brand" href="#">

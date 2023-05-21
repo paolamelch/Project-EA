@@ -1413,11 +1413,24 @@ a.nav-link {
   * .separate-border {
     border-top: 1px solid #dddcdc;
   }
+  * .list-unstyled {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  * #sidebar-overlay {
+    top: 40px;
+  }
+  * #tablet-nav-close {
+    border: none;
+    background: none;
+  }
   * .tablet-sidebar {
     height: 100%;
-    position: absolute;
-    z-index: 10;
+    position: fixed;
+    z-index: 600;
     padding: 0;
+    left: -40rem;
+    transition: all 0.3s ease-in-out;
   }
   * .tablet-sidebar .tablet-sidebar-head {
     display: flex;
@@ -1455,6 +1468,8 @@ a.nav-link {
     font-size: larger;
   }
   * .container-main-tablet .main-nav-tablet {
+    position: fixed;
+    z-index: 40;
     display: flex;
     background-color: white;
     width: 100%;

@@ -32,8 +32,6 @@ sideToggle.addEventListener("click", () => {
   document.getElementById("navbar").style.overflowY = "auto";
   document.getElementById("navbar").style.top = "0";
   document.getElementById("navbar2").style.top = "36px";
-
-  // document.body.scroll = "no";
 });
 closeToggle.addEventListener("click", () => {
   sidebar.style.left = "-41rem";
@@ -46,7 +44,24 @@ closeToggle.addEventListener("click", () => {
 });
 
 // Fine Sidebar Toggle
+// TABLET SIDEBAR
+let tabletSidebar = document.getElementById("tablet-sidebar");
+let openTabletSidebar = document.getElementById("tablet-nav-toggle");
+let closeTabletSidebar = document.getElementById("tablet-nav-close");
 
+openTabletSidebar.addEventListener("click", () => {
+  tabletSidebar.style.left = "0";
+  sidebarOverlay.style.display = "block";
+  sidebarOverlay.style.visibility = "visible";
+});
+
+closeTabletSidebar.addEventListener("click", () => {
+  tabletSidebar.style.left = "-41rem";
+  sidebarOverlay.style.display = "none";
+  sidebarOverlay.style.visibility = "hidden";
+});
+
+// FINE TABLET SIDEBAR
 // Navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
