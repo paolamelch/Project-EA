@@ -53,12 +53,16 @@ openTabletSidebar.addEventListener("click", () => {
   tabletSidebar.style.left = "0";
   sidebarOverlay.style.display = "block";
   sidebarOverlay.style.visibility = "visible";
+  document.documentElement.style.overflow = "hidden";
+  document.body.scroll = "no";
 });
 
 closeTabletSidebar.addEventListener("click", () => {
   tabletSidebar.style.left = "-41rem";
   sidebarOverlay.style.display = "none";
   sidebarOverlay.style.visibility = "hidden";
+  document.documentElement.style.overflow = "scroll";
+  document.body.scroll = "yes";
 });
 
 // FINE TABLET SIDEBAR
