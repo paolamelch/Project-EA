@@ -1,4 +1,7 @@
 @use "base-module.scss" as basic;
+@import "media-queries-Paola";
+
+
 @font-face {
   font-family: "EaFont";
   src: url("EaFont.ttf") format("truetype");
@@ -715,116 +718,9 @@ a.nav-link {
     font-size: 2.5rem;
     transition: all 0.2s ease;
   }
-  h3 {
-    margin: 10px 0 10px 10px;
-    text-align: right;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
-  }
-  ul {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    gap: 2.5rem;
-  }
-  li {
-    list-style-type: none;
-  }
-  li a {
-    text-decoration: none;
-    color: black;
-  }
-  li a .fa-brands:hover {
-    font-size: 2.5rem;
-    transition: all 0.2s ease;
-  }
 }
 
 .section2 {
-  background-color: rgb(242, 241, 241);
-  .networkFooter {
-    height: 240px;
-    padding: 3rem 10rem 0 13rem;
-    margin: 0 2rem;
-    .networkFooterContainer {
-      height: 100%;
-      width: 100%;
-      display: flex;
-    }
-    .networkFooterLogo {
-      img {
-        width: 100%;
-        height: 50px;
-      }
-    }
-    .networkFooterLinks {
-      width: 100%;
-      height: 100%;
-      margin: 0 0 0 1.5rem;
-      .networkFooterLinksContainer {
-        width: 100%;
-        height: auto;
-        display: flex;
-        gap: 1rem;
-        .networkFooterList {
-          flex: 2;
-          a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.7rem;
-            margin: 1.2rem 1.2rem 1.2rem 0;
-            line-height: 3rem;
-          }
-        }
-        .networkFooterSelect {
-          width: 100%;
-          flex: 2;
-          display: flex;
-          justify-content: flex-end;
-          gap: 4rem;
-          .networkFooterSelect1 {
-            width: auto;
-            .selectButton {
-              height: 60px;
-              width: 150px;
-            }
-          }
-        }
-      }
-      .networkFooterLegal {
-        width: 100%;
-        height: 50%;
-        margin-top: 1rem;
-        display: flex;
-        gap: 15rem;
-        .networkFooterLegalList {
-          width: 100%;
-          flex: 4;
-          height: auto;
-          a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.3rem;
-            margin: 1rem 1rem 1rem 0;
-            line-height: 1.7rem;
-          }
-          .networkFooterCopyright {
-            margin: 1rem 1rem 1rem 0;
-          }
-        }
-        .networkFooterLegalImg {
-          width: 100%;
-          height: auto;
-          flex: 2;
-          img {
-            float: right;
-            padding-top: 2.5rem;
-          }
-        }
-      }
-    }
-  }
   background-color: rgb(242, 241, 241);
   .networkFooter {
     height: 240px;
@@ -1496,22 +1392,6 @@ a.nav-link {
     }
   }
 }
-// fine faq wrapper
-// .nav-link.dropdown-toggle::after {
-//   content: "";
-//   display: inline-block;
-//   width: 0;
-//   height: 0;
-//   border-left: 5px solid transparent;
-//   border-right: 5px solid transparent;
-//   border-top: 5px solid black;
-//   transform: translateY(2px);
-//   transition: transform 0.3s ease;
-// }
-
-// .nav-link.dropdown-toggle:hover::after {
-//   transform: rotate(180deg) translateY(-2px);
-// }
 
 .nav-link.dropdown-toggle {
   position: relative;
