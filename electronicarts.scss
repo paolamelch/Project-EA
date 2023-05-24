@@ -806,6 +806,12 @@ a.nav-link {
             line-height: 3rem;
           }
         }
+        .buttonMediaQueryContainer{
+          visibility: hidden;
+          .selectButtonMediaQuery{
+            visibility: hidden;
+          }
+        }
         .networkFooterSelect {
           width: 100%;
           flex: 2;
