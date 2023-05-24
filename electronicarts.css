@@ -471,7 +471,7 @@ body {
   list-style: none;
 }
 .dropdown-menu.first-dropdown .container-drop .left-side-drop ul li {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
 }
 .dropdown-menu.first-dropdown .container-drop .left-side-drop ul li:first-of-type {
   margin-top: 2rem;
@@ -490,7 +490,7 @@ body {
   list-style: none;
 }
 .dropdown-menu.first-dropdown .container-drop .right-side-drop ul li {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
 }
 .dropdown-menu.first-dropdown .container-drop .right-side-drop ul li:first-of-type {
   margin-top: 2rem;
@@ -605,7 +605,7 @@ a.nav-link {
 }
 
 .featured-games-container {
-  margin: 12rem 0 4rem 0;
+  margin: 12rem 0 4rem;
   text-align: center;
 }
 .featured-games-container h1 {
@@ -811,6 +811,8 @@ a.nav-link {
 
 .latest-update-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .latest-update-container .disableLatest {
   display: none !important;
@@ -820,16 +822,19 @@ a.nav-link {
   margin: 5rem 0;
   font-weight: 900;
 }
-.latest-update-container .buttonContainer {
-  width: 100%;
+.latest-update-container .spazioHr {
   border-bottom: 2px solid lightgray;
+  margin: 0.8rem 0;
+}
+.latest-update-container .buttonContainer {
+  width: 90%;
+  max-width: 1100px;
+  align-self: center;
 }
 .latest-update-container .buttonContainerFlex {
   height: 50px;
   display: flex;
-  align-items: center;
-  width: 70%;
-  padding: 0 0 0 9.5rem;
+  width: 100%;
   font-size: 2rem;
 }
 .latest-update-container .buttonContainerFlex .buttonBorder {
@@ -885,29 +890,42 @@ a.nav-link {
   padding: 5px 15px;
   cursor: pointer;
 }
-.latest-update-container .borderLatest {
-  border-bottom: solid 1px gray;
-  width: 100vw;
-}
 .latest-update-container .cardLatestUpdate:hover {
   transform: translateY(-2rem);
   box-shadow: 2px 20px 25px;
 }
+.latest-update-container .containerLatestSub {
+  display: flex;
+  flex-direction: column;
+}
 .latest-update-container .containerCardLatest {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 350px));
+  width: 90%;
+  max-width: 1100px;
+  min-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem auto;
   gap: 3rem;
-  margin-bottom: 3rem;
-  padding: 6rem 0;
-  justify-content: center;
 }
 .latest-update-container .containerCardLatest .cardLatestUpdate {
   border: solid lightgray 0.2px;
-  cursor: pointer;
   box-shadow: 2px 2px 6px;
+  width: 30%;
+  max-height: 45rem;
+  cursor: pointer;
+  flex-basis: calc(33% - 3rem);
+}
+.latest-update-container .containerCardLatest .cardLatestUpdate .latestUpdateImg {
+  width: 100%;
 }
 .latest-update-container .containerCardLatest .cardLatestUpdate .paddingLatest {
-  padding: 1rem;
+  padding: 2rem;
+  margin-bottom: 6rem;
+}
+.latest-update-container .cardLatestUpdate:hover {
+  transform: translateY(-2rem);
+  transition: 400ms ease-in-out;
+  box-shadow: 2px 20px 25px;
 }
 .latest-update-container .readMore {
   display: flex;
@@ -922,6 +940,7 @@ a.nav-link {
 .latest-update-container .cardLatestUpdate {
   max-width: 36rem;
   max-height: 45rem;
+  min-width: 250px;
 }
 .latest-update-container .cardLatestUpdate .latestUpdateImg {
   max-width: 100%;
@@ -944,6 +963,35 @@ a.nav-link {
   outline-offset: 4px;
 }
 
+@media all and (max-width: 820px) {
+  .latest-update-container .buttonContainerFlex {
+    align-self: center;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .latest-update-container .containerCardLatest {
+    width: 90%;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate {
+    flex-basis: calc(50% - 3rem);
+    width: 5.5rem;
+    margin: auto;
+    max-height: 45rem;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate .latestUpdateImg {
+    width: 100%;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate .paddingLatest {
+    padding: 5%;
+    text-align: start;
+  }
+  .latest-update-container .buttonLatestUpdate .our-btn {
+    margin-top: 3rem;
+  }
+}
 .footerContainer {
   height: auto;
 }
@@ -976,8 +1024,7 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .eaParagraph {
@@ -1400,7 +1447,7 @@ a.nav-link {
 .EA-sidebar-container .big-EA {
   width: 35rem;
   height: 35rem;
-  background: url(media/big-EA.png);
+  background: url("media/big-EA.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1426,7 +1473,7 @@ a.nav-link {
 .EA-sidebar-container .smallEA-container .smallEA {
   width: 16rem;
   height: 16rem;
-  background: url(media/square1.png);
+  background: url("media/square1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1444,7 +1491,7 @@ a.nav-link {
 .EA-sidebar-container .smallEA-container .smallEA1 {
   width: 16rem;
   height: 16rem;
-  background: url(media/square2.png);
+  background: url("media/square2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1463,7 +1510,7 @@ a.nav-link {
 .EA-sidebar-container .smallEA-container .smallEA2 {
   width: 16rem;
   height: 16rem;
-  background: url(media/square3.png);
+  background: url("media/square3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1482,7 +1529,7 @@ a.nav-link {
 .EA-sidebar-container .smallEA-container .smallEA3 {
   width: 16rem;
   height: 16rem;
-  background: url(media/square4.png);
+  background: url("media/square4.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1501,7 +1548,7 @@ a.nav-link {
 .EA-sidebar-container .smallEA-container .smallEA4 {
   width: 16rem;
   height: 16rem;
-  background: url(media/square5.jpg);
+  background: url("media/square5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1520,7 +1567,7 @@ a.nav-link {
 .EA-sidebar-container .smallEA-container .smallEA5 {
   width: 16rem;
   height: 16rem;
-  background: url(media/square6.png);
+  background: url("media/square6.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1760,4 +1807,6 @@ a.nav-link {
 
 .dropdown-toggle:hover::after {
   transform: rotate(-50deg);
-}/*# sourceMappingURL=electronicarts.css.map */
+}
+
+/*# sourceMappingURL=electronicarts.css.map */
