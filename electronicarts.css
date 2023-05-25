@@ -2181,6 +2181,7 @@ a.nav-link {
     background-image: url(mainlogo.jpg);
   }
   * .container-main-tablet .left-side-tablet {
+    padding-top: 5rem;
     width: 50%;
     height: 100%;
     display: flex;
