@@ -1,0 +1,114 @@
+@media screen and (max-width: 390px) {
+  .main-logo-tablet {
+    display: none;
+    visibility: hidden;
+  }
+
+  .main-nav-tablet {
+    display: none;
+    visibility: hidden;
+  }
+
+  .hiding-nav-tablet {
+    display: none;
+    visibility: hidden;
+  }
+
+  .container-main-tablet {
+    display: none;
+    visibility: hidden;
+  }
+
+  #tablet-sidebar {
+    margin-top: 4.5vh;
+  }
+
+  .black-nav-mobile {
+    display: block;
+    visibility: visible;
+    display: flex;
+    width: 100%;
+    height: 4.5vh;
+    background-color: #161616;
+    justify-content: end;
+    gap: 4.5rem;
+    color: #a3a3a3;
+    padding-right: 3rem;
+
+    button {
+      background: none;
+      border: none;
+      font-size: larger;
+    }
+  }
+
+  .main-nav-mobile {
+    display: block;
+    visibility: visible;
+    display: flex;
+    width: 100%;
+    height: 6.5vh;
+    background-color: white;
+
+    button {
+      background: none;
+      border: none;
+      color: #a3a3a3;
+      font-size: x-large;
+      padding-left: 1.5rem;
+    }
+  }
+
+  .main-logo-mobile {
+    visibility: visible;
+    display: block;
+    height: 61vh;
+    background-image: url(mobile-logo.jpg);
+    background-size: cover;
+
+    .top-side-mobile {
+      height: 42%;
+    }
+
+    .bottom-side-mobile {
+      display: flex;
+      flex-direction: column;
+      //   justify-content: center;
+
+      h1 {
+        color: #161616;
+        font-size: 4rem;
+        font-weight: 900;
+        padding: 0 5rem;
+        text-align: center;
+      }
+
+      h3 {
+        color: #161616;
+        text-align: center;
+        font-weight: 400;
+        padding: 0 2rem;
+        // word-spacing: 0.2rem;
+        margin: 0.5rem 0;
+      }
+
+      button {
+        background: white;
+        border-radius: 3px;
+        border: none;
+        outline: 2px solid white;
+        font-size: 1.6rem;
+        padding: 1.5rem 2.5rem;
+        transition: all 0.1s ease-in-out;
+        margin-top: 1rem;
+        font-weight: 550;
+        width: 80%;
+        margin-left: 40px;
+
+        &:hover {
+          outline: 6px solid white;
+        }
+      }
+    }
+  }
+}

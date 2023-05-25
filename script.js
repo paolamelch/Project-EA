@@ -153,3 +153,15 @@ faqClose.addEventListener("click", () => {
   document.documentElement.style.overflow = "scroll";
 });
 // Fine FAQ Wrapper
+
+// mobile sidebar
+
+let mobileSideToggle = document.getElementById("mobile-nav-toggle");
+
+mobileSideToggle.addEventListener("click", () => {
+  tabletSidebar.style.left = "0";
+  sidebarOverlay.style.display = "block";
+  sidebarOverlay.style.visibility = "visible";
+  document.documentElement.style.overflow = "hidden";
+  document.body.scroll = "no";
+});
