@@ -1023,6 +1023,7 @@ a.nav-link {
   }
   .latest-update-container .buttonContainer {
     overflow: scroll;
+    padding: 0.5rem;
   }
   .latest-update-container .containerCardLatest {
     width: 100%;

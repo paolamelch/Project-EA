@@ -650,7 +650,8 @@ text-align: center;
 .latest-update-container{
     overflow: hidden;
     .buttonContainer{
-        overflow: scroll;  
+        overflow: scroll; 
+        padding: .5rem; 
     }
     .containerCardLatest {
         width: 100%;
