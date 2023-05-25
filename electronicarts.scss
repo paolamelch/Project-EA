@@ -448,40 +448,84 @@ a.nav-link {
 
 // Inizio Latest Update
 .latest-update-container {
+  width: 100%;
   .disableLatest {
     display: none !important;
   }
 
-  width: 98vw;
-  h3 {
-    font-size: 2rem;
-    font-weight: normal;
-  }
-
   h1 {
     text-align: center;
-    margin: 3rem 0;
+    margin: 5rem 0;
     font-weight: 900;
   }
 
-  .divisorSpanFra {
-    border-right: 0.5px solid gray;
-    margin-left: 2rem;
-  }
-  .containerLatestSub {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .buttonContainer {
-    display: flex;
-    justify-content: start;
-    gap: 2rem;
-    padding: 0.5rem;
-    transform: translateX(-6rem);
+    width:100%;
+    border-bottom: 2px solid lightgray;
   }
+  .buttonContainerFlex{
+    height:50px;
+    display: flex;
+    align-items: center;
+    width:70%;
+    padding : 0 0 0 9.5rem;
+    font-size:2rem;
 
+      .buttonBorder{
+        height: 50px;
+        &:hover{
+          background-color: #c2c2c2;
+        }
+        #eaNews{
+          height:40px;
+          padding: 5px 15px;
+          border-right: 2px solid lightgray;
+          cursor: pointer;
+        }
+        #eaPlay{
+          height:40px;
+          padding: 5px 15px;
+          border-right: 2px solid lightgray;
+          cursor: pointer;
+        }
+        #FIFA{
+          height:40px;
+          padding: 5px 15px;
+          border-right: 2px solid lightgray;
+          cursor: pointer;
+        }
+        #F1{
+          height:40px;
+          padding: 5px 15px;
+          border-right: 2px solid lightgray;
+          cursor: pointer;
+        }
+        #Madden{
+          height:40px;
+          padding: 5px 15px;
+          border-right: 2px solid lightgray;
+          cursor: pointer;
+        }
+        #Apex{
+          height:40px;
+          padding: 5px 15px;
+          border-right: 2px solid lightgray;
+          cursor: pointer;
+        }
+        #TheSims{
+          height:40px;
+          padding: 5px 15px;
+          border-right: 2px solid lightgray;
+          cursor: pointer;
+        }
+        #Battle{
+          height:40px;
+          padding: 5px 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  
   .borderLatest {
     border-bottom: solid 1px gray;
     width: 100vw;
@@ -497,7 +541,8 @@ a.nav-link {
     grid-template-columns: repeat(3, minmax(200px, 350px));
     gap: 3rem;
     margin-bottom: 3rem;
-    padding: 6rem 22rem;
+    padding: 6rem 0;
+    justify-content: center;
     .cardLatestUpdate {
       border: solid lightgray 0.2px;
       cursor: pointer;
@@ -506,6 +551,11 @@ a.nav-link {
         padding: 1rem;
       }
     }
+  }
+  .readMore{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
   }
   .cardLatestUpdate:hover {
     transform: translateY(-2rem);
@@ -759,6 +809,12 @@ a.nav-link {
             font-size: 1.7rem;
             margin: 1.2rem 1.2rem 1.2rem 0;
             line-height: 3rem;
+          }
+        }
+        .buttonMediaQueryContainer{
+          visibility: hidden;
+          .selectButtonMediaQuery{
+            visibility: hidden;
           }
         }
         .networkFooterSelect {
@@ -1266,7 +1322,7 @@ a.nav-link {
   position: fixed;
   top: -44rem;
   width: 100%;
-  height: 55vh;
+  height: 70vh;
   background-color: basic.$primary;
   z-index: 450;
   transition: all 0.3s ease-in-out;
