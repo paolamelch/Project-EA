@@ -182,6 +182,47 @@
     height: 60px;
     width: 31rem;
   }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer {
+    visibility: visible;
+    width: 85%;
+    height: 65px;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 50%;
+    height: 100%;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery1 {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: url(media/buttons/button-regional-pricing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 100%;
+    height: 100%;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery2 {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: url(media/buttons/button-nations-select.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal {
     width: 100%;
     height: 40%;
@@ -359,7 +400,6 @@
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks {
     width: 100%;
     height: 100%;
-    margin: 0 0 0 1.5rem;
   }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer {
     width: 100%;
@@ -396,6 +436,50 @@
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect .networkFooterSelect1 .selectButton1 {
     height: 60px;
     width: 31rem;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer {
+    visibility: visible;
+    width: 85%;
+    height: 150px;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 50%;
+    height: 100%;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery1 {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: url(media/buttons/button-regional-pricing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 100%;
+    height: 100%;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery2 {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: url(media/buttons/button-nations-select.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal {
     width: 100%;
@@ -1089,7 +1173,8 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .eaParagraph {
@@ -1751,7 +1836,7 @@ a.nav-link {
   position: fixed;
   top: -44rem;
   width: 100%;
-  height: 70vh;
+  height: 62vh;
   background-color: #161616;
   z-index: 450;
   transition: all 0.3s ease-in-out;
@@ -2009,6 +2094,7 @@ a.nav-link {
     transition: all 0.1s ease-in-out;
     margin-top: 1rem;
     font-weight: 550;
+    width: -moz-fit-content;
     width: fit-content;
     margin-left: 115px;
   }
@@ -2025,6 +2111,4 @@ a.nav-link {
     margin-top: 10px;
     transition: all 0.3s ease-in-out;
   }
-}
-
-/*# sourceMappingURL=electronicarts.css.map */
+}/*# sourceMappingURL=electronicarts.css.map */
