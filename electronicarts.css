@@ -904,7 +904,7 @@ a.nav-link {
 }
 .latest-update-container .containerCardLatest {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1150px;
   min-width: 830px;
   display: flex;
   flex-wrap: wrap;
@@ -1017,7 +1017,7 @@ a.nav-link {
     text-align: center;
   }
 }
-@media (max-width: 365px) {
+@media (max-width: 390px) {
   .latest-update-container {
     overflow: hidden;
   }
