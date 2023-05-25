@@ -832,7 +832,7 @@ a.nav-link {
 }
 .latest-update-container .buttonContainer {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1130px;
   align-self: center;
 }
 .latest-update-container .buttonContainerFlex {
@@ -904,11 +904,12 @@ a.nav-link {
   flex-direction: column;
 }
 .latest-update-container .containerCardLatest {
-  width: 90%;
-  max-width: 1100px;
-  min-width: 900px;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 830px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 4rem auto;
   gap: 3rem;
 }
@@ -988,20 +989,18 @@ a.nav-link {
     margin: 0.8rem 0;
   }
   .latest-update-container .buttonContainer {
-    width: 90%;
     max-width: 750px;
     align-self: center;
   }
   .latest-update-container .buttonContainerFlex {
-    height: 45px;
+    height: 40px;
     display: flex;
     width: 100%;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
   .latest-update-container .containerCardLatest {
-    width: 90%;
-    max-width: 750px;
+    width: 100%;
     min-width: 500px;
     margin: 4rem auto;
     gap: 2rem;
@@ -1017,6 +1016,38 @@ a.nav-link {
   .readMore {
     width: 100vw;
     text-align: center;
+  }
+}
+@media (max-width: 365px) {
+  .latest-update-container {
+    overflow: hidden;
+  }
+  .latest-update-container .buttonContainer {
+    overflow: scroll;
+  }
+  .latest-update-container .containerCardLatest {
+    width: 100%;
+    min-width: 360px;
+    margin: 4rem auto;
+    gap: 2rem;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate {
+    cursor: pointer;
+    flex-basis: calc(100% - 3rem);
+    height: 20rem;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate .latestUpdateImg {
+    display: none;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate .paddingLatest {
+    text-align: center;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate .paddingLatest h3 {
+    margin-top: 4rem;
+    font-weight: 600;
+  }
+  .latest-update-container .containerCardLatest .cardLatestUpdate .paddingLatest p {
+    display: none;
   }
 }
 .footerContainer {
