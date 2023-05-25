@@ -378,12 +378,12 @@
    
     <div class="container-main-tablet">
         <div class="hiding-nav-tablet" id="black-nav-tablet">
-            <button id="user-toggle1">
+            <button onclick="showDropdown()" id="user-toggle1">
                 <i class="fa-regular fa-user"></i>
             </button>
             <div class="user-dropdown-tablet">
                 <div class="bouncyX">
-                    <button id="profile-close1"><i class="fa-solid fa-x fa-bounce"></i></button>
+                    <button onclick="closeDropdown()" class="bouncyXButton"><i class="fa-solid fa-x fa-bounce"></i></button>
                 </div>
                 <div class="user-wrapper-tablet-container"> 
                     <div class="user-wrapper-tablet">
@@ -403,9 +403,49 @@
                 </div>
             </div>
 
-            <button id="faq-toggle1">
+            <button onclick="showDropdown1()" id="faq-toggle1">
                 <i class="fa-solid fa-question"></i>
             </button>
+            <div class="user-dropdown-tablet1">
+                <div class="bouncyX1">
+                    <button onclick="closeDropdown1()" class="bouncyXButton1"><i class="fa-solid fa-x fa-bounce"></i></button>
+                </div>
+                <div class="user-wrapper-tablet-container1"> 
+                    <h4>NEED HELP?</h4>
+                    <div class="user-wrapper-tablet1">
+                            <div class="faq-login">
+                                <a href="#">
+                                    <i id="eaLogo">EA</i>
+                                    <p>Verify my EA Login</p>
+                                </a>
+                                <div></div>
+                            </div>
+                            <div class="faq-link">
+                                <a href="#">
+                                    <i class="fa-solid fa-link"></i>
+                                    <p>Linking your platform accounts to <br> your EA Account</p>
+                                </a>
+                                
+                            </div>
+                            <div class="faq-redeem">
+                                <a href="#">
+                                    <i id="eaLogo">EA</i>
+                                    <p>How do I redeem a Code?</p>
+                                </a>
+                            </div>
+                            <div class="faq-problem">
+                                <a href="#">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <p>I can't play online!</p>
+                                </a>
+                            </div>
+                    </div>   
+                    <div class="faq-footer">
+                        <p>Can't find what you're loking for? Go to <span>EA Help</span>,
+                        <span>Answers HQ</span> or <span>EA Forums</span></p>
+                    </div>
+                </div>
+            </div>
 
             <button>
                 <i id="eaLogo">EA</i>

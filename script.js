@@ -21,7 +21,41 @@ profileClose.addEventListener("click", () => {
 // Fine UserBar Toggle
 
 // Inizio UserBar Toggle Tablet
-let userToggle1 = document.getElementById("user-toggle1");
+let userToggle1 = document.querySelector("#user-toggle1");
+let dropdownTablet = document.querySelector(".user-dropdown-tablet")
+let dropdownTabletClose = document.querySelector(".bouncyXButton");
+
+function showDropdown(){
+  userToggle1.addEventListener("click", () => {
+    dropdownTablet.style.top = "28px";
+    document.documentElement.style.overflow = "hidden";
+  });
+}
+
+function closeDropdown(){
+  dropdownTabletClose.addEventListener('click',() => {
+    dropdownTablet.style.top = "-400px";
+    document.documentElement.style.overflow = "scroll";
+  })
+}
+
+let faqToggle1 = document.querySelector("#faq-toggle1");
+let dropdownTablet1 = document.querySelector(".user-dropdown-tablet1")
+let dropdownTabletClose1 = document.querySelector(".bouncyXButton1");
+
+function showDropdown1(){
+  faqToggle1.addEventListener("click", () => {
+    dropdownTablet1.style.top = "28px";
+    document.documentElement.style.overflow = "hidden";
+  });
+}
+
+function closeDropdown1(){
+  dropdownTabletClose1.addEventListener('click',() => {
+    dropdownTablet1.style.top = "-400px";
+    document.documentElement.style.overflow = "scroll";
+  })
+}
 
 
 // Fine UserBar Toggle Tablet
