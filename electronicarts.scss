@@ -1,7 +1,6 @@
 @use "base-module.scss" as basic;
 @import "media-queries-Paola";
 
-
 @font-face {
   font-family: "EaFont";
   src: url("EaFont.ttf") format("truetype");
@@ -460,72 +459,72 @@ a.nav-link {
   }
 
   .buttonContainer {
-    width:100%;
+    width: 100%;
     border-bottom: 2px solid lightgray;
   }
-  .buttonContainerFlex{
-    height:50px;
+  .buttonContainerFlex {
+    height: 50px;
     display: flex;
     align-items: center;
-    width:70%;
-    padding : 0 0 0 9.5rem;
-    font-size:2rem;
+    width: 70%;
+    padding: 0 0 0 9.5rem;
+    font-size: 2rem;
 
-      .buttonBorder{
-        height: 50px;
-        &:hover{
-          background-color: #c2c2c2;
-        }
-        #eaNews{
-          height:40px;
-          padding: 5px 15px;
-          border-right: 2px solid lightgray;
-          cursor: pointer;
-        }
-        #eaPlay{
-          height:40px;
-          padding: 5px 15px;
-          border-right: 2px solid lightgray;
-          cursor: pointer;
-        }
-        #FIFA{
-          height:40px;
-          padding: 5px 15px;
-          border-right: 2px solid lightgray;
-          cursor: pointer;
-        }
-        #F1{
-          height:40px;
-          padding: 5px 15px;
-          border-right: 2px solid lightgray;
-          cursor: pointer;
-        }
-        #Madden{
-          height:40px;
-          padding: 5px 15px;
-          border-right: 2px solid lightgray;
-          cursor: pointer;
-        }
-        #Apex{
-          height:40px;
-          padding: 5px 15px;
-          border-right: 2px solid lightgray;
-          cursor: pointer;
-        }
-        #TheSims{
-          height:40px;
-          padding: 5px 15px;
-          border-right: 2px solid lightgray;
-          cursor: pointer;
-        }
-        #Battle{
-          height:40px;
-          padding: 5px 15px;
-          cursor: pointer;
-        }
+    .buttonBorder {
+      height: 50px;
+      &:hover {
+        background-color: #c2c2c2;
+      }
+      #eaNews {
+        height: 40px;
+        padding: 5px 15px;
+        border-right: 2px solid lightgray;
+        cursor: pointer;
+      }
+      #eaPlay {
+        height: 40px;
+        padding: 5px 15px;
+        border-right: 2px solid lightgray;
+        cursor: pointer;
+      }
+      #FIFA {
+        height: 40px;
+        padding: 5px 15px;
+        border-right: 2px solid lightgray;
+        cursor: pointer;
+      }
+      #F1 {
+        height: 40px;
+        padding: 5px 15px;
+        border-right: 2px solid lightgray;
+        cursor: pointer;
+      }
+      #Madden {
+        height: 40px;
+        padding: 5px 15px;
+        border-right: 2px solid lightgray;
+        cursor: pointer;
+      }
+      #Apex {
+        height: 40px;
+        padding: 5px 15px;
+        border-right: 2px solid lightgray;
+        cursor: pointer;
+      }
+      #TheSims {
+        height: 40px;
+        padding: 5px 15px;
+        border-right: 2px solid lightgray;
+        cursor: pointer;
+      }
+      #Battle {
+        height: 40px;
+        padding: 5px 15px;
+        cursor: pointer;
       }
     }
-  
+  }
+
   .borderLatest {
     border-bottom: solid 1px gray;
     width: 100vw;
@@ -552,7 +551,7 @@ a.nav-link {
       }
     }
   }
-  .readMore{
+  .readMore {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
@@ -811,9 +810,9 @@ a.nav-link {
             line-height: 3rem;
           }
         }
-        .buttonMediaQueryContainer{
+        .buttonMediaQueryContainer {
           visibility: hidden;
-          .selectButtonMediaQuery{
+          .selectButtonMediaQuery {
             visibility: hidden;
           }
         }
@@ -1593,7 +1592,62 @@ a.nav-link {
         background-size: 130%;
         background-image: url(mainlogo.jpg);
       }
+
+      .left-side-tablet {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        h1 {
+          color: #161616;
+          font-size: 4rem;
+          font-weight: 900;
+          padding: 0 5rem;
+          text-align: center;
+        }
+
+        h3 {
+          color: #161616;
+          text-align: center;
+          font-weight: 400;
+          padding: 0 2rem;
+          // word-spacing: 0.2rem;
+        }
+
+        button {
+          background: white;
+          border-radius: 3px;
+          border: none;
+          outline: 2px solid white;
+          font-size: 1.6rem;
+          padding: 1.5rem 2.5rem;
+          transition: all 0.1s ease-in-out;
+          margin-top: 1rem;
+          font-weight: 550;
+          width: fit-content;
+          margin-left: 115px;
+
+          &:hover {
+            outline: 6px solid white;
+          }
+        }
+      }
     }
     // FINE MEDIA QUERY HEADER TABLET
+
+    .tab-side-div {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      text-decoration: none;
+
+      i {
+        margin-top: 10px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 }

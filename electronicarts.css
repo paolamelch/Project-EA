@@ -136,135 +136,90 @@
     display: flex;
     flex-direction: column;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLogo
-    img {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLogo img {
     width: 50px;
     height: 50px;
     margin: 0 0 10px 10px;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks {
     width: 100%;
     height: 100%;
     margin: 0 0 0 1.5rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLinksContainer {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLinksContainer
-    .networkFooterList {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer .networkFooterList {
     margin-bottom: 7px;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLinksContainer
-    .networkFooterList
-    a {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer .networkFooterList a {
     text-decoration: none;
     color: black;
     font-size: 1.7rem;
     margin: 1rem 1rem 1rem 0;
     line-height: 3rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     gap: 4rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect
-    .networkFooterSelect1 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect .networkFooterSelect1 {
     width: auto;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect
-    .networkFooterSelect1
-    .selectButton {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect .networkFooterSelect1 .selectButton {
     display: none;
     height: 60px;
     width: 31rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect
-    .networkFooterSelect1
-    .selectButton1 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect .networkFooterSelect1 .selectButton1 {
     display: none;
     height: 60px;
     width: 31rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .selectButtonMediaQuery {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer {
+    visibility: visible;
+    width: 85%;
+    height: 65px;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery {
     visibility: visible;
     width: 100%;
     height: 100%;
-    border: none;
-    border-radius: 1px;
-    font-size: 1.3rem;
-    text-align: left;
-    outline: 2px solid #c2c2c2;
-    padding: 0 1.2rem;
-    transition: all 0.1s ease-in-out;
+    display: flex;
+    gap: 3rem;
+    padding: 0;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .selectButtonMediaQuery:hover {
-    outline-offset: 2px;
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 50%;
+    height: 100%;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery1 {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    background: url(media/buttons/button-regional-pricing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 100%;
+    height: 100%;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery2 {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    background: url(media/buttons/button-nations-select.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal {
     width: 100%;
     height: 40%;
     margin-top: 1rem;
@@ -272,58 +227,25 @@
     flex-direction: column;
     gap: 0;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalList {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalList {
     width: 75%;
     height: auto;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalList
-    a {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalList a {
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
     margin: 1rem 1rem 1rem 0;
     line-height: 1.7rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalList
-    .networkFooterCopyright {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalList .networkFooterCopyright {
     margin: 1rem 1rem 1rem 0;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalImg {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalImg {
     width: 100%;
     height: auto;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalImg
-    img {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalImg img {
     float: none;
     padding-top: 0;
   }
@@ -466,110 +388,93 @@
     display: flex;
     flex-direction: column;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLogo
-    img {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLogo img {
     width: 50px;
     height: 50px;
     margin: 0 0 10px 10px;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks {
     width: 100%;
     height: 100%;
     margin: 0 0 0 1.5rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLinksContainer {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLinksContainer
-    .networkFooterList {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer .networkFooterList {
     width: 300px;
     margin-bottom: 7px;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLinksContainer
-    .networkFooterList
-    a {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer .networkFooterList a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     margin: 0 27px 0 0;
     line-height: 4rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     gap: 30px;
     flex-direction: column;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect
-    .networkFooterSelect1 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect .networkFooterSelect1 {
     width: auto;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect
-    .networkFooterSelect1
-    .selectButton {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect .networkFooterSelect1 .selectButton {
     height: 60px;
     width: 31rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterSelect
-    .networkFooterSelect1
-    .selectButton1 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterSelect .networkFooterSelect1 .selectButton1 {
     height: 60px;
     width: 31rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer {
+    visibility: visible;
+    width: 85%;
+    height: 150px;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 50%;
+    height: 100%;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery1 {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    background: url(media/buttons/button-regional-pricing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+    width: 100%;
+    height: 100%;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery2 {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    background: url(media/buttons/button-nations-select.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal {
     width: 100%;
     height: 40%;
     margin-top: 1rem;
@@ -577,59 +482,26 @@
     flex-direction: column;
     gap: 0;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalList {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalList {
     width: 80%;
     height: auto;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalList
-    a {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalList a {
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
     margin: 0 3rem 0 0;
     line-height: 3rem;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalList
-    .networkFooterCopyright {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalList .networkFooterCopyright {
     margin: 1rem 1rem 1rem 0;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalImg {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalImg {
     width: 100%;
     height: auto;
     margin-top: 10px;
   }
-  .footerContainer
-    .section2
-    .networkFooter
-    .networkFooterContainer
-    .networkFooterLinks
-    .networkFooterLegal
-    .networkFooterLegalImg
-    img {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal .networkFooterLegalImg img {
     float: none;
     padding-top: 0;
   }
@@ -685,11 +557,7 @@ body {
 .dropdown-menu.first-dropdown .container-drop .left-side-drop ul li {
   margin: 0 0 1rem 0;
 }
-.dropdown-menu.first-dropdown
-  .container-drop
-  .left-side-drop
-  ul
-  li:first-of-type {
+.dropdown-menu.first-dropdown .container-drop .left-side-drop ul li:first-of-type {
   margin-top: 2rem;
 }
 .dropdown-menu.first-dropdown .container-drop .right-side-drop {
@@ -708,11 +576,7 @@ body {
 .dropdown-menu.first-dropdown .container-drop .right-side-drop ul li {
   margin: 0 0 1rem 0;
 }
-.dropdown-menu.first-dropdown
-  .container-drop
-  .right-side-drop
-  ul
-  li:first-of-type {
+.dropdown-menu.first-dropdown .container-drop .right-side-drop ul li:first-of-type {
   margin-top: 2rem;
 }
 
@@ -849,60 +713,31 @@ a.nav-link {
   background: url("media/square1.png");
   background-repeat: no-repeat;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--one
-  .square-logos-container {
+.featured-games-container .featured-grid .featured-square--one .square-logos-container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--one
-  .square-logos-container:hover {
-  background: linear-gradient(
-    to right,
-    rgba(15, 0, 125, 0.7),
-    rgba(255, 71, 71, 0.7)
-  );
+.featured-games-container .featured-grid .featured-square--one .square-logos-container:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--one
-  .square-logos-container
-  .translateContainer {
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer {
   width: 50%;
   height: 40%;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--one
-  .square-logos-container
-  .translateContainer
-  a {
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer a {
   text-decoration: none;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--one
-  .square-logos-container
-  .translateContainer
-  a
-  p {
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .translateContainer a p {
   visibility: hidden;
   color: white;
   font-size: 1.5rem;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--one
-  .square-logos-container
-  .square-logos {
+.featured-games-container .featured-grid .featured-square--one .square-logos-container .square-logos {
   width: 50%;
   height: 50%;
 }
@@ -910,43 +745,22 @@ a.nav-link {
   background: url("media/square2.png");
   background-repeat: no-repeat;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--two
-  .square-logos-container1 {
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--two
-  .square-logos-container1:hover {
-  background: linear-gradient(
-    to right,
-    rgba(15, 0, 125, 0.7),
-    rgba(255, 71, 71, 0.7)
-  );
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--two
-  .square-logos-container1
-  .translateContainer1
-  a {
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1 .translateContainer1 a {
   text-decoration: none;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--two
-  .square-logos-container1
-  .translateContainer1
-  a
-  p {
+.featured-games-container .featured-grid .featured-square--two .square-logos-container1 .translateContainer1 a p {
   visibility: hidden;
   color: white;
 }
@@ -958,43 +772,22 @@ a.nav-link {
   background: url("media/square3.png");
   background-repeat: no-repeat;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--three
-  .square-logos-container2 {
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--three
-  .square-logos-container2:hover {
-  background: linear-gradient(
-    to right,
-    rgba(15, 0, 125, 0.7),
-    rgba(255, 71, 71, 0.7)
-  );
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--three
-  .square-logos-container2
-  .translateContainer2
-  a {
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2 .translateContainer2 a {
   text-decoration: none;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--three
-  .square-logos-container2
-  .translateContainer2
-  a
-  p {
+.featured-games-container .featured-grid .featured-square--three .square-logos-container2 .translateContainer2 a p {
   visibility: hidden;
   color: white;
 }
@@ -1006,43 +799,22 @@ a.nav-link {
   background: url("media/square4.png");
   background-repeat: no-repeat;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--four
-  .square-logos-container3 {
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--four
-  .square-logos-container3:hover {
-  background: linear-gradient(
-    to right,
-    rgba(15, 0, 125, 0.7),
-    rgba(255, 71, 71, 0.7)
-  );
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--four
-  .square-logos-container3
-  .translateContainer3
-  a {
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3 .translateContainer3 a {
   text-decoration: none;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--four
-  .square-logos-container3
-  .translateContainer3
-  a
-  p {
+.featured-games-container .featured-grid .featured-square--four .square-logos-container3 .translateContainer3 a p {
   visibility: hidden;
   color: white;
 }
@@ -1055,43 +827,22 @@ a.nav-link {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--five
-  .square-logos-container4 {
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--five
-  .square-logos-container4:hover {
-  background: linear-gradient(
-    to right,
-    rgba(15, 0, 125, 0.7),
-    rgba(255, 71, 71, 0.7)
-  );
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--five
-  .square-logos-container4
-  .translateContainer4
-  a {
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4 .translateContainer4 a {
   text-decoration: none;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--five
-  .square-logos-container4
-  .translateContainer4
-  a
-  p {
+.featured-games-container .featured-grid .featured-square--five .square-logos-container4 .translateContainer4 a p {
   visibility: hidden;
   color: white;
 }
@@ -1105,43 +856,22 @@ a.nav-link {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--six
-  .square-logos-container5 {
+.featured-games-container .featured-grid .featured-square--six .square-logos-container5 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--six
-  .square-logos-container5:hover {
-  background: linear-gradient(
-    to right,
-    rgba(15, 0, 125, 0.7),
-    rgba(255, 71, 71, 0.7)
-  );
+.featured-games-container .featured-grid .featured-square--six .square-logos-container5:hover {
+  background: linear-gradient(to right, rgba(15, 0, 125, 0.7), rgba(255, 71, 71, 0.7));
   background-size: cover;
   cursor: pointer;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--six
-  .square-logos-container5
-  .translateContainer5
-  a {
+.featured-games-container .featured-grid .featured-square--six .square-logos-container5 .translateContainer5 a {
   text-decoration: none;
 }
-.featured-games-container
-  .featured-grid
-  .featured-square--six
-  .square-logos-container5
-  .translateContainer5
-  a
-  p {
+.featured-games-container .featured-grid .featured-square--six .square-logos-container5 .translateContainer5 a p {
   visibility: hidden;
   color: white;
 }
@@ -1330,7 +1060,6 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  -o-object-fit: fill;
   object-fit: fill;
 }
 
@@ -1504,77 +1233,37 @@ a.nav-link {
   display: flex;
   gap: 1rem;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterList {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterList {
   flex: 2;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterList
-  a {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterList a {
   text-decoration: none;
   color: black;
   font-size: 1.7rem;
   margin: 1.2rem 1.2rem 1.2rem 0;
   line-height: 3rem;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .buttonMediaQueryContainer {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .buttonMediaQueryContainer {
   visibility: hidden;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .buttonMediaQueryContainer
-  .selectButtonMediaQuery {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .buttonMediaQueryContainer .selectButtonMediaQuery {
   visibility: hidden;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect {
   width: 100%;
   flex: 2;
   display: flex;
   justify-content: flex-end;
   gap: 4rem;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1 {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 {
   width: auto;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1 {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 {
   height: 60px;
   width: 150px;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1 {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 {
   width: 100%;
   height: 100%;
   border: none;
@@ -1586,37 +1275,14 @@ a.nav-link {
   transition: all 0.1s ease-in-out;
   position: relative;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1:hover {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1:hover {
   outline-offset: 2px;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1
-  .priceAndLanguage {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .priceAndLanguage {
   width: 100%;
   color: rgb(125, 125, 125);
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1
-  .nationsSelect1 {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 {
   border: 2px solid #c2c2c2;
   width: 600px;
   height: 400px;
@@ -1628,97 +1294,33 @@ a.nav-link {
   display: flex;
   flex-direction: column wrap;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1
-  .nationsSelect1
-  .nationsColumn1 {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 {
   height: 100%;
   padding: 0 1.5rem;
   flex: 1;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1
-  .nationsSelect1
-  .nationsColumn1
-  .firstColumn1 {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1 {
   height: 11.1%;
   border-bottom: 1px solid #dddcdc;
   align-items: center;
   display: flex;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1
-  .nationsSelect1
-  .nationsColumn1
-  .firstColumn1:hover {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1:hover {
   transform: translateX(0.7rem);
   transition: all 0.2s ease-in-out;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1
-  .nationsSelect1
-  .nationsColumn1
-  .firstColumn1
-  .nationsName1 {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1 .nationsName1 {
   padding-left: 1rem;
   flex: 8;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton1
-  .selectRegion1
-  .nationsSelect1
-  .nationsColumn1
-  .firstColumn1
-  .flagSpan {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton1 .selectRegion1 .nationsSelect1 .nationsColumn1 .firstColumn1 .flagSpan {
   flex: 1;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton {
   height: 60px;
   width: 150px;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion {
   width: 100%;
   height: 100%;
   border: none;
@@ -1730,25 +1332,10 @@ a.nav-link {
   transition: all 0.1s ease-in-out;
   position: relative;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion:hover {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion:hover {
   outline-offset: 2px;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .nationsSelect {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect {
   border: 2px solid #c2c2c2;
   width: 600px;
   height: 400px;
@@ -1760,100 +1347,33 @@ a.nav-link {
   display: flex;
   flex-direction: column wrap;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .nationsSelect
-  .nationsColumn {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn {
   height: 100%;
   padding: 0 1.5rem;
   flex: 1;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .nationsSelect
-  .nationsColumn
-  .firstColumn {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn {
   height: 11.1%;
   border-bottom: 1px solid #dddcdc;
   align-items: center;
   display: flex;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .nationsSelect
-  .nationsColumn
-  .firstColumn:hover {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn:hover {
   transform: translateX(0.7rem);
   transition: all 0.2s ease-in-out;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .nationsSelect
-  .nationsColumn
-  .firstColumn
-  .nationsName {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn .nationsName {
   padding-left: 1rem;
   flex: 8;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .nationsSelect
-  .nationsColumn
-  .firstColumn
-  .checkSpan {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .nationsSelect .nationsColumn .firstColumn .checkSpan {
   flex: 1;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .priceAndLanguage {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .priceAndLanguage {
   width: 100%;
   color: rgb(125, 125, 125);
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLinksContainer
-  .networkFooterSelect
-  .networkFooterSelect1
-  .selectButton
-  .selectRegion
-  .selectNation {
+.section2 .networkFooter .networkFooterLinks .networkFooterLinksContainer .networkFooterSelect .networkFooterSelect1 .selectButton .selectRegion .selectNation {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1866,50 +1386,27 @@ a.nav-link {
   display: flex;
   gap: 15rem;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLegal
-  .networkFooterLegalList {
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalList {
   width: 100%;
   flex: 4;
   height: auto;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLegal
-  .networkFooterLegalList
-  a {
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalList a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
   margin: 1rem 1rem 1rem 0;
   line-height: 1.7rem;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLegal
-  .networkFooterLegalList
-  .networkFooterCopyright {
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalList .networkFooterCopyright {
   margin: 1rem 1rem 1rem 0;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLegal
-  .networkFooterLegalImg {
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalImg {
   width: 100%;
   height: auto;
   flex: 2;
 }
-.section2
-  .networkFooter
-  .networkFooterLinks
-  .networkFooterLegal
-  .networkFooterLegalImg
-  img {
+.section2 .networkFooter .networkFooterLinks .networkFooterLegal .networkFooterLegalImg img {
   float: right;
   padding-top: 2.5rem;
 }
@@ -2451,6 +1948,53 @@ a.nav-link {
     background-repeat: no-repeat;
     background-size: 130%;
     background-image: url(mainlogo.jpg);
+  }
+  * .container-main-tablet .left-side-tablet {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  * .container-main-tablet .left-side-tablet h1 {
+    color: #161616;
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 0 5rem;
+    text-align: center;
+  }
+  * .container-main-tablet .left-side-tablet h3 {
+    color: #161616;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 2rem;
+  }
+  * .container-main-tablet .left-side-tablet button {
+    background: white;
+    border-radius: 3px;
+    border: none;
+    outline: 2px solid white;
+    font-size: 1.6rem;
+    padding: 1.5rem 2.5rem;
+    transition: all 0.1s ease-in-out;
+    margin-top: 1rem;
+    font-weight: 550;
+    width: fit-content;
+    margin-left: 115px;
+  }
+  * .container-main-tablet .left-side-tablet button:hover {
+    outline: 6px solid white;
+  }
+  * .tab-side-div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+  }
+  * .tab-side-div i {
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
   }
 }
 
