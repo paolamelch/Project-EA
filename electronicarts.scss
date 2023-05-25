@@ -1502,7 +1502,9 @@ a.nav-link {
 
     .separate-border {
       border-top: 1px solid #dddcdc;
-    }
+    }  
+    
+    
 
     // TABLET SIDEBAR
 
@@ -1552,7 +1554,6 @@ a.nav-link {
       visibility: visible;
 
       .hiding-nav-tablet {
-        // position: fixed;
         display: flex;
         width: 100%;
         height: 3.5vh;
@@ -1561,11 +1562,63 @@ a.nav-link {
         gap: 4.5rem;
         color: #a3a3a3;
         padding-right: 3rem;
+        
+        #user-toggle1{
+          position:relative;
+        }
+
+        .user-dropdown-tablet{
+          position: absolute;
+          visibility: hidden;
+          top:0px;
+          width:820px;
+          height:400px;
+          background-color: basic.$primary;
+          left:0;
+          .bouncyX{
+            height: 50px;
+            padding: 20px 50px 0 0;
+          }
+          .user-wrapper-tablet-container{
+            height: 350px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .user-wrapper-tablet{
+              height:150px;
+              width:100%;
+              margin-left:100px;
+              display:flex;
+              justify-content: flex-start;
+              .user1{
+                width:100%;
+                height:100%;
+                display:flex;
+                align-items: center;
+                gap:10px;
+                button{
+                  width:36px;
+                  height:36px;
+                  background-color: white;
+                  border-radius:7px;
+                }
+                h5{
+                }
+              }
+            }
+          }
+        }
+        
+
+        #faq-toggle1{
+          position: relative;
+        }
 
         button {
           background: none;
           border: none;
           font-size: larger;
+          float: right;
         }
       }
 

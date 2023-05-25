@@ -20,6 +20,12 @@ profileClose.addEventListener("click", () => {
 
 // Fine UserBar Toggle
 
+// Inizio UserBar Toggle Tablet
+let userToggle1 = document.getElementById("user-toggle1");
+
+
+// Fine UserBar Toggle Tablet
+
 // Sidebar Toggle
 sideToggle.addEventListener("click", () => {
   console.log("click");
