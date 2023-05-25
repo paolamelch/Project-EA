@@ -105,6 +105,62 @@ closeTabletSidebar.addEventListener("click", () => {
   document.body.scroll = "yes";
 });
 
+let rotateSideArrow = document.getElementById("button1");
+let rotateSideArrow2 = document.getElementById("button2");
+let rotateSideArrow3 = document.getElementById("button3");
+let rotateSideArrow4 = document.getElementById("button4");
+let rotateSideArrow5 = document.getElementById("button5");
+
+let arrow1 = document.getElementById("arrow1");
+rotateSideArrow.addEventListener("click", () => {
+  console.log("click");
+  if (arrow1.style.transform === "rotate(180deg)") {
+    arrow1.style.transform = "rotate(0deg)";
+  } else {
+    arrow1.style.transform = "rotate(180deg)";
+  }
+});
+
+let arrow2 = document.getElementById("arrow2");
+rotateSideArrow2.addEventListener("click", () => {
+  console.log("click");
+  if (arrow2.style.transform === "rotate(180deg)") {
+    arrow2.style.transform = "rotate(0deg)";
+  } else {
+    arrow2.style.transform = "rotate(180deg)";
+  }
+});
+
+let arrow3 = document.getElementById("arrow3");
+rotateSideArrow3.addEventListener("click", () => {
+  console.log("click");
+  if (arrow3.style.transform === "rotate(180deg)") {
+    arrow3.style.transform = "rotate(0deg)";
+  } else {
+    arrow3.style.transform = "rotate(180deg)";
+  }
+});
+
+let arrow4 = document.getElementById("arrow4");
+rotateSideArrow4.addEventListener("click", () => {
+  console.log("click");
+  if (arrow4.style.transform === "rotate(180deg)") {
+    arrow4.style.transform = "rotate(0deg)";
+  } else {
+    arrow4.style.transform = "rotate(180deg)";
+  }
+});
+
+let arrow5 = document.getElementById("arrow5");
+rotateSideArrow5.addEventListener("click", () => {
+  console.log("click");
+  if (arrow5.style.transform === "rotate(180deg)") {
+    arrow5.style.transform = "rotate(0deg)";
+  } else {
+    arrow5.style.transform = "rotate(180deg)";
+  }
+});
+
 // FINE TABLET SIDEBAR
 // Navbar
 var prevScrollpos = window.pageYOffset;
@@ -137,3 +193,30 @@ faqClose.addEventListener("click", () => {
   document.documentElement.style.overflow = "scroll";
 });
 // Fine FAQ Wrapper
+
+// mobile sidebar
+
+let mobileSideToggle = document.getElementById("mobile-nav-toggle");
+
+mobileSideToggle.addEventListener("click", () => {
+  tabletSidebar.style.left = "0";
+  sidebarOverlay.style.display = "block";
+  sidebarOverlay.style.visibility = "visible";
+  document.documentElement.style.overflow = "hidden";
+  document.body.scroll = "no";
+});
+
+// Navbar mobile
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar2").style.top = "36px";
+  } else {
+    document.getElementById("navbar").style.top = "-20px";
+    document.getElementById("navbar2").style.top = "0";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+// Fine Navbar mobile
