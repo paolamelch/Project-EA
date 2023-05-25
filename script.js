@@ -165,3 +165,18 @@ mobileSideToggle.addEventListener("click", () => {
   document.documentElement.style.overflow = "hidden";
   document.body.scroll = "no";
 });
+
+// Navbar mobile
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar2").style.top = "36px";
+  } else {
+    document.getElementById("navbar").style.top = "-20px";
+    document.getElementById("navbar2").style.top = "0";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+// Fine Navbar mobile
