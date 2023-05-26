@@ -2091,8 +2091,11 @@ a.nav-link {
     display: none;
     visibility: hidden;
   }
+  * #profile-wrapper .user-profile-tags {
+    padding: 0;
+  }
   * #faq-wrapper {
-    height: 30vh;
+    height: 34vh;
     top: -44rem;
   }
   * #faq-wrapper .faq-icons {
