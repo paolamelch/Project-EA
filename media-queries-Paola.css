@@ -199,29 +199,56 @@
     width: 50%;
     height: 100%;
   }
-  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery1 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .regionalPricingQueryContainer {
     width: 100%;
-    height: 100%;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: url(media/buttons/button-regional-pricing.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 65px;
+    padding: 0 15px;
+    background-color: rgb(242, 241, 241);
+    border: 2px solid #c2c2c2;
+    display: flex;
+    flex-direction: column;
   }
-  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .regionalPricingQueryContainer .regionalPricing1 {
+    flex: 10;
+    padding: 5px 0 0 3px;
+    color: #a3a3a3;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .regionalPricingQueryContainer .selectMediaQuery1 {
     width: 100%;
+    height: 100%;
+    border: none;
+    flex: 6;
+    background-color: rgb(242, 241, 241);
+    padding: 0 0px 10px 0;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery2 {
+    width: 50%;
     height: 100%;
   }
-  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery2 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery2 .regionalPricingQueryContainer1 {
+    width: 100%;
+    height: 65px;
+    padding: 0 15px;
+    background-color: rgb(242, 241, 241);
+    border: 1px solid #c2c2c2;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery2 .regionalPricingQueryContainer1 .regionalPricing2 {
+    flex: 10;
+    padding: 5px 0 0 3px;
+    color: #a3a3a3;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery2 .regionalPricingQueryContainer1 .image-flex {
+    display: flex;
+  }
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery2 .regionalPricingQueryContainer1 .image-flex .selectMediaQuery2 {
     width: 100%;
     height: 100%;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: url(media/buttons/button-nations-select.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    border: none;
+    flex: 6;
+    background-color: rgb(242, 241, 241);
+    padding: 0 0px 10px 0;
   }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal {
     width: 100%;
@@ -452,34 +479,14 @@
     padding: 0;
   }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
-    width: 50%;
-    height: 100%;
-  }
-  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery1 {
     width: 100%;
-    height: 100%;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: url(media/buttons/button-regional-pricing.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: white;
+    border: 1px solid #a3a3a3;
   }
-  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 {
+  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery2 {
     width: 100%;
-    height: 100%;
-  }
-  .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .buttonMediaQueryContainer .selectButtonMediaQuery .buttonMediaQuery1 .selectMediaQuery2 {
-    width: 100%;
-    height: 100%;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: url(media/buttons/button-nations-select.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: white;
+    border: 1px solid #a3a3a3;
   }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLegal {
     width: 100%;
