@@ -64,6 +64,9 @@ let closeTabletSidebar = document.getElementById("tablet-nav-close");
 
 openTabletSidebar.addEventListener("click", () => {
   tabletSidebar.style.left = "0";
+  tabletSidebar.style.top = "4rem";
+  hidingNavTablet.style.top = "0";
+  mainNavTablet.style.top = "38px";
   sidebarOverlay.style.display = "block";
   sidebarOverlay.style.visibility = "visible";
   document.documentElement.style.overflow = "hidden";
@@ -72,7 +75,10 @@ openTabletSidebar.addEventListener("click", () => {
 
 closeTabletSidebar.addEventListener("click", () => {
   tabletSidebar.style.left = "-41rem";
+  tabletSidebar.style.top = "0";
   sidebarOverlay.style.display = "none";
+  mainNavTablet.style.top = " -5px";
+  hidingNavTablet.style.top = "-38px";
   sidebarOverlay.style.visibility = "hidden";
   document.documentElement.style.overflow = "scroll";
   document.body.scroll = "yes";

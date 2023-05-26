@@ -2121,7 +2121,7 @@ a.nav-link {
     margin-right: 2rem;
   }
   * #sidebar-overlay {
-    top: 40px;
+    top: 38px;
   }
   * #tablet-nav-close {
     border: none;
@@ -2130,7 +2130,6 @@ a.nav-link {
   * #tablet-sidebar {
     display: block;
     visibility: visible;
-    top: 4rem;
   }
   * .tablet-sidebar {
     height: 100%;
