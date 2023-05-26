@@ -1611,12 +1611,17 @@ a.nav-link {
 
     #faq-wrapper {
       height: 30vh;
-      top: 0;
+      top: -44rem;
+
+      .faq-icons {
+        gap: 0rem;
+        padding: 0rem;
+      }
     }
 
     #profile-wrapper {
       top: -44rem;
-      height: 35vh;
+      height: 30vh;
     }
 
     .myborder {

@@ -21,7 +21,7 @@ userToggle.addEventListener("click", () => {
 });
 
 userToggleTablet.addEventListener("click", () => {
-  profileWrapper.style.top = "0";
+  profileWrapper.style.top = "3rem";
   document.documentElement.style.overflow = "hidden";
 });
 
@@ -154,8 +154,14 @@ window.onscroll = function () {
 let faqWrapper = document.getElementById("faq-wrapper");
 let faqClose = document.getElementById("faq-close");
 let faqToggle = document.getElementById("faq-toggle");
+let faqToggleTablet = document.getElementById("faq-toggle-tablet");
 
 faqToggle.addEventListener("click", () => {
+  faqWrapper.style.top = "30px";
+  document.documentElement.style.overflow = "hidden";
+});
+
+faqToggleTablet.addEventListener("click", () => {
   faqWrapper.style.top = "30px";
   document.documentElement.style.overflow = "hidden";
 });
