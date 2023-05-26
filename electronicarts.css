@@ -814,12 +814,23 @@ a.nav-link {
   display: flex;
   flex-direction: column;
 }
+.latest-update-container .buttonContainerSroll {
+  display: flex;
+}
+.latest-update-container .scrollDivL {
+  align-self: center;
+}
+.latest-update-container .svgFra {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
 .latest-update-container .disableLatest {
   display: none !important;
 }
 .latest-update-container .activeLatest {
   background-color: #b9b3b3;
-  border-bottom: red 2px solid;
+  border-bottom: red 4px solid;
 }
 .latest-update-container h1 {
   text-align: center;
@@ -837,7 +848,6 @@ a.nav-link {
 .latest-update-container .buttonContainerFlex {
   height: 50px;
   display: flex;
-  width: 100%;
   min-width: 900px;
   font-size: 2rem;
 }
@@ -917,6 +927,7 @@ a.nav-link {
   box-shadow: 2px 2px 6px;
   width: 30%;
   max-height: 45rem;
+  background-color: white;
   cursor: pointer;
   flex-basis: calc(33% - 3rem);
 }
@@ -994,7 +1005,6 @@ a.nav-link {
   .latest-update-container .buttonContainerFlex {
     height: 40px;
     display: flex;
-    width: 100%;
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -1005,7 +1015,7 @@ a.nav-link {
     gap: 2rem;
   }
   .latest-update-container .containerCardLatest .cardLatestUpdate {
-    border: solid lightgray 0.2px;
+    border: solid rgb(204, 196, 196) 0.2px;
     box-shadow: 2px 2px 6px;
     width: 20%;
     max-height: 45rem;
@@ -1021,9 +1031,29 @@ a.nav-link {
   .latest-update-container {
     overflow: hidden;
   }
+  .latest-update-container .activeLatest {
+    background-color: #b9b3b3;
+    border-bottom: red 12px solid;
+  }
+  .latest-update-container .scrollRight {
+    display: block !important;
+  }
   .latest-update-container .buttonContainer {
-    overflow: scroll;
-    padding: 0.5rem;
+    overflow-y: hidden;
+  }
+  .latest-update-container #hiddenButtonLatest {
+    width: 350px !important;
+    overflow-x: hidden;
+    background-color: red;
+  }
+  .latest-update-container .buttonContainerFlex {
+    overflow-x: scroll;
+    height: 40px;
+    overflow-y: hidden;
+  }
+  .latest-update-container .spazioHr {
+    position: relative;
+    top: -8px;
   }
   .latest-update-container .containerCardLatest {
     width: 100%;

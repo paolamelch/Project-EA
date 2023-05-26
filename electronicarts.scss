@@ -425,6 +425,9 @@ a.nav-link {
 
 // Inizio Latest Update
 .latest-update-container {
+    .buttonContainerSroll{display: flex;}
+    .scrollDivL{align-self: center;}
+    .svgFra{width: 24px;height: 24px; display: none;}
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -433,7 +436,7 @@ a.nav-link {
     }
     .activeLatest{
       background-color: #b9b3b3;
-      border-bottom: red 2px solid;
+      border-bottom: red 4px solid;
     }
 
     h1 {
@@ -444,17 +447,14 @@ a.nav-link {
     .spazioHr {
         border-bottom: 2px solid lightgray;
     }
-
     .buttonContainer {
         width: 90%;
         max-width: 1130px;
         align-self: center;
     }
     .buttonContainerFlex {
-
         height: 50px;
         display: flex;
-        width: 100%;
         min-width: 900px;
         font-size: 2rem;
         .buttonBorder {
@@ -536,6 +536,7 @@ a.nav-link {
             box-shadow: 2px 2px 6px;
             width: 30%;
             max-height: 45rem;
+            background-color: white;
             cursor: pointer;
             flex-basis: calc(33% - 3rem);
             .latestUpdateImg {
@@ -620,7 +621,6 @@ a.nav-link {
     .buttonContainerFlex {
         height: 40px;
         display: flex;
-        width: 100%;
         font-size: 1.3rem;
         font-weight: 500;
     }
@@ -632,7 +632,7 @@ a.nav-link {
         margin: 4rem auto;
         gap: 2rem;
         .cardLatestUpdate {
-            border: solid lightgray 0.2px;
+            border: solid rgb(204, 196, 196) 0.2px;
             box-shadow: 2px 2px 6px;
             width: 20%;
             max-height: 45rem;
@@ -647,15 +647,32 @@ text-align: center;
 }
 }
 @media (max-width:390px){
-.latest-update-container{
-    overflow: hidden;
+    .latest-update-container{
+        overflow: hidden;
+    .activeLatest{
+        background-color: #b9b3b3;
+        border-bottom: red 12px solid;
+    }
+    .scrollRight{display: block !important;}
     .buttonContainer{
-        overflow: scroll; 
-        padding: .5rem; 
+        overflow-y: hidden;
+    }
+    #hiddenButtonLatest{
+        width: 350px !important;
+        overflow-x: hidden;
+        background-color: red;
+    }
+    .buttonContainerFlex{
+        overflow-x: scroll;
+        height: 40px;
+        overflow-y: hidden;
+    }
+    .spazioHr {
+        position: relative;
+        top:-8px;
     }
     .containerCardLatest {
         width: 100%;
-        // max-width: 750px;
         min-width: 360px;
         margin: 4rem auto;
         gap: 2rem;

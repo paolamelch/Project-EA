@@ -7,7 +7,6 @@ const apex = document.getElementById('Apex')
 const theSims = document.getElementById('TheSims')
 const battle = document.getElementById('Battle')
 
-
 eaNews.addEventListener('click', uno)
 eaPlay.addEventListener('click', due)
 fifa.addEventListener('click', tre)
@@ -26,14 +25,14 @@ function uno() {
     document.querySelector('.seiFra').classList.add("disableLatest");
     document.querySelector('.setteFra').classList.add("disableLatest");
     document.querySelector('.ottoFra').classList.add("disableLatest");
-    eaNews.classList.add("activeLatest");
-    eaPlay.classList.remove("activeLatest");
-    fifa.classList.remove("activeLatest");
-    fUno.classList.remove("activeLatest");
-    madden.classList.remove("activeLatest");
-    apex.classList.remove("activeLatest");
-    theSims.classList.remove("activeLatest");
-    battle.classList.remove("activeLatest");
+    document.querySelector('#cardUnoL').classList.add("activeLatest");
+    document.querySelector('#cardDueL').classList.remove("activeLatest");
+    document.querySelector('#cardTreL').classList.remove("activeLatest");
+    document.querySelector('#cardQuattroL').classList.remove("activeLatest");
+    document.querySelector('#cardCinqueL').classList.remove("activeLatest");
+    document.querySelector('#cardSeiL').classList.remove("activeLatest");
+    document.querySelector('#cardSetteL').classList.remove("activeLatest");
+    document.querySelector('#cardOttoL').classList.remove("activeLatest");
 }
 
 function due() {
@@ -45,14 +44,14 @@ function due() {
     document.querySelector('.seiFra').classList.add("disableLatest");
     document.querySelector('.setteFra').classList.add("disableLatest");
     document.querySelector('.ottoFra').classList.add("disableLatest"); 
-    eaPlay.classList.add("activeLatest");
-    eaNews.classList.remove("activeLatest");
-    fifa.classList.remove("activeLatest");
-    fUno.classList.remove("activeLatest");
-    madden.classList.remove("activeLatest");
-    apex.classList.remove("activeLatest");
-    theSims.classList.remove("activeLatest");
-    battle.classList.remove("activeLatest");
+    document.querySelector('#cardUnoL').classList.remove("activeLatest");
+    document.querySelector('#cardDueL').classList.add("activeLatest");
+    document.querySelector('#cardTreL').classList.remove("activeLatest");
+    document.querySelector('#cardQuattroL').classList.remove("activeLatest");
+    document.querySelector('#cardCinqueL').classList.remove("activeLatest");
+    document.querySelector('#cardSeiL').classList.remove("activeLatest");
+    document.querySelector('#cardSetteL').classList.remove("activeLatest");
+    document.querySelector('#cardOttoL').classList.remove("activeLatest");
 }
 
 function tre() {
@@ -64,14 +63,14 @@ function tre() {
     document.querySelector('.seiFra').classList.add("disableLatest");
     document.querySelector('.setteFra').classList.add("disableLatest");
     document.querySelector('.ottoFra').classList.add("disableLatest"); 
-    eaNews.classList.remove("activeLatest");
-    eaPlay.classList.remove("activeLatest");
-    fifa.classList.add("activeLatest");
-    fUno.classList.remove("activeLatest");
-    madden.classList.remove("activeLatest");
-    apex.classList.remove("activeLatest");
-    theSims.classList.remove("activeLatest");
-    battle.classList.remove("activeLatest");
+    document.querySelector('#cardUnoL').classList.remove("activeLatest");
+    document.querySelector('#cardDueL').classList.remove("activeLatest");
+    document.querySelector('#cardTreL').classList.add("activeLatest");
+    document.querySelector('#cardQuattroL').classList.remove("activeLatest");
+    document.querySelector('#cardCinqueL').classList.remove("activeLatest");
+    document.querySelector('#cardSeiL').classList.remove("activeLatest");
+    document.querySelector('#cardSetteL').classList.remove("activeLatest");
+    document.querySelector('#cardOttoL').classList.remove("activeLatest");
 }
 
 function quattro() {
@@ -83,14 +82,14 @@ function quattro() {
     document.querySelector('.seiFra').classList.add("disableLatest");
     document.querySelector('.setteFra').classList.add("disableLatest");
     document.querySelector('.ottoFra').classList.add("disableLatest");
-    eaNews.classList.remove("activeLatest");
-    eaPlay.classList.remove("activeLatest");
-    fifa.classList.remove("activeLatest");
-    fUno.classList.add("activeLatest");
-    madden.classList.remove("activeLatest");
-    apex.classList.remove("activeLatest");
-    theSims.classList.remove("activeLatest");
-    battle.classList.remove("activeLatest");
+    document.querySelector('#cardUnoL').classList.remove("activeLatest");
+    document.querySelector('#cardDueL').classList.remove("activeLatest");
+    document.querySelector('#cardTreL').classList.remove("activeLatest");
+    document.querySelector('#cardQuattroL').classList.add("activeLatest");
+    document.querySelector('#cardCinqueL').classList.remove("activeLatest");
+    document.querySelector('#cardSeiL').classList.remove("activeLatest");
+    document.querySelector('#cardSetteL').classList.remove("activeLatest");
+    document.querySelector('#cardOttoL').classList.remove("activeLatest");
 }
 function cinque() {
     document.querySelector('.cinqueFra').classList.remove("disableLatest");
@@ -102,14 +101,14 @@ function cinque() {
     document.querySelector('.setteFra').classList.add("disableLatest");
     document.querySelector('.ottoFra').classList.add("disableLatest");
 
-    eaNews.classList.remove("activeLatest");
-    eaPlay.classList.remove("activeLatest");
-    fifa.classList.remove("activeLatest");
-    fUno.classList.remove("activeLatest");
-    madden.classList.add("activeLatest");
-    apex.classList.remove("activeLatest");
-    theSims.classList.remove("activeLatest");
-    battle.classList.remove("activeLatest");
+    document.querySelector('#cardUnoL').classList.remove("activeLatest");
+    document.querySelector('#cardDueL').classList.remove("activeLatest");
+    document.querySelector('#cardTreL').classList.remove("activeLatest");
+    document.querySelector('#cardQuattroL').classList.remove("activeLatest");
+    document.querySelector('#cardCinqueL').classList.add("activeLatest");
+    document.querySelector('#cardSei').classList.remove("activeLatest");
+    document.querySelector('#cardSetteL').classList.remove("activeLatest");
+    document.querySelector('#cardOttoL').classList.remove("activeLatest");
 }
 function sei() {
     document.querySelector('.seiFra').classList.remove("disableLatest");
@@ -120,14 +119,14 @@ function sei() {
     document.querySelector('.dueFra').classList.add("disableLatest");
     document.querySelector('.setteFra').classList.add("disableLatest");
     document.querySelector('.ottoFra').classList.add("disableLatest");
-    eaNews.classList.remove("activeLatest");
-    eaPlay.classList.remove("activeLatest");
-    fifa.classList.remove("activeLatest");
-    fUno.classList.remove("activeLatest");
-    madden.classList.remove("activeLatest");
-    apex.classList.add("activeLatest");
-    theSims.classList.remove("activeLatest");
-    battle.classList.remove("activeLatest");
+    document.querySelector('#cardUnoL').classList.remove("activeLatest");
+    document.querySelector('#cardDueL').classList.remove("activeLatest");
+    document.querySelector('#cardTreL').classList.remove("activeLatest");
+    document.querySelector('#cardQuattroL').classList.remove("activeLatest");
+    document.querySelector('#cardCinqueL').classList.remove("activeLatest");
+    document.querySelector('#cardSeiL').classList.add("activeLatest");
+    document.querySelector('#cardSetteL').classList.remove("activeLatest");
+    document.querySelector('#cardOttoL').classList.remove("activeLatest");
 }
 function sette() {
     document.querySelector('.setteFra').classList.remove("disableLatest");
@@ -138,14 +137,14 @@ function sette() {
     document.querySelector('.seiFra').classList.add("disableLatest");
     document.querySelector('.dueFra').classList.add("disableLatest");
     document.querySelector('.ottoFra').classList.add("disableLatest");
-    eaNews.classList.remove("activeLatest");
-    eaPlay.classList.remove("activeLatest");
-    fifa.classList.remove("activeLatest");
-    fUno.classList.remove("activeLatest");
-    madden.classList.remove("activeLatest");
-    apex.classList.remove("activeLatest");
-    theSims.classList.add("activeLatest");
-    battle.classList.remove("activeLatest");
+    document.querySelector('#cardUnoL').classList.remove("activeLatest");
+    document.querySelector('#cardDueL').classList.remove("activeLatest");
+    document.querySelector('#cardTreL').classList.remove("activeLatest");
+    document.querySelector('#cardQuattroL').classList.remove("activeLatest");
+    document.querySelector('#cardCinqueL').classList.remove("activeLatest");
+    document.querySelector('#cardSeiL').classList.remove("activeLatest");
+    document.querySelector('#cardSetteL').classList.add("activeLatest");
+    document.querySelector('#cardOttoL').classList.remove("activeLatest");
 }
 function otto() {
     document.querySelector('.ottoFra').classList.remove("disableLatest");
@@ -156,12 +155,12 @@ function otto() {
     document.querySelector('.seiFra').classList.add("disableLatest");
     document.querySelector('.setteFra').classList.add("disableLatest");
     document.querySelector('.dueFra').classList.add("disableLatest");
-    eaNews.classList.remove("activeLatest");
-    eaPlay.classList.remove("activeLatest");
-    fifa.classList.remove("activeLatest");
-    fUno.classList.remove("activeLatest");
-    madden.classList.remove("activeLatest");
-    apex.classList.remove("activeLatest");
-    theSims.classList.remove("activeLatest");
-    battle.classList.add("activeLatest");
+    document.querySelector('#cardUnoL').classList.remove("activeLatest");
+    document.querySelector('#cardTreL').classList.remove("activeLatest");
+    document.querySelector('#cardQuattroL').classList.remove("activeLatest");
+    document.querySelector('#cardCinqueL').classList.remove("activeLatest");
+    document.querySelector('#cardSeiL').classList.remove("activeLatest");
+    document.querySelector('#cardSetteL').classList.remove("activeLatest");
+    document.querySelector('#cardDueL').classList.remove("activeLatest");
+    document.querySelector('#cardOttoL').classList.add("activeLatest");
 }
