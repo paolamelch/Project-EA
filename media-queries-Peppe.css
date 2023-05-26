@@ -19,7 +19,7 @@
     visibility: hidden;
   }
   #tablet-sidebar {
-    top: 0;
+    margin-top: 4rem;
   }
   #sidebar-overlay {
     top: 30px;
@@ -66,6 +66,7 @@
   .main-logo-mobile {
     visibility: visible;
     display: block;
+    margin-top: 5rem;
     height: 61vh;
     background-image: url(mobile-logo.jpg);
     background-size: cover;

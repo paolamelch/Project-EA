@@ -628,6 +628,14 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#browse-collapse ul li {
+  margin: 1rem 0;
+}
+
+#PLATFORM-collapse ul li {
+  margin: 1rem 0;
+}
+
 #tablet-sidebar {
   display: none;
   visibility: hidden;
