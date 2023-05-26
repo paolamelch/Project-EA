@@ -4,6 +4,10 @@
     visibility: hidden;
   }
 
+  #profile-wrapper .user-profile-tags {
+    padding: 0rem;
+  }
+
   .main-nav-tablet {
     display: none;
     visibility: hidden;
@@ -19,7 +23,11 @@
   }
 
   #tablet-sidebar {
-    margin-top: 5vh;
+    margin-top: 4rem;
+  }
+
+  #sidebar-overlay {
+    top: 30px;
   }
 
   .black-nav-mobile {

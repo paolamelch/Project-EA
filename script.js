@@ -136,15 +136,29 @@ rotateSideArrow5.addEventListener("click", () => {
 
 // FINE TABLET SIDEBAR
 // Navbar
+let mainNavTablet = document.getElementById("main-nav-tablet");
+let mainNavMobile = document.getElementById("main-nav-mobile");
+
+let hidingNavMobile = document.getElementById("black-nav-mobile");
+let hidingNavTablet = document.getElementById("black-nav-tablet");
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
     document.getElementById("navbar2").style.top = "36px";
+    hidingNavMobile.style.top = "0";
+    hidingNavTablet.style.top = "0";
+    mainNavMobile.style.top = "38px";
+    mainNavTablet.style.top = "38px";
   } else {
     document.getElementById("navbar").style.top = "-20px";
     document.getElementById("navbar2").style.top = "0";
+    hidingNavMobile.style.top = "-38px";
+    mainNavMobile.style.top = " -5px";
+    mainNavTablet.style.top = " -5px";
+    hidingNavTablet.style.top = "-38px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -172,7 +186,7 @@ faqToggleMobile.addEventListener("click", () => {
   console.log("click");
   faqWrapper.style.top = "3rem";
   faqWrapper.style.height = "52vh";
-  // document.documentElement.style.overflow = "hidden";
+  document.documentElement.style.overflow = "hidden";
 });
 
 faqClose.addEventListener("click", () => {
@@ -188,22 +202,13 @@ let mobileSideToggle = document.getElementById("mobile-nav-toggle");
 mobileSideToggle.addEventListener("click", () => {
   tabletSidebar.style.left = "0";
   sidebarOverlay.style.display = "block";
+  hidingNavMobile.style.top = "0";
+  mainNavMobile.style.top = "38px";
   sidebarOverlay.style.visibility = "visible";
   document.documentElement.style.overflow = "hidden";
   document.body.scroll = "no";
 });
 
 // Navbar mobile
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar2").style.top = "36px";
-  } else {
-    document.getElementById("navbar").style.top = "-20px";
-    document.getElementById("navbar2").style.top = "0";
-  }
-  prevScrollpos = currentScrollPos;
-};
 
 // Fine Navbar mobile
