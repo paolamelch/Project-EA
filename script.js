@@ -12,7 +12,8 @@ let profileClose = document.getElementById("profile-close");
 let mobileUserToggle = document.getElementById("user-toggle-mobile");
 
 mobileUserToggle.addEventListener("click", () => {
-  console.log("click");
+  profileWrapper.style.top = "30px";
+  document.documentElement.style.overflow = "hidden";
 });
 
 userToggle.addEventListener("click", () => {
@@ -155,6 +156,7 @@ let faqWrapper = document.getElementById("faq-wrapper");
 let faqClose = document.getElementById("faq-close");
 let faqToggle = document.getElementById("faq-toggle");
 let faqToggleTablet = document.getElementById("faq-toggle-tablet");
+let faqToggleMobile = document.getElementById("faq-mobile-toggle");
 
 faqToggle.addEventListener("click", () => {
   faqWrapper.style.top = "30px";
@@ -164,6 +166,13 @@ faqToggle.addEventListener("click", () => {
 faqToggleTablet.addEventListener("click", () => {
   faqWrapper.style.top = "30px";
   document.documentElement.style.overflow = "hidden";
+});
+
+faqToggleMobile.addEventListener("click", () => {
+  console.log("click");
+  faqWrapper.style.top = "3rem";
+  faqWrapper.style.height = "52vh";
+  // document.documentElement.style.overflow = "hidden";
 });
 
 faqClose.addEventListener("click", () => {
