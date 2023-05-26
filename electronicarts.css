@@ -2081,12 +2081,12 @@ a.nav-link {
     visibility: hidden;
   }
   * #faq-wrapper {
-    display: none;
-    visibility: hidden;
+    height: 30vh;
+    top: 0;
   }
   * #profile-wrapper {
-    display: none;
-    visibility: hidden;
+    top: -44rem;
+    height: 35vh;
   }
   * .myborder {
     border-top: 2px solid #a3a3a3;

@@ -6,10 +6,22 @@ let closeToggle = document.getElementById("close-toggle");
 let sidebarOverlay = document.getElementById("sidebar-overlay");
 // User Bar Toggle
 let userToggle = document.getElementById("user-toggle");
+let userToggleTablet = document.getElementById("user-toggle-tablet");
 let profileWrapper = document.getElementById("profile-wrapper");
 let profileClose = document.getElementById("profile-close");
+let mobileUserToggle = document.getElementById("user-toggle-mobile");
+
+mobileUserToggle.addEventListener("click", () => {
+  console.log("click");
+});
+
 userToggle.addEventListener("click", () => {
   profileWrapper.style.top = "30px";
+  document.documentElement.style.overflow = "hidden";
+});
+
+userToggleTablet.addEventListener("click", () => {
+  profileWrapper.style.top = "0";
   document.documentElement.style.overflow = "hidden";
 });
 

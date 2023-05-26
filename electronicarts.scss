@@ -1610,13 +1610,13 @@ a.nav-link {
     }
 
     #faq-wrapper {
-      display: none;
-      visibility: hidden;
+      height: 30vh;
+      top: 0;
     }
 
     #profile-wrapper {
-      display: none;
-      visibility: hidden;
+      top: -44rem;
+      height: 35vh;
     }
 
     .myborder {
