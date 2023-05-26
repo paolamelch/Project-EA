@@ -653,17 +653,17 @@ text-align: center;
         background-color: #b9b3b3;
         border-bottom: red 12px solid;
     }
-    .scrollRight{display: block !important;}
+    .scrollVisible{display: block !important;}
     .buttonContainer{
         overflow-y: hidden;
     }
+    #hiddenButtonLatest::-webkit-scrollbar{display: none;}
     #hiddenButtonLatest{
-        width: 350px !important;
-        overflow-x: hidden;
-        background-color: red;
+        width: 340px !important;
+        overflow-x: scroll;
     }
     .buttonContainerFlex{
-        overflow-x: scroll;
+        max-width: min-content;
         height: 40px;
         overflow-y: hidden;
     }

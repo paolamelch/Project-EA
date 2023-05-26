@@ -1,3 +1,20 @@
+const frecciaR = document.querySelector('.scrollLR');
+const frecciaL = document.querySelector('.scrollLL');
+const scrollbarL = document.querySelector('#hiddenButtonLatest');
+frecciaR.addEventListener('click', rightBtn)
+frecciaL.addEventListener('click', leftBtn)
+
+function rightBtn (){
+    scrollbarL.scrollLeft += 280;
+    frecciaL.classList.add('scrollVisible')
+    frecciaR.classList.remove('scrollVisible')
+}
+function leftBtn (){
+    scrollbarL.scrollLeft -= 350;
+    frecciaR.classList.add('scrollVisible')
+    frecciaL.classList.remove('scrollVisible')
+}
+
 const eaNews = document.getElementById('eaNews')
 const eaPlay = document.getElementById('eaPlay')
 const fifa = document.getElementById('FIFA')
