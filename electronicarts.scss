@@ -707,6 +707,22 @@ text-align: center;
 }
 @media (max-width:390px){
   .latest-update-container{
+    .our-btn {
+      background: none;
+      border-radius: 3px;
+      border: none;
+      outline: 2px solid black;
+      font-size: 1.7rem;
+      font-weight: 500;
+      padding: 1.5rem 2.5rem;
+      transition: all 0.1s ease-in-out;
+      margin-bottom: 3rem;
+      width: 35rem;
+
+      &:hover {
+          outline-offset: 4px;
+      }
+  }
       overflow: hidden;
   .activeLatest{
       background-color: #b9b3b3;
