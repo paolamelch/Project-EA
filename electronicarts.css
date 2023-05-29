@@ -1301,6 +1301,7 @@ a.nav-link {
     overflow-x: scroll;
   }
   .latest-update-container .buttonContainerFlex {
+    max-width: -moz-min-content;
     max-width: min-content;
     height: 40px;
     overflow-y: hidden;
@@ -1366,7 +1367,8 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .eaParagraph {
@@ -2307,6 +2309,7 @@ a.nav-link {
     transition: all 0.1s ease-in-out;
     margin-top: 1rem;
     font-weight: 550;
+    width: -moz-fit-content;
     width: fit-content;
     margin-left: 115px;
   }
@@ -2323,6 +2326,4 @@ a.nav-link {
     margin-top: 10px;
     transition: all 0.3s ease-in-out;
   }
-}
-
-/*# sourceMappingURL=electronicarts.css.map */
+}/*# sourceMappingURL=electronicarts.css.map */

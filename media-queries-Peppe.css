@@ -1,4 +1,7 @@
 @media screen and (max-width: 390px) {
+  body {
+    max-width: 390px;
+  }
   .main-logo-tablet {
     display: none;
     visibility: hidden;
