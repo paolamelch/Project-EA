@@ -48,6 +48,9 @@
     border: none;
     font-size: larger;
   }
+  .black-nav-mobile button i {
+    font-size: 2rem;
+  }
   .main-nav-mobile {
     display: block;
     visibility: visible;

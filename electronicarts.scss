@@ -758,8 +758,6 @@ text-align: center;
           height: 20rem;
           .paddingLatest{
               text-align: center;
-              .redEaInc{
-              }
               h3{
                   margin-top: 4rem;
                   font-weight: 600;
@@ -1408,7 +1406,7 @@ text-align: center;
   .profile-close {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 3rem;
     button {
       color: white;
@@ -1512,7 +1510,7 @@ text-align: center;
   .faq-close {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 3rem;
     button {
       color: white;
@@ -1758,7 +1756,7 @@ text-align: center;
         width: 100%;
         height: 3.5vh;
         background-color: basic.$primary;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 4.5rem;
         color: #a3a3a3;
         padding-right: 3rem;

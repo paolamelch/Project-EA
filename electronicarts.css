@@ -425,7 +425,7 @@
     margin: 0 0 10px 10px;
   }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks {
-    width: 100%;
+    width: 360px;
     height: 100%;
   }
   .footerContainer .section2 .networkFooter .networkFooterContainer .networkFooterLinks .networkFooterLinksContainer {
@@ -521,6 +521,9 @@
   }
 }
 @media screen and (max-width: 390px) {
+  body {
+    max-width: 390px;
+  }
   .main-logo-tablet {
     display: none;
     visibility: hidden;
@@ -566,6 +569,9 @@
     background: none;
     border: none;
     font-size: larger;
+  }
+  .black-nav-mobile button i {
+    font-size: 2rem;
   }
   .main-nav-mobile {
     display: block;
@@ -1946,7 +1952,7 @@ a.nav-link {
 #profile-wrapper .profile-close {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 3rem;
 }
 #profile-wrapper .profile-close button {
@@ -2038,7 +2044,7 @@ a.nav-link {
 #faq-wrapper .faq-close {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 3rem;
 }
 #faq-wrapper .faq-close button {
@@ -2241,7 +2247,7 @@ a.nav-link {
     width: 100%;
     height: 3.5vh;
     background-color: #161616;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 4.5rem;
     color: #a3a3a3;
     padding-right: 3rem;
