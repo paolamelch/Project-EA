@@ -83,16 +83,19 @@
   .main-logo-mobile .bottom-side-mobile {
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
   }
   .main-logo-mobile .bottom-side-mobile h1 {
     color: #161616;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 900;
     padding: 0 5rem;
     text-align: center;
+    margin-top: 0;
   }
   .main-logo-mobile .bottom-side-mobile h3 {
     color: #161616;
+    font-size: 2rem;
     text-align: center;
     font-weight: 400;
     padding: 0 2rem;
@@ -114,4 +117,9 @@
   .main-logo-mobile .bottom-side-mobile button:hover {
     outline: 6px solid white;
   }
-}/*# sourceMappingURL=media-queries-Peppe.css.map */
+  .main-logo-mobile .bottom-side-mobile img {
+    padding: 0 10rem;
+  }
+}
+
+/*# sourceMappingURL=media-queries-Peppe.css.map */

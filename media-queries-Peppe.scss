@@ -1,6 +1,6 @@
 @media screen and (max-width: 390px) {
-  body{
-    max-width:390px;
+  body {
+    max-width: 390px;
   }
   .main-logo-tablet {
     display: none;
@@ -53,8 +53,8 @@
       background: none;
       border: none;
       font-size: larger;
-      i{
-        font-size:2rem
+      i {
+        font-size: 2rem;
       }
     }
   }
@@ -94,18 +94,21 @@
     .bottom-side-mobile {
       display: flex;
       flex-direction: column;
+      margin-top: 4rem;
       //   justify-content: center;
 
       h1 {
         color: #161616;
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: 900;
         padding: 0 5rem;
         text-align: center;
+        margin-top: 0;
       }
 
       h3 {
         color: #161616;
+        font-size: 2rem;
         text-align: center;
         font-weight: 400;
         padding: 0 2rem;
@@ -129,6 +132,10 @@
         &:hover {
           outline: 6px solid white;
         }
+      }
+
+      img {
+        padding: 0 10rem;
       }
     }
   }

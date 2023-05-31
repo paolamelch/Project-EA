@@ -819,17 +819,20 @@ a.nav-link {
 }
 .container-main .main-logo h1 {
   color: #161616;
-  font-size: 5.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   padding: 0 5rem;
   text-align: center;
+  margin-top: 0;
 }
 .container-main .main-logo h3 {
   color: #161616;
   text-align: center;
   font-weight: 400;
   padding: 0 5rem;
+  font-size: large;
   word-spacing: 0.2rem;
+  margin-top: 1rem 0;
 }
 .container-main .main-logo button {
   background: white;
@@ -1307,7 +1310,6 @@ a.nav-link {
     overflow-x: scroll;
   }
   .latest-update-container .buttonContainerFlex {
-    max-width: -moz-min-content;
     max-width: min-content;
     height: 40px;
     overflow-y: hidden;
@@ -1373,8 +1375,7 @@ a.nav-link {
 }
 
 #eaSmallLogo {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .eaParagraph {
@@ -2292,16 +2293,21 @@ a.nav-link {
     align-content: center;
     justify-content: center;
   }
+  * .container-main-tablet .left-side-tablet img {
+    padding: 0 10rem;
+  }
   * .container-main-tablet .left-side-tablet h1 {
     color: #161616;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 900;
     padding: 0 5rem;
     text-align: center;
+    margin: 0;
   }
   * .container-main-tablet .left-side-tablet h3 {
     color: #161616;
     text-align: center;
+    font-size: large;
     font-weight: 400;
     padding: 0 2rem;
   }
@@ -2315,7 +2321,6 @@ a.nav-link {
     transition: all 0.1s ease-in-out;
     margin-top: 1rem;
     font-weight: 550;
-    width: -moz-fit-content;
     width: fit-content;
     margin-left: 115px;
   }
@@ -2332,4 +2337,6 @@ a.nav-link {
     margin-top: 10px;
     transition: all 0.3s ease-in-out;
   }
-}/*# sourceMappingURL=electronicarts.css.map */
+}
+
+/*# sourceMappingURL=electronicarts.css.map */
